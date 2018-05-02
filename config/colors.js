@@ -43,6 +43,78 @@ const TomorrowDark = {
 			selectionBackground: '#c1deff5a',
 		},
 	},
+	tokens: {
+		editor: {
+			background: '#1d1f20',
+			foreground: '#c5c9c6',
+		},
+		gutter: {
+			background: '#1d1f20',
+			foreground: '#ffffff33',
+		},
+		lineNumber: {
+			foreground: '#ffffff33',
+			active: '#ffffff50',
+		},
+		caret: '#de935e',
+		selection: {
+			general: '#ffffff16',
+			bright: '#ffffff1a',
+			border: '#ffffff16',
+			inactive: '#ffffff10',
+		},
+		guide: {
+			indent: '#ffffff1a',
+			whitespace: '#ffffff16',
+			ruler: '#ffffff1a',
+			bracket: '#ffffff16',
+		},
+		find: {
+			current: '#f2d98c',
+			other: '#ffffff16',
+		},
+		lineHighlight: '#ffffff0d',
+		blockquote: {
+			background: '#ffffff13',
+			foreground: '#bcbdbc',
+		},
+		link: '#82a3bf',
+		accent: '#de935e',
+		comment: '#959795', // comment, punctuation.definition.comment
+		string: '#b4bc67',
+		color1: '#f0c775', // constant.numeric, constant.language, entity.name
+		color2: '#cc6666', // variable.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
+		color3: '#b295bb', // constant, constant.other, constant.character, keyword, storage.type, attributes
+		color4: '#c5c9c6', // variable, variable.parameter, Operators, Misc, punctuation.definition.variable
+		color5: '#82a3bf', // variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
+		color6: '#e9b36d', // keyword.operator
+		color7: '#afb1af', // Property, Separator, Terminator
+		color8: '#d6d7d6', // Pseudo Property
+	},
+	scheme: {
+		blockquote: {
+			background: '#ffffff13',
+			foreground: '#bcbdbc',
+		},
+		'markup.error': '#cc6666',
+		'message.error': '#cc6666',
+		'markup.warning': '#f0c775',
+		'markup.info': '#82a3bf',
+		'markup.deleted': '#cc6666',
+		'markup.inserted': '#b4bc67',
+		'markup.changed': '#82a3bf',
+		'markup.ignored': '#898b89',
+		'markup.untracked': '#898b89',
+		'markup.heading': '#cc6666',
+		'markup.list.unnumbered': '#afb1af',
+		'markup.list.numbered': '#82a3bf',
+		'markup.quote': '#bcbdbc',
+		link: '#82a3bf',
+		'link.description': '#b4bc67',
+	},
+};
+
+const modifiers = {
 	// Background and text variations
 	bgPrimary() {
 		return this.workspace.background;
@@ -105,19 +177,19 @@ const TomorrowDark = {
 		return `${this.workspace.foreground}${(40).toString(16)}`;
 	},
 	bgAccent() {
-		return Color(this.workspace.bluish)
+		return Color(this.workspace.accent)
 			.hsl()
 			.darken(0.15)
 			.hex();
 	},
 	bgAccentDarker() {
-		return Color(this.workspace.bluish)
+		return Color(this.workspace.accent)
 			.hsl()
 			.darken(0.2)
 			.hex();
 	},
 	bgAccentLighter() {
-		return Color(this.workspace.bluish)
+		return Color(this.workspace.accent)
 			.hsl()
 			.darken(0.1)
 			.hex();
@@ -244,115 +316,11 @@ const TomorrowDark = {
 	scrollbarActive() {
 		return `${this.workspace.foreground}${(60).toString(16)}`;
 	},
-	tokens: {
-		editor: {
-			background: '#1d1f20',
-			foreground: '#c5c9c6',
-		},
-		gutter: {
-			background: '#1d1f20',
-			foreground: '#ffffff33',
-		},
-		lineNumber: {
-			foreground: '#ffffff33',
-			active: '#ffffff50',
-		},
-		caret: '#de935e',
-		selection: {
-			general: '#ffffff16',
-			bright: '#ffffff1a',
-			border: '#ffffff16',
-			inactive: '#ffffff10',
-		},
-		guide: {
-			indent: '#ffffff1a',
-			whitespace: '#ffffff16',
-			ruler: '#ffffff1a',
-			bracket: '#ffffff16',
-		},
-		find: {
-			current: '#f2d98c',
-			other: '#ffffff16',
-		},
-		lineHighlight: '#ffffff0d',
-		blockquote: {
-			background: '#ffffff13',
-			foreground: '#bcbdbc',
-		},
-		link: '#82a3bf',
-		accent: '#de935e',
-		comment: '#959795',
-	},
-	scheme: {
-		background: '#1d1f20',
-		foreground: '#c5c9c6',
-		accent: '#de935e',
-		caret: '#de935e',
-		lineHighlight: '#ffffff0d',
-		error: '#cc6666',
-		highlight: '#ffffff40',
-		comment: '#959795',
-		definition: '#afb1af', // separator, terminator
-		blockquote: {
-			background: '#ffffff13',
-			foreground: '#bcbdbc',
-		},
-		string: '#b4bc67',
-		constant: {
-			numeric: '#f0c775',
-			language: '#cc6666', // italic
-			character: '#b295bb',
-			other: '#b295bb',
-		},
-		variable: {
-			member: '#cc6666',
-			parameter: '#c5c9c6',
-			language: '#cc6666', // italic
-			function: '#82a3bf',
-			annonation: '#82a3bf',
-		},
-		keyword: '#b295bb',
-		'keyword.operator': '#e9b36d',
-		'keyword.operator.word': '#b295bb',
-		storage: '#cc6666',
-		'storage.type': '#b295bb', // italic
-		'entity.name': '#f0c775',
-		'entity.name.function': '#82a3bf',
-		'entity.name.label': '#82a3bf',
-		'entity.other.inherited-class': '#b4bc67', // italic
-		'entity.name.tag': '#cc6666',
-		'entity.other.attribute-name': '#b295bb', // italic
-		'support.function': '#82a3bf', // italic
-		'support.macro': '#82a3bf', // italic
-		'support.constant': '#de935e', // italic
-		'support.type': '#82a3bf', // italic
-		'support.class': '#82a3bf', // italic
-		invalid: {
-			background: '#493132',
-			foreground: '#d98c8c',
-		},
-		'invalid.deprecated': {
-			background: '#4e3d31',
-			foreground: '#e6ad84',
-		},
-		'markup.error': '#cc6666',
-		'message.error': '#cc6666',
-		'markup.warning': '#f0c775',
-		'markup.info': '#82a3bf',
-		'markup.deleted': '#cc6666',
-		'markup.inserted': '#b4bc67',
-		'markup.changed': '#82a3bf',
-		'markup.ignored': '#898b89',
-		'markup.untracked': '#898b89',
-		'markup.heading': '#cc6666',
-		'markup.list.unnumbered': '#afb1af',
-		'markup.list.numbered': '#82a3bf',
-		'markup.quote': '#bcbdbc',
-		link: '#82a3bf',
-		'link.description': '#b4bc67',
-	},
 };
 
 module.exports = {
-	TomorrowDark,
+	'Tomorrow Night': {
+		...TomorrowDark,
+		...modifiers,
+	},
 };

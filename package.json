@@ -19,9 +19,9 @@
                 "path": "./themes/Beautiful UI-color-theme.json"
             },
             {
-                "label": "bUI - Tomorrow Dark",
+                "label": "bUI - Tomorrow Night",
                 "uiTheme": "vs-dark",
-                "path": "./themes/TomorrowDark-color-theme.json"
+                "path": "./themes/Tomorrow Night-color-theme.json"
             }
         ]
     },
