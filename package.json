@@ -1,0 +1,22 @@
+{
+    "name": "beautiful-ui",
+    "displayName": "Beautiful UI",
+    "description": "A set of beautiful color themes for VSCode, inspired by Sublime DA UI.",
+    "version": "0.0.1",
+    "publisher": "swashata",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Beautiful UI",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Beautiful UI-color-theme.json"
+            }
+        ]
+    }
+}
