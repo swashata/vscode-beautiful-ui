@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "publisher": "swashata",
     "engines": {
+        "node": ">=8.0.0",
         "vscode": "^1.22.0"
     },
     "categories": [
@@ -16,7 +17,34 @@
                 "label": "Beautiful UI",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Beautiful UI-color-theme.json"
+            },
+            {
+                "label": "bUI - Tomorrow Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/TomorrowDark-color-theme.json"
             }
         ]
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Swashata Ghosh",
+        "email": "swashata4u@gmail.com",
+        "url": "https://swashata.me"
+    },
+    "devDependencies": {
+        "chalk": "^2.4.1",
+        "chokidar-cli": "^1.2.0",
+        "color": "^3.0.0",
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.11.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "lodash": "^4.17.10",
+        "prettier": "^1.12.1"
+    },
+    "scripts": {
+        "build": "node ./script/generateTheme.js",
+        "watch": "chokidar 'config/**' 'script/**' -c 'yarn build'"
     }
 }
