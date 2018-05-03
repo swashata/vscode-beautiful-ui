@@ -369,6 +369,7 @@
 		{
 			"name": "Constants - numeric, support",
 			"scope": [
+				"support.type.property-name",
 				"constant.numeric",
 				"support.constant"
 			],
@@ -528,7 +529,7 @@
 		{
 			"name": "Property, Separator, Terminator",
 			"scope": [
-				"support.type.property-name",
+
 				"punctuation.terminator",
 				"punctuation.separator",
 				"meta.property-list.scss",
