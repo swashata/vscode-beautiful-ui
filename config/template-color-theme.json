@@ -63,8 +63,8 @@
 		"list.highlightForeground": "<%= workspace.accent %>",
 		"list.hoverBackground": "<%= bgHover() %>",
 		"list.hoverForeground": "<%= textHover() %>",
-		"list.inactiveSelectionBackground": "<%= bgInActive() %>",
-		"list.inactiveSelectionForeground": "<%= textInActive() %>",
+		"list.inactiveSelectionBackground": "<%= bgActivePassive() %>",
+		"list.inactiveSelectionForeground": "<%= textActivePassive() %>",
 		"list.inactiveFocusBackground": "<%= bgInActiveFocus() %>",
 		"list.invalidItemForeground": "<%= textInvalid() %>",
 
@@ -143,12 +143,12 @@
 		"editorOverviewRuler.warningForeground": "<%= bgWarningFaded() %>",
 		"editorOverviewRuler.infoForeground": "<%= bgWarningFaded() %>",
 
-		"editorError.foreground": "<%= bgInvalid() %>",
-		"editorWarning.foreground": "<%= bgWarning() %>",
+		"editorError.foreground": "<%= textInvalid() %>",
+		"editorWarning.foreground": "<%= textWarning() %>",
 		"editorGutter.background": "<%= tokens.gutter.background %>",
-		"editorGutter.modifiedBackground": "<%= bgWarningFaded() %>",
-		"editorGutter.addedBackground": "<%= bgSuccessFaded() %>",
-		"editorGutter.deletedBackground": "<%= bgInvalidFaded() %>",
+		"editorGutter.modifiedBackground": "<%= gutterModified() %>",
+		"editorGutter.addedBackground": "<%= gutterAdded() %>",
+		"editorGutter.deletedBackground": "<%= gutterDeleted() %>",
 
 		// Diff Editor Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_diff-editor-colors
@@ -157,15 +157,15 @@
 
 		// Editor Widget Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-widget-colors
-		"editorWidget.background": "<%= bgPrimary() %>",
-		"editorWidget.border": "<%= bgPrimary() %>",
+		"editorWidget.background": "<%= bgDarker() %>",
+		"editorWidget.border": "<%= bgDarkest() %>",
+		"editorHoverWidget.background": "<%= bgHover() %>",
 		"editorSuggestWidget.background": "<%= bgPrimary() %>",
 		"editorSuggestWidget.border": "<%= bgPrimary() %>",
 		"editorSuggestWidget.foreground": "<%= textPrimary() %>",
 		"editorSuggestWidget.selectedBackground": "<%= bgActive() %>",
-		"editorHoverWidget.background": "<%= bgHover() %>",
-		"debugExceptionWidget.background": "<%= bgPrimary() %>",
-		"debugExceptionWidget.border": "<%= bgPrimary() %>",
+		"debugExceptionWidget.background": "<%= bgInvalid() %>",
+		"debugExceptionWidget.border": "<%= bgInvalid() %>",
 		"editorMarkerNavigation.background": "<%= bgPrimary() %>",
 		"editorMarkerNavigationError.background": "<%= bgInvalid() %>",
 		"editorMarkerNavigationWarning.background": "<%= bgWarning() %>",
@@ -190,11 +190,11 @@
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_merge-conflicts
 		"merge.currentHeaderBackground": "<%= bgInfo() %>",
 		"merge.currentContentBackground": "<%= bgInfoFaded() %>",
-		"merge.incomingHeaderBackground": "<%= bgSuccess() %>",
-		"merge.incomingContentBackground": "<%= bgSuccessFaded() %>",
-		"merge.border": "<%= bgWarning() %>",
+		"merge.incomingHeaderBackground": "<%= bgWarning() %>",
+		"merge.incomingContentBackground": "<%= bgWarningFaded() %>",
+		"merge.border": "<%= bgInvalid() %>",
 		"editorOverviewRuler.currentContentForeground": "<%= bgInfoFaded() %>",
-		"editorOverviewRuler.incomingContentForeground": "<%= bgSuccessFaded() %>",
+		"editorOverviewRuler.incomingContentForeground": "<%= bgWarningFaded() %>",
 
 		// Panel Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_panel-colors
@@ -206,17 +206,17 @@
 
 		// Status Bar Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_status-bar-colors
-		"statusBar.background": "<%= bgAccent() %>",
-		"statusBar.foreground": "<%= textAccent() %>",
+		"statusBar.background": "<%= bgDarkest() %>",
+		"statusBar.foreground": "<%= textLightest() %>",
 		"statusBar.debuggingBackground": "<%= bgAccent() %>",
-		"statusBar.debuggingForeground": "<%= bgAccentDarker() %>",
-		"statusBar.noFolderForeground": "<%= textAccent() %>",
-		"statusBar.noFolderBackground": "<%= bgAccent() %>",
-		"statusBarItem.activeBackground": "<%= bgAccent() %>",
-		"statusBarItem.hoverBackground": "<%= bgAccent() %>",
-		"statusBarItem.prominentBackground": "<%= bgAccent() %>",
-		"statusBarItem.prominentHoverBackground": "<%= bgAccent() %>",
-		"statusBar.border": "<%= bgAccentLighter() %>",
+		"statusBar.debuggingForeground": "<%= textAccent() %>",
+		"statusBar.noFolderBackground": "<%= bgLightest() %>",
+		"statusBar.noFolderForeground": "<%= textLightest() %>",
+		"statusBarItem.activeBackground": "<%= bgActive() %>",
+		"statusBarItem.hoverBackground": "<%= bgHover() %>",
+		"statusBarItem.prominentBackground": "<%= bgAccentDarker() %>",
+		"statusBarItem.prominentHoverBackground": "<%= bgAccentLighter() %>",
+		"statusBar.border": "<%= bgLightest() %>",
 
 		// Title Bar Colors (macOS)
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_title-bar-colors-macos

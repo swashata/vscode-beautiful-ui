@@ -1,5 +1,10 @@
 const Color = require('color');
 
+// A small function to convert alpha into hex
+const convertAlpha = alpha =>
+	parseInt(alpha, 10)
+		.toString(16)
+		.padStart(2, '0');
 // Color codes for different themes
 const TomorrowDark = {
 	author: 'Chris Kempson, Ihor Oleksandrov, Swashata Ghosh',
@@ -68,7 +73,7 @@ const TomorrowDark = {
 			bracket: '#ffffff16',
 		},
 		find: {
-			current: '#f2d98c',
+			current: '#f2d98c1e',
 			other: '#ffffff16',
 		},
 		lineHighlight: '#ffffff0d',
@@ -148,10 +153,10 @@ const modifiers = {
 			.hex();
 	},
 	bgFaded() {
-		return `${this.workspace.background}${(40).toString(16)}`;
+		return `${this.workspace.background}${convertAlpha(40)}`;
 	},
 	textFaded() {
-		return `${this.workspace.foreground}${(40).toString(16)}`;
+		return `${this.workspace.foreground}${convertAlpha(40)}`;
 	},
 	bgAccent() {
 		return Color(this.workspace.accent)
@@ -184,6 +189,18 @@ const modifiers = {
 		return Color(this.workspace.foreground)
 			.hsl()
 			.lighten(0.3)
+			.hex();
+	},
+	bgActivePassive() {
+		return Color(this.workspace.background)
+			.hsl()
+			.lighten(0.25)
+			.hex();
+	},
+	textActivePassive() {
+		return Color(this.workspace.foreground)
+			.hsl()
+			.lighten(0.25)
 			.hex();
 	},
 	bgInActive() {
@@ -235,7 +252,7 @@ const modifiers = {
 			.hex();
 	},
 	bgInvalidFaded() {
-		return `${this.bgInvalid()}${(40).toString(16)}`;
+		return `${this.bgInvalid()}${convertAlpha(40)}`;
 	},
 	textInvalid() {
 		return Color(this.workspace.redish)
@@ -250,7 +267,7 @@ const modifiers = {
 			.hex();
 	},
 	bgInfoFaded() {
-		return `${this.bgInfo()}${(40).toString(16)}`;
+		return `${this.bgInfo()}${convertAlpha(40)}`;
 	},
 	textInfo() {
 		return Color(this.workspace.bluish)
@@ -259,16 +276,16 @@ const modifiers = {
 			.hex();
 	},
 	bgWarning() {
-		return Color(this.workspace.orangish)
+		return Color(this.workspace.yellowish)
 			.hsl()
 			.darken(0.2)
 			.hex();
 	},
 	bgWarningFaded() {
-		return `${this.bgWarning()}${(40).toString(16)}`;
+		return `${this.bgWarning()}${convertAlpha(40)}`;
 	},
 	textWarning() {
-		return Color(this.workspace.orangish)
+		return Color(this.workspace.yellowish)
 			.hsl()
 			.lighten(0.05)
 			.hex();
@@ -280,7 +297,7 @@ const modifiers = {
 			.hex();
 	},
 	bgSuccessFaded() {
-		return `${this.bgSuccess()}${(40).toString(16)}`;
+		return `${this.bgSuccess()}${convertAlpha(40)}`;
 	},
 	textSuccess() {
 		return Color(this.workspace.greenish)
@@ -297,13 +314,23 @@ const modifiers = {
 	},
 	// Scrollbar - transparency
 	scrollbarBg() {
-		return `${this.workspace.foreground}${(40).toString(16)}`;
+		return `${this.workspace.foreground}${convertAlpha(40)}`;
 	},
 	scrollbarHover() {
-		return `${this.workspace.foreground}${(50).toString(16)}`;
+		return `${this.workspace.foreground}${convertAlpha(50)}`;
 	},
 	scrollbarActive() {
-		return `${this.workspace.foreground}${(60).toString(16)}`;
+		return `${this.workspace.foreground}${convertAlpha(60)}`;
+	},
+	// Git Gutter - Transparency
+	gutterAdded() {
+		return `${this.workspace.greenish}${convertAlpha(90)}`;
+	},
+	gutterDeleted() {
+		return `${this.workspace.redish}${convertAlpha(90)}`;
+	},
+	gutterModified() {
+		return `${this.workspace.yellowish}${convertAlpha(90)}`;
 	},
 };
 
