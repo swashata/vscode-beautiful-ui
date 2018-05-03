@@ -9,7 +9,7 @@ const convertAlpha = alpha =>
 const TomorrowDark = {
 	author: 'Chris Kempson, Ihor Oleksandrov, Swashata Ghosh',
 	name: 'Tomorrow Night',
-	type: 'dark',
+	type: 'dark', // dark, or light
 	workspace: {
 		background: Color('#2d2d2d')
 			.darken(0.2)
