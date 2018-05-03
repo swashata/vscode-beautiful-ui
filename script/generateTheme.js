@@ -12,14 +12,17 @@ spinner.color = 'yellow';
 const log = chalk.blue;
 const update = chalk.green;
 // Get schemes
-const schemes = require('../config/colors');
+const schemes = require('../src/colors');
+
+// Get modifiers
+const modifiers = require('../src/helpers');
 
 spinner.succeed(`Found ${Object.keys(schemes).length} schemes`);
 spinner.start('Getting template file');
 
 // Get template
 const themeTemplate = fs.readFileSync(
-	path.join(__dirname, '../config/template.json')
+	path.join(__dirname, '../src/template.json')
 );
 const compiler = template(themeTemplate.toString());
 spinner.succeed('Template found');
@@ -38,7 +41,7 @@ Object.keys(schemes).forEach(theme => {
 
 	// Create the theme
 	const scheme = schemes[theme];
-	const newTheme = compiler(scheme);
+	const newTheme = compiler({ ...scheme, ...modifiers });
 	const filename = path.join(
 		__dirname,
 		`../themes/${theme}-color-theme.json`
