@@ -22,8 +22,6 @@ const TomorrowDark = {
 		bluish: '#6699cc',
 		purplish: '#cc99cc',
 		terminal: {
-			background: '#000000',
-			foreground: '#ffffff',
 			ansiBlack: '#000000',
 			ansiBlue: '#427ab3',
 			ansiBrightBlack: '#686a66',
@@ -88,7 +86,7 @@ const TomorrowDark = {
 		color4: '#c5c9c6', // variable, variable.parameter, Operators, Misc, punctuation.definition.variable
 		color5: '#82a3bf', // variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
 		color6: '#e9b36d', // keyword.operator
-		color7: '#afb1af', // Property, Separator, Terminator
+		color7: '#afb1af', // Property, Separator, Terminator, list_item
 		color8: '#d6d7d6', // Pseudo Property
 	},
 	scheme: {
@@ -179,19 +177,19 @@ const modifiers = {
 	bgAccent() {
 		return Color(this.workspace.accent)
 			.hsl()
-			.darken(0.15)
+			.darken(0.25)
 			.hex();
 	},
 	bgAccentDarker() {
 		return Color(this.workspace.accent)
 			.hsl()
-			.darken(0.2)
+			.darken(0.35)
 			.hex();
 	},
 	bgAccentLighter() {
 		return Color(this.workspace.accent)
 			.hsl()
-			.darken(0.1)
+			.darken(0.2)
 			.hex();
 	},
 	textAccent() {
@@ -257,10 +255,13 @@ const modifiers = {
 			.darken(0.2)
 			.hex();
 	},
+	bgInvalidFaded() {
+		return `${this.bgInvalid()}${(40).toString(16)}`;
+	},
 	textInvalid() {
 		return Color(this.workspace.redish)
 			.hsl()
-			.lighten(0.4)
+			.lighten(0.05)
 			.hex();
 	},
 	bgInfo() {
@@ -269,10 +270,13 @@ const modifiers = {
 			.darken(0.2)
 			.hex();
 	},
+	bgInfoFaded() {
+		return `${this.bgInfo()}${(40).toString(16)}`;
+	},
 	textInfo() {
 		return Color(this.workspace.bluish)
 			.hsl()
-			.lighten(0.4)
+			.lighten(0.05)
 			.hex();
 	},
 	bgWarning() {
@@ -281,10 +285,13 @@ const modifiers = {
 			.darken(0.2)
 			.hex();
 	},
+	bgWarningFaded() {
+		return `${this.bgWarning()}${(40).toString(16)}`;
+	},
 	textWarning() {
 		return Color(this.workspace.orangish)
 			.hsl()
-			.lighten(0.4)
+			.lighten(0.05)
 			.hex();
 	},
 	bgSuccess() {
@@ -293,10 +300,13 @@ const modifiers = {
 			.darken(0.2)
 			.hex();
 	},
+	bgSuccessFaded() {
+		return `${this.bgSuccess()}${(40).toString(16)}`;
+	},
 	textSuccess() {
 		return Color(this.workspace.greenish)
 			.hsl()
-			.lighten(0.4)
+			.lighten(0.05)
 			.hex();
 	},
 	// Shadow

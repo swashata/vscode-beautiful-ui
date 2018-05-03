@@ -136,24 +136,24 @@
 		"editorOverviewRuler.selectionHighlightForeground": "<%= tokens.selection.general %>",
 		"editorOverviewRuler.wordHighlightForeground": "<%= tokens.selection.bright %>",
 		"editorOverviewRuler.wordHighlightStrongForeground": "<%= tokens.selection.bright %>",
-		"editorOverviewRuler.modifiedForeground": "<%= bgInfo() %>",
-		"editorOverviewRuler.addedForeground": "<%= bgSuccess() %>",
-		"editorOverviewRuler.deletedForeground": "<%= bgInvalid() %>",
-		"editorOverviewRuler.errorForeground": "<%= bgInvalid() %>",
-		"editorOverviewRuler.warningForeground": "<%= bgWarning() %>",
-		"editorOverviewRuler.infoForeground": "<%= bgInfo() %>",
+		"editorOverviewRuler.modifiedForeground": "<%= bgWarningFaded() %>",
+		"editorOverviewRuler.addedForeground": "<%= bgSuccessFaded() %>",
+		"editorOverviewRuler.deletedForeground": "<%= bgInvalidFaded() %>",
+		"editorOverviewRuler.errorForeground": "<%= bgInvalidFaded() %>",
+		"editorOverviewRuler.warningForeground": "<%= bgWarningFaded() %>",
+		"editorOverviewRuler.infoForeground": "<%= bgWarningFaded() %>",
 
 		"editorError.foreground": "<%= bgInvalid() %>",
 		"editorWarning.foreground": "<%= bgWarning() %>",
 		"editorGutter.background": "<%= tokens.gutter.background %>",
-		"editorGutter.modifiedBackground": "<%= bgInfo() %>",
-		"editorGutter.addedBackground": "<%= bgSuccess() %>",
-		"editorGutter.deletedBackground": "<%= bgInvalid() %>",
+		"editorGutter.modifiedBackground": "<%= bgWarningFaded() %>",
+		"editorGutter.addedBackground": "<%= bgSuccessFaded() %>",
+		"editorGutter.deletedBackground": "<%= bgInvalidFaded() %>",
 
 		// Diff Editor Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_diff-editor-colors
-		"diffEditor.insertedTextBackground": "<%= bgSuccess() %>",
-		"diffEditor.removedTextBackground": "<%= bgInvalid() %>",
+		"diffEditor.insertedTextBackground": "<%= bgSuccessFaded() %>",
+		"diffEditor.removedTextBackground": "<%= bgInvalidFaded() %>",
 
 		// Editor Widget Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-widget-colors
@@ -189,18 +189,18 @@
 		// Merge Conflicts
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_merge-conflicts
 		"merge.currentHeaderBackground": "<%= bgInfo() %>",
-		"merge.currentContentBackground": "<%= tokens.editor.background %>",
+		"merge.currentContentBackground": "<%= bgInfoFaded() %>",
 		"merge.incomingHeaderBackground": "<%= bgSuccess() %>",
-		"merge.incomingContentBackground": "<%= tokens.editor.background %>",
+		"merge.incomingContentBackground": "<%= bgSuccessFaded() %>",
 		"merge.border": "<%= bgWarning() %>",
-		"editorOverviewRuler.currentContentForeground": "<%= bgInfo() %>",
-		"editorOverviewRuler.incomingContentForeground": "<%= bgSuccess() %>",
+		"editorOverviewRuler.currentContentForeground": "<%= bgInfoFaded() %>",
+		"editorOverviewRuler.incomingContentForeground": "<%= bgSuccessFaded() %>",
 
 		// Panel Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_panel-colors
 		"panel.background": "<%= bgDarker() %>",
 		"panel.border": "<%= bgLightest() %>",
-		"panelTitle.activeBorder": "<%= bgLightest() %>",
+		"panelTitle.activeBorder": "<%= bgAccentDarker() %>",
 		"panelTitle.activeForeground": "<%= textDarkest() %>",
 		"panelTitle.inactiveForeground": "<%= textLightest() %>",
 
@@ -250,8 +250,8 @@
 
 		// Integrated Terminal Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_integrated-terminal-colors
-		"terminal.background": "<%= workspace.terminal.background %>",
-		"terminal.foreground": "<%= workspace.terminal.foreground %>",
+		"terminal.background": "<%= bgDarkest() %>",
+		"terminal.foreground": "<%= textPrimary() %>",
 		"terminal.ansiBlack": "<%= workspace.terminal.ansiBlack %>",
 		"terminal.ansiBlue": "<%= workspace.terminal.ansiBlue %>",
 		"terminal.ansiBrightBlack": "<%= workspace.terminal.ansiBrightBlack %>",
@@ -272,12 +272,12 @@
 
 		// Welcome Page
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_welcome-page
-		"welcomePage.buttonBackground": "<%= bgAccent() %>",
-		"welcomePage.buttonHoverBackground": "<%= bgAccentDarker() %>",
+		"welcomePage.buttonBackground": "<%= bgLighter() %>",
+		"welcomePage.buttonHoverBackground": "<%= bgLightest() %>",
 		"walkThrough.embeddedEditorBackground": "<%= bgPrimary() %>",
 
 		// Git Colors
-		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_git-colors
+		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_git-colors
 		"gitDecoration.modifiedResourceForeground": "<%= textInfo() %>",
 		"gitDecoration.deletedResourceForeground": "<%= textInvalid() %>",
 		"gitDecoration.untrackedResourceForeground": "<%= textSuccess() %>",
@@ -285,6 +285,12 @@
 		"gitDecoration.conflictingResourceForeground": "<%= textInvalid() %>"
 	},
 	"tokenColors": [
+		{
+			"settings": {
+				"foreground": "<%= tokens.editor.foreground %>",
+				"background": "<%= tokens.editor.background %>"
+			}
+		},
 		{
 			"name": "Comment",
 			"scope": [
@@ -425,6 +431,7 @@
 			"name": "Keyword, Storage - italics",
 			"scope": [
 				"storage.modifier",
+				"storage.type",
 				"keyword.control"
 			],
 			"settings": {
@@ -464,8 +471,7 @@
 				"entity.name"
 			],
 			"settings": {
-				"foreground": "<%= tokens.color1 %>",
-				"fontStyle": "italic"
+				"foreground": "<%= tokens.color1 %>"
 			}
 		},
 		{
@@ -502,7 +508,6 @@
 				"string",
 				"entity.other.inherited-class",
 				"markup.heading",
-				"markup.inserted.git_gutter",
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
@@ -556,7 +561,7 @@
 			],
 			"settings": {
 				"foreground": "<%= tokens.link %>",
-				"fontStyle": "italic underline",
+				"fontStyle": "italic underline"
 			}
 		},
 		{
@@ -568,6 +573,199 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "<%= tokens.color5 %>"
+			}
+		},
+		{
+			"name": "Markdown - Plain",
+			"scope": [
+				"text.html.markdown",
+				"punctuation.definition.list_item.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color7 %>"
+			}
+		},
+		{
+			"name": "Markdown - Markup Raw Inline",
+			"scope": [
+				"text.html.markdown markup.inline.raw.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color3 %>"
+			}
+		},
+		{
+			"name": "Markdown - Markup Raw Inline Punctuation",
+			"scope": [
+				"text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color8 %>"
+			}
+		},
+		{
+			"name": "Markdown - Line Break",
+			"scope": [
+				"text.html.markdown meta.dummy.line-break"
+			],
+			"settings": {
+				"foreground": ""
+			}
+		},
+		{
+			"name": "Markdown - Heading",
+			"scope": [
+				"markdown.heading",
+				"markup.heading.markdown entity.name.section.markdown",
+				"markup.heading | markup.heading entity.name",
+				"markup.heading.markdown punctuation.definition.heading.markdown",
+				"beginning.punctuation.definition.list.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color2 %>"
+			}
+		},
+		{
+			"name": "Markup - Italic",
+			"scope": [
+				"markup.italic"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "<%= tokens.color6 %>"
+			}
+		},
+		{
+			"name": "Markup - Bold",
+			"scope": [
+				"markup.bold",
+				"markup.bold string"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "<%= tokens.color6 %>"
+			}
+		},
+		{
+			"name": "Markup - Bold-Italic",
+			"scope": [
+				"markup.bold markup.italic",
+				"markup.italic markup.bold",
+				"markup.quote markup.bold",
+				"markup.bold markup.italic string",
+				"markup.italic markup.bold string",
+				"markup.quote markup.bold string"
+			],
+			"settings": {
+				"fontStyle": "bold italic",
+				"foreground": "<%= tokens.color6 %>"
+			}
+		},
+		{
+			"name": "Markup - Underline",
+			"scope": [
+				"markup.underline"
+			],
+			"settings": {
+				"fontStyle": "underline",
+				"foreground": "<%= tokens.color6 %>"
+			}
+		},
+		{
+			"name": "Markup - Strike",
+			"scope": [
+				"markup.strike"
+			],
+			"settings": {
+				"fontStyle": "strike",
+				"foreground": "<%= tokens.comment %>"
+			}
+		},
+		{
+			"name": "Markdown - Blockquote",
+			"scope": [
+				"markup.quote punctuation.definition.blockquote.markdown"
+			],
+			"settings": {
+				"background": "<%= tokens.blockquote.background %>",
+				"foreground": "<%= tokens.blockquote.foreground %>"
+			}
+		},
+		{
+			"name": "Markup - Quote",
+			"scope": [
+				"markup.quote"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": ""
+			}
+		},
+		{
+			"name": "Markdown - Link",
+			"scope": [
+				"string.other.link.title.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.link %>"
+			}
+		},
+		{
+			"name": "Markdown - Link Description",
+			"scope": [
+				"string.other.link.description.title.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.string %>"
+			}
+		},
+		{
+			"name": "Markdown - Link Anchor",
+			"scope": [
+				"constant.other.reference.link.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color6 %>"
+			}
+		},
+		{
+			"name": "Markup - Raw Block",
+			"scope": [
+				"markup.raw.block"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color4 %>"
+			}
+		},
+		{
+			"name": "Markdown - Raw",
+			"scope": [
+				"markup.raw.block.fenced.markdown",
+				"markup.inline.raw.string.markdown",
+				"markup.fenced_code.block.markdown"
+			],
+			"settings": {
+				"foreground": "<%= tokens.color4 %>"
+			}
+		},
+		{
+			"name": "Markdown - Separator",
+			"scope": [
+				"meta.separator"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"background": "<%= bgPrimary() %>",
+				"foreground": "<%= textPrimary() %>"
+			}
+		},
+		{
+			"name": "Markup - Table",
+			"scope": [
+				"markup.table"
+			],
+			"settings": {
+				"foreground": "<%= tokens.editor.foreground %>"
 			}
 		},
 		{
@@ -591,14 +789,26 @@
 		{
 			"scope": "token.debug-token",
 			"settings": {
-				"foreground": "<%= textWarning() %>"
+				"foreground": "<%= tokens.color5 %>"
+			}
+		},
+		{
+			"scope": ["markup.deleted", "punctuation.definition.deleted"],
+			"settings": {
+				"foreground": "<%= textInvalid() %>"
+			}
+		},
+		{
+			"scope": ["markup.inserted", "punctuation.definition.inserted"],
+			"settings": {
+				"foreground": "<%= textSuccess() %>"
+			}
+		},
+		{
+			"scope": ["markup.changed", "punctuation.definition.changed"],
+			"settings": {
+				"foreground": "<%= textInfo() %>"
 			}
 		}
-		// TODO Markdown
-		// TODO Git Gutter
-		// TODO Markup (changed, deleted)
-		// TODO: Fix welcome page
-		// TODO: Check diff view
-		// TODO: Fine tune workspace
 	]
 }
