@@ -18,14 +18,18 @@ const schemes = require('../src/colors');
 const modifiers = require('../src/helpers');
 
 spinner.succeed(`Found ${Object.keys(schemes).length} schemes`);
-spinner.start('Getting template file');
+spinner.start('Getting template files');
 
 // Get template
-const themeTemplate = fs.readFileSync(
-	path.join(__dirname, '../src/template.json')
+const themeTemplateDark = fs.readFileSync(
+	path.join(__dirname, '../src/template-dark.json')
 );
-const compiler = template(themeTemplate.toString());
-spinner.succeed('Template found');
+const compilerDark = template(themeTemplateDark.toString());
+const themeTemplateLight = fs.readFileSync(
+	path.join(__dirname, '../src/template-light.json')
+);
+const compilerLight = template(themeTemplateLight.toString());
+spinner.succeed('Templates found');
 
 // placeholder for the contributes json in package.json
 const createdSchemes = {
@@ -41,7 +45,10 @@ Object.keys(schemes).forEach(theme => {
 
 	// Create the theme
 	const scheme = schemes[theme];
-	const newTheme = compiler({ ...scheme, ...modifiers });
+	const newTheme =
+		scheme.type === 'dark'
+			? compilerDark({ ...scheme, ...modifiers })
+			: compilerLight({ ...scheme, ...modifiers });
 	const filename = path.join(
 		__dirname,
 		`../themes/${theme}-color-theme.json`

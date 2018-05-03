@@ -75,6 +75,7 @@ const modifiers = {
 	textFaded() {
 		return `${this.workspace.foreground}${convertAlpha(40)}`;
 	},
+	// Background with accent color
 	bgAccent() {
 		return Color(this.workspace.accent)
 			.hsl()
@@ -96,72 +97,132 @@ const modifiers = {
 	textAccent() {
 		return '#ffffff';
 	},
-	bgActive() {
-		return Color(this.workspace.background)
-			.hsl()
-			.lighten(0.3)
-			.hex();
-	},
-	textActive() {
-		return Color(this.workspace.foreground)
-			.hsl()
-			.lighten(0.3)
-			.hex();
-	},
-	bgActivePassive() {
-		return Color(this.workspace.background)
-			.hsl()
-			.lighten(0.25)
-			.hex();
-	},
-	textActivePassive() {
-		return Color(this.workspace.foreground)
-			.hsl()
-			.lighten(0.25)
-			.hex();
-	},
-	bgInActive() {
-		return Color(this.workspace.background)
-			.hsl()
-			.lighten(0.1)
-			.hex();
-	},
-	bgInActiveFocus() {
-		return Color(this.workspace.accent)
-			.hsl()
-			.lighten(0.05)
-			.hex();
-	},
-	textInActive() {
-		return Color(this.workspace.foreground)
-			.hsl()
-			.lighten(0.05)
-			.hex();
-	},
-	bgFocus() {
-		return Color(this.workspace.background)
-			.hsl()
-			.lighten(0.15)
-			.hex();
-	},
-	textFocus() {
-		return Color(this.workspace.foreground)
-			.hsl()
-			.lighten(0.15)
-			.hex();
-	},
+	// Background for hover
 	bgHover() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.background)
+				.hsl()
+				.lighten(0.3)
+				.hex();
+		}
 		return Color(this.workspace.background)
 			.hsl()
-			.lighten(0.2)
+			.darken(0.02)
 			.hex();
 	},
 	textHover() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.foreground)
+				.hsl()
+				.lighten(0.3)
+				.hex();
+		}
 		return Color(this.workspace.foreground)
 			.hsl()
-			.lighten(0.2)
+			.darken(0.02)
 			.hex();
 	},
+	// Background for Focus
+	bgFocus() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.background)
+				.hsl()
+				.lighten(0.5)
+				.hex();
+		}
+		return Color(this.workspace.background)
+			.hsl()
+			.darken(0.06)
+			.hex();
+	},
+	textFocus() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.foreground)
+				.hsl()
+				.lighten(0.5)
+				.hex();
+		}
+		return Color(this.workspace.foreground)
+			.hsl()
+			.darken(0.06)
+			.hex();
+	},
+	// Background for active area
+	bgActive() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.background)
+				.hsl()
+				.lighten(0.65)
+				.hex();
+		}
+		return Color(this.workspace.background)
+			.hsl()
+			.darken(0.08)
+			.hex();
+	},
+	textActive() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.foreground)
+				.hsl()
+				.lighten(0.65)
+				.hex();
+		}
+		return Color(this.workspace.foreground)
+			.hsl()
+			.darken(0.08)
+			.hex();
+	},
+	// Background for active area of inactive widget/tab
+	bgActivePassive() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.background)
+				.hsl()
+				.lighten(0.5)
+				.hex();
+		}
+		return Color(this.workspace.background)
+			.hsl()
+			.darken(0.04)
+			.hex();
+	},
+	textActivePassive() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.foreground)
+				.hsl()
+				.lighten(0.5)
+				.hex();
+		}
+		return Color(this.workspace.foreground)
+			.hsl()
+			.darken(0.04)
+			.hex();
+	},
+	// Background for inActiveFocus
+	bgInActiveFocus() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.accent)
+				.hsl()
+				.lighten(0.3)
+				.hex();
+		}
+		return Color(this.workspace.accent)
+			.hsl()
+			.darken(0.02)
+			.hex();
+	},
+	textInActive() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.foreground)
+				.hsl()
+				.lighten(0.3)
+				.hex();
+		}
+		return Color(this.workspace.foreground)
+			.hsl()
+			.darken(0.02)
+			.hex();
+	},
+	// Invalid|Error background & text - Redish
 	bgInvalid() {
 		return Color(this.workspace.redish)
 			.hsl()
@@ -177,6 +238,7 @@ const modifiers = {
 			.lighten(0.05)
 			.hex();
 	},
+	// Info background & text - Bluish
 	bgInfo() {
 		return Color(this.workspace.bluish)
 			.hsl()
@@ -192,6 +254,7 @@ const modifiers = {
 			.lighten(0.05)
 			.hex();
 	},
+	// Warning background & text - Yellowish
 	bgWarning() {
 		return Color(this.workspace.yellowish)
 			.hsl()
@@ -207,6 +270,7 @@ const modifiers = {
 			.lighten(0.05)
 			.hex();
 	},
+	// Success background & text - Greenish
 	bgSuccess() {
 		return Color(this.workspace.greenish)
 			.hsl()
@@ -224,9 +288,15 @@ const modifiers = {
 	},
 	// Shadow
 	shadow() {
+		if (this.type === 'dark') {
+			return Color(this.workspace.background)
+				.hsl()
+				.darken(0.5)
+				.hex();
+		}
 		return Color(this.workspace.background)
 			.hsl()
-			.lighten(0.1)
+			.darken(0.02)
 			.hex();
 	},
 	// Scrollbar - transparency
