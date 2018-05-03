@@ -22,6 +22,11 @@
                 "label": "Beautiful UI - Tomorrow Light",
                 "uiTheme": "vs",
                 "path": "./themes/Tomorrow Light-color-theme.json"
+			},
+			{
+                "label": "Beautiful UI - One Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/One Dark-color-theme.json"
             }
         ]
     },

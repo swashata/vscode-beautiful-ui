@@ -76,7 +76,7 @@ const TomorrowLight = {
 		lineHighlight: '#0000000d',
 		blockquote: {
 			background: '#ffffff13',
-			foreground: '#00000013',
+			foreground: '#6f716f',
 		},
 		link: '#82a3bf',
 		comment: '#959795', // comment, punctuation.definition.comment
@@ -89,6 +89,7 @@ const TomorrowLight = {
 		color6: '#e9b36d', // keyword.operator
 		color7: '#7c7e7c', // Property, Separator, Terminator, list_item
 		color8: '#565856', // Pseudo Property
+		color9: '#de935e', // constant.numeric
 	},
 };
 

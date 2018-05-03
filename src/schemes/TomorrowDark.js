@@ -85,7 +85,7 @@ const TomorrowDark = {
 		link: '#82a3bf',
 		comment: '#959795', // comment, punctuation.definition.comment
 		string: '#b4bc67',
-		color1: '#f0c775', // constant.numeric, constant.language, entity.name
+		color1: '#f0c775', // constant.language, entity.name
 		color2: '#cc6666', // variable.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
 		color3: '#b295bb', // constant, constant.other, constant.character, keyword, storage.type, attributes
 		color4: '#c5c9c6', // variable, variable.parameter, Operators, Misc, punctuation.definition.variable
@@ -93,6 +93,7 @@ const TomorrowDark = {
 		color6: '#e9b36d', // keyword.operator
 		color7: '#afb1af', // Property, Separator, Terminator, list_item
 		color8: '#d6d7d6', // Pseudo Property
+		color9: '#de935e', // constant.numeric
 	},
 };
 
