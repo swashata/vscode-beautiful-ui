@@ -390,7 +390,6 @@
 			"scope": [
 				"constant.character.escape",
 				"constant.other.placeholder",
-				"punctuation.separator.inheritance",
 				"support.constant.property-value"
 			],
 			"settings": {
@@ -535,7 +534,8 @@
 				"meta.property-list.scss",
 				"meta.property-list.css",
 				"meta.property-list.styl",
-				"meta.property-list.less"
+				"meta.property-list.less",
+				"punctuation.separator.inheritance"
 			],
 			"settings": {
 				"foreground": "#afb1af"

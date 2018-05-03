@@ -89,27 +89,6 @@ const TomorrowDark = {
 		color7: '#afb1af', // Property, Separator, Terminator, list_item
 		color8: '#d6d7d6', // Pseudo Property
 	},
-	scheme: {
-		blockquote: {
-			background: '#ffffff13',
-			foreground: '#bcbdbc',
-		},
-		'markup.error': '#cc6666',
-		'message.error': '#cc6666',
-		'markup.warning': '#f0c775',
-		'markup.info': '#82a3bf',
-		'markup.deleted': '#cc6666',
-		'markup.inserted': '#b4bc67',
-		'markup.changed': '#82a3bf',
-		'markup.ignored': '#898b89',
-		'markup.untracked': '#898b89',
-		'markup.heading': '#cc6666',
-		'markup.list.unnumbered': '#afb1af',
-		'markup.list.numbered': '#82a3bf',
-		'markup.quote': '#bcbdbc',
-		link: '#82a3bf',
-		'link.description': '#b4bc67',
-	},
 };
 
 const modifiers = {
