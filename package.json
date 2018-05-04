@@ -22,13 +22,13 @@
                 "label": "Beautiful UI - Tomorrow Light",
                 "uiTheme": "vs",
                 "path": "./themes/Tomorrow Light-color-theme.json"
-			},
-			{
+            },
+            {
                 "label": "Beautiful UI - One Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/One Dark-color-theme.json"
-			},
-			{
+            },
+            {
                 "label": "Beautiful UI - One Light",
                 "uiTheme": "vs",
                 "path": "./themes/One Light-color-theme.json"
@@ -61,11 +61,7 @@
         ]
     },
     "license": "MIT",
-    "author": {
-        "name": "Swashata Ghosh",
-        "email": "swashata4u@gmail.com",
-        "url": "https://swashata.me"
-    },
+    "author": "Swashata Ghosh <swashata4u@gmail.com> (https://swashata.me)",
     "devDependencies": {
         "chalk": "^2.4.1",
         "chokidar-cli": "^1.2.0",
@@ -82,5 +78,8 @@
     "scripts": {
         "build": "node ./script/generateTheme.js",
         "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'"
-    }
+    },
+    "main": "src/colors.js",
+    "repository": "git@github.com:swashata/vscode-beautiful-ui.git",
+    "private": false
 }
