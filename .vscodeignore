@@ -7,3 +7,5 @@ src/**
 .eslintrc.js
 .prettierrc.json
 docs/**
+package-lock.json
+yarn.lock
