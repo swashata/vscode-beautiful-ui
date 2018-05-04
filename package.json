@@ -32,6 +32,11 @@
                 "label": "Beautiful UI - One Light",
                 "uiTheme": "vs",
                 "path": "./themes/One Light-color-theme.json"
+            },
+            {
+                "label": "Beautiful UI - Eighties Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Eighties Dark-color-theme.json"
             }
         ]
     },

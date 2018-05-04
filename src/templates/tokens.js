@@ -215,6 +215,30 @@ module.exports = {
 			},
 		},
 		{
+			name: 'CSS - Class',
+			scope: [
+				'source.css entity.other.attribute-name.class',
+				'source.scss entity.other.attribute-name.class',
+				'source.styl entity.other.attribute-name.class',
+				'source.less entity.other.attribute-name.class',
+			],
+			settings: {
+				foreground: '<%= tokens.color6 %>',
+			},
+		},
+		{
+			name: 'CSS - ID',
+			scope: [
+				'source.css entity.other.attribute-name.id',
+				'source.scss entity.other.attribute-name.id',
+				'source.styl entity.other.attribute-name.id',
+				'source.less entity.other.attribute-name.id',
+			],
+			settings: {
+				foreground: '<%= tokens.color5 %>',
+			},
+		},
+		{
 			name: 'Pseudo Elements',
 			scope: [
 				'entity.other.attribute-name.pseudo-element',

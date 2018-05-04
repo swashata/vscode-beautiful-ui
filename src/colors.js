@@ -5,4 +5,5 @@ module.exports = {
 	'Tomorrow Light': require('./schemes/TomorrowLight'),
 	'One Dark': require('./schemes/OneDark'),
 	'One Light': require('./schemes/OneLight'),
+	'Eighties Dark': require('./schemes/EightiesDark'),
 };
