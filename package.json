@@ -87,7 +87,9 @@
     },
     "scripts": {
         "build": "node ./script/generateTheme.js",
-        "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'"
+		"start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
+		"vscode:prepublish": "yarn build",
+		"vsce": "vsce publish"
     },
     "main": "src/colors.js",
     "private": false
