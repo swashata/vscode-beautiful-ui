@@ -1,4 +1,8 @@
 .vscode/**
 .vscode-test/**
 .gitignore
-vsc-extension-quickstart.md
+script/**
+src/**
+.eslintrc.js
+.prettierrc.json
+docs/**
