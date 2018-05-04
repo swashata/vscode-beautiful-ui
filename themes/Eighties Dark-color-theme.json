@@ -295,11 +295,19 @@
             "scope": [
                 "support.type.property-name",
                 "constant.numeric",
-                "support.constant",
-                "meta.object-literal.key"
+                "support.constant"
             ],
             "settings": {
                 "foreground": "#f99058"
+            }
+        },
+        {
+            "name": "Object Literal",
+            "scope": [
+                "meta.object-literal.key"
+            ],
+            "settings": {
+                "foreground": "#ffcc66"
             }
         },
         {

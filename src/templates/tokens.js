@@ -70,10 +70,16 @@ module.exports = {
 				'support.type.property-name',
 				'constant.numeric',
 				'support.constant',
-				'meta.object-literal.key',
 			],
 			settings: {
 				foreground: '<%= tokens.color9 %>',
+			},
+		},
+		{
+			name: 'Object Literal',
+			scope: ['meta.object-literal.key'],
+			settings: {
+				foreground: '<%= tokens.color1 %>',
 			},
 		},
 		{
