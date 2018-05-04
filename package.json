@@ -37,6 +37,16 @@
                 "label": "Beautiful UI - Eighties Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Eighties Dark-color-theme.json"
+            },
+            {
+                "label": "Beautiful UI - Ocean Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Ocean Dark-color-theme.json"
+            },
+            {
+                "label": "Beautiful UI - Ocean Light",
+                "uiTheme": "vs",
+                "path": "./themes/Ocean Light-color-theme.json"
             }
         ]
     },
