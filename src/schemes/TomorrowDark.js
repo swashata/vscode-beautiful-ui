@@ -69,12 +69,13 @@ const TomorrowDark = {
 		},
 		guide: {
 			indent: '#ffffff1a',
+			active: '#ffffff33',
 			whitespace: '#ffffff16',
 			ruler: '#ffffff1a',
 			bracket: '#ffffff16',
 		},
 		find: {
-			current: '#f2d98c1e',
+			current: '#f2d98c3c',
 			other: '#ffffff16',
 		},
 		lineHighlight: '#ffffff0d',

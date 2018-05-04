@@ -21,14 +21,38 @@ spinner.succeed(`Found ${Object.keys(schemes).length} schemes`);
 spinner.start('Getting template files');
 
 // Get template
-const themeTemplateDark = fs.readFileSync(
-	path.join(__dirname, '../src/template-dark.json')
+const workspaceDark = require('../src/templates/workspace.dark');
+const workspaceLight = require('../src/templates/workspace.light');
+const tokens = require('../src/templates/tokens');
+
+const general = {
+	name: '<%= name %>',
+	type: '<%= type %>',
+};
+
+const compilerDark = template(
+	JSON.stringify(
+		{
+			...general,
+			...workspaceDark,
+			...tokens,
+		},
+		null,
+		4
+	)
 );
-const compilerDark = template(themeTemplateDark.toString());
-const themeTemplateLight = fs.readFileSync(
-	path.join(__dirname, '../src/template-light.json')
+
+const compilerLight = template(
+	JSON.stringify(
+		{
+			...general,
+			...workspaceLight,
+			...tokens,
+		},
+		null,
+		4
+	)
 );
-const compilerLight = template(themeTemplateLight.toString());
 spinner.succeed('Templates found');
 
 // placeholder for the contributes json in package.json

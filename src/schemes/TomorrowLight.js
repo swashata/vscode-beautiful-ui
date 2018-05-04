@@ -65,12 +65,13 @@ const TomorrowLight = {
 		},
 		guide: {
 			indent: '#0000001a',
+			active: '#00000033',
 			whitespace: '#00000016',
 			ruler: '#0000001a',
 			bracket: '#00000016',
 		},
 		find: {
-			current: '#f2d98c1e',
+			current: '#f2d98c3c',
 			other: '#00000016',
 		},
 		lineHighlight: '#0000000d',

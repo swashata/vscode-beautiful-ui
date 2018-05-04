@@ -27,6 +27,11 @@
                 "label": "Beautiful UI - One Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/One Dark-color-theme.json"
+			},
+			{
+                "label": "Beautiful UI - One Light",
+                "uiTheme": "vs",
+                "path": "./themes/One Light-color-theme.json"
             }
         ]
     },
@@ -51,6 +56,6 @@
     },
     "scripts": {
         "build": "node ./script/generateTheme.js",
-        "watch": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'"
+        "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'"
     }
 }

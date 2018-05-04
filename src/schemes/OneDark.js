@@ -69,6 +69,7 @@ const OneDark = {
 		},
 		guide: {
 			indent: '#ffffff1a',
+			active: '#ffffff33',
 			whitespace: '#ffffff16',
 			ruler: '#ffffff1a',
 			bracket: '#ffffff16',
@@ -87,13 +88,13 @@ const OneDark = {
 		string: '#98c27a', // [string]
 		color1: '#e4be77', // [entity.name - (entity.name.section | entity.name.tag | entity.name.label)] entity.name, support.constant.property-value
 		color2: '#de6872', // [variable.language] variable.language, constant.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
-		color3: '#c678dd', // [storage.type] constant, constant.other, constant.character, keyword, storage.type, attributes
+		color3: '#c678dd', // [storage.type] constant, constant.other, constant.character, keyword, storage.type
 		color4: '#abb2bf', // [variable.parameter] variable, variable.parameter, Operators, Misc, punctuation.definition.variable
 		color5: '#61afef', // [variable.function] variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
 		color6: '#dcb16f', // [keyword.operator] keyword.operator
 		color7: '#737c8c', // [punctuation.separator] Property, Separator, Terminator, list_item
 		color8: '#9da3af', // [entity.other.pseudo-class] Pseudo Property
-		color9: '#d19a66', // [constant.numeric]
+		color9: '#d19a66', // [constant.numeric], attributes
 	},
 };
 
