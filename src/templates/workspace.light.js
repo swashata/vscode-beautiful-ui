@@ -5,7 +5,7 @@ module.exports = {
 		focusBorder: '<%= bgFocus() %>',
 		foreground: '<%= workspace.foreground %>',
 		'widget.shadow': '<%= shadow() %>',
-		'selection.background': '<%= workspace.bluish %>',
+		'selection.background': '<%= bgSelection() %>',
 		errorForeground: '<%= textInvalid() %>',
 
 		// Button Control
@@ -207,8 +207,8 @@ module.exports = {
 
 		// Panel Colors
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_panel-colors
-		'panel.background': '<%= bgDarker() %>',
-		'panel.border': '<%= bgLightest() %>',
+		'panel.background': '<%= bgPrimary() %>',
+		'panel.border': '<%= bgDarkest() %>',
 		'panelTitle.activeBorder': '<%= bgAccentDarker() %>',
 		'panelTitle.activeForeground': '<%= textDarkest() %>',
 		'panelTitle.inactiveForeground': '<%= textLightest() %>',
@@ -259,7 +259,7 @@ module.exports = {
 
 		// Integrated Terminal Colors
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_integrated-terminal-colors
-		'terminal.background': '<%= bgLighter() %>',
+		'terminal.background': '<%= bgPrimary() %>',
 		'terminal.foreground': '<%= textPrimary() %>',
 		'terminal.ansiBlack': '<%= workspace.terminal.ansiBlack %>',
 		'terminal.ansiBlue': '<%= workspace.terminal.ansiBlue %>',

@@ -58,7 +58,7 @@ const OneDark = {
 		},
 		lineNumber: {
 			foreground: '#ffffff33', // [gutterForeground]
-			active: '#ffffff0d', // [lineHighlight]
+			active: '#ffffff5a',
 		},
 		caret: '#61afef', // [caret]
 		selection: {

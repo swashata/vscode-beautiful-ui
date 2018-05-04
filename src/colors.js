@@ -8,4 +8,6 @@ module.exports = {
 	'Eighties Dark': require('./schemes/EightiesDark'),
 	'Ocean Dark': require('./schemes/OceanDark'),
 	'Ocean Light': require('./schemes/OceanLight'),
+	'Solarized Dark': require('./schemes/SolarizedDark'),
+	'Solarized Light': require('./schemes/SolarizedLight'),
 };

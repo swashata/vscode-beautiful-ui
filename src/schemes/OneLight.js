@@ -59,7 +59,7 @@ const OneLight = {
 		},
 		lineNumber: {
 			foreground: '#00000033', // [gutterForeground]
-			active: '#0000000d', // [lineHighlight]
+			active: '#0000005a',
 		},
 		caret: '#4179f1', // [caret]
 		selection: {

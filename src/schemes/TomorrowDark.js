@@ -58,7 +58,7 @@ const TomorrowDark = {
 		},
 		lineNumber: {
 			foreground: '#ffffff33',
-			active: '#ffffff50',
+			active: '#ffffff5a',
 		},
 		caret: '#de935e',
 		selection: {

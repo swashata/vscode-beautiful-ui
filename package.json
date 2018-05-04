@@ -47,6 +47,16 @@
                 "label": "Beautiful UI - Ocean Light",
                 "uiTheme": "vs",
                 "path": "./themes/Ocean Light-color-theme.json"
+            },
+            {
+                "label": "Beautiful UI - Solarized Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Solarized Dark-color-theme.json"
+            },
+            {
+                "label": "Beautiful UI - Solarized Light",
+                "uiTheme": "vs",
+                "path": "./themes/Solarized Light-color-theme.json"
             }
         ]
     },

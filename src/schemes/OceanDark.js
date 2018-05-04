@@ -59,7 +59,7 @@ const OceanDark = {
 		},
 		lineNumber: {
 			foreground: '#ffffff33', // [gutterForeground]
-			active: '#ffffff0d', // [lineHighlight]
+			active: '#ffffff5a',
 		},
 		caret: '#ebca89', // [caret]
 		selection: {

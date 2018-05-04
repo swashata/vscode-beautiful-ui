@@ -59,7 +59,7 @@ const EightiesDark = {
 		},
 		lineNumber: {
 			foreground: '#ffffff33', // [gutterForeground]
-			active: '#ffffff0d', // [lineHighlight]
+			active: '#ffffff5a',
 		},
 		caret: '#f99058', // [caret]
 		selection: {

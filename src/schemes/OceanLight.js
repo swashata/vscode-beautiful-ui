@@ -75,7 +75,7 @@ const OceanLight = {
 		},
 		lineNumber: {
 			foreground: '#00000033', // [gutterForeground]
-			active: '#0000000d', // [lineHighlight]
+			active: '#0000005a',
 		},
 		caret: '#a4bf8d', // [caret]
 		selection: {
@@ -106,7 +106,9 @@ const OceanLight = {
 		},
 		link: '#8fa1b3', // [markup.underline.link, string.other.link]
 		comment: '#a6acb9', // [comment] comment, punctuation.definition.comment
-		string: '#a4bf8d', // [string]
+		string: Color('#a4bf8d')
+			.hsl()
+			.hex(), // [string]
 		color1: Color('#ebca89')
 			.hsl()
 			.darken(0.2)

@@ -5,7 +5,7 @@ module.exports = {
 		focusBorder: '<%= bgFocus() %>',
 		foreground: '<%= workspace.foreground %>',
 		'widget.shadow': '<%= shadow() %>',
-		'selection.background': '<%= workspace.bluish %>',
+		'selection.background': '<%= bgSelection() %>',
 		errorForeground: '<%= textInvalid() %>',
 
 		// Button Control
@@ -207,7 +207,7 @@ module.exports = {
 
 		// Panel Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_panel-colors
-		'panel.background': '<%= bgDarker() %>',
+		'panel.background': '<%= bgDarkest() %>',
 		'panel.border': '<%= bgLightest() %>',
 		'panelTitle.activeBorder': '<%= bgAccentDarker() %>',
 		'panelTitle.activeForeground': '<%= textDarkest() %>',

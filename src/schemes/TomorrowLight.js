@@ -54,7 +54,7 @@ const TomorrowLight = {
 		},
 		lineNumber: {
 			foreground: '#00000033',
-			active: '#00000050',
+			active: '#0000005a',
 		},
 		caret: '#cc6666',
 		selection: {
@@ -81,16 +81,46 @@ const TomorrowLight = {
 		},
 		link: '#82a3bf',
 		comment: '#959795', // comment, punctuation.definition.comment
-		string: '#b4bc67',
-		color1: '#f0c775', // constant.numeric, constant.language, entity.name
-		color2: '#cc6666', // variable.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
-		color3: '#b295bb', // constant, constant.other, constant.character, keyword, storage.type, attributes
-		color4: '#282a2e', // variable, variable.parameter, Operators, Misc, punctuation.definition.variable
-		color5: '#82a3bf', // variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
-		color6: '#e9b36d', // keyword.operator
-		color7: '#7c7e7c', // Property, Separator, Terminator, list_item
-		color8: '#565856', // Pseudo Property
-		color9: '#de935e', // constant.numeric
+		string: Color('#b4bc67')
+			.hsl()
+			.darken(0.2)
+			.hex(),
+		color1: Color('#f0c775')
+			.hsl()
+			.darken(0.2)
+			.hex(), // constant.numeric, constant.language, entity.name
+		color2: Color('#cc6666')
+			.hsl()
+			.darken(0.2)
+			.hex(), // variable.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
+		color3: Color('#b295bb')
+			.hsl()
+			.darken(0.2)
+			.hex(), // constant, constant.other, constant.character, keyword, storage.type, attributes
+		color4: Color('#282a2e')
+			.hsl()
+			.darken(0.2)
+			.hex(), // variable, variable.parameter, Operators, Misc, punctuation.definition.variable
+		color5: Color('#82a3bf')
+			.hsl()
+			.darken(0.2)
+			.hex(), // variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
+		color6: Color('#e9b36d')
+			.hsl()
+			.darken(0.2)
+			.hex(), // keyword.operator
+		color7: Color('#7c7e7c')
+			.hsl()
+			.darken(0.2)
+			.hex(), // Property, Separator, Terminator, list_item
+		color8: Color('#565856')
+			.hsl()
+			.darken(0.2)
+			.hex(), // Pseudo Property
+		color9: Color('#de935e')
+			.hsl()
+			.darken(0.2)
+			.hex(), // constant.numeric
 	},
 };
 

@@ -22,51 +22,59 @@ const modifiers = {
 		return this.workspace.foreground;
 	},
 	bgLighter() {
+		const lighten = this.type === 'dark' ? 0.1 : 0.02;
 		return Color(this.workspace.background)
 			.hsl()
-			.lighten(0.1)
+			.lighten(lighten)
 			.hex();
 	},
 	textLighter() {
+		const lighten = this.type === 'dark' ? 0.1 : 0.02;
 		return Color(this.workspace.foreground)
 			.hsl()
-			.darken(0.1)
+			.darken(lighten)
 			.hex();
 	},
 	bgLightest() {
+		const lighten = this.type === 'dark' ? 0.2 : 0.05;
 		return Color(this.workspace.background)
 			.hsl()
-			.lighten(0.2)
+			.lighten(lighten)
 			.hex();
 	},
 	textLightest() {
+		const lighten = this.type === 'dark' ? 0.2 : 0.05;
 		return Color(this.workspace.foreground)
 			.hsl()
-			.darken(0.2)
+			.darken(lighten)
 			.hex();
 	},
 	bgDarker() {
+		const darken = this.type === 'dark' ? 0.1 : 0.02;
 		return Color(this.workspace.background)
 			.hsl()
-			.darken(0.1)
+			.darken(darken)
 			.hex();
 	},
 	textDarker() {
+		const darken = this.type === 'dark' ? 0.1 : 0.02;
 		return Color(this.workspace.foreground)
 			.hsl()
-			.lighten(0.1)
+			.lighten(darken)
 			.hex();
 	},
 	bgDarkest() {
+		const darken = this.type === 'dark' ? 0.2 : 0.05;
 		return Color(this.workspace.background)
 			.hsl()
-			.darken(0.2)
+			.darken(darken)
 			.hex();
 	},
 	textDarkest() {
+		const darken = this.type === 'dark' ? 0.2 : 0.05;
 		return Color(this.workspace.foreground)
 			.hsl()
-			.lighten(0.2)
+			.lighten(darken)
 			.hex();
 	},
 	bgFaded() {
@@ -318,6 +326,10 @@ const modifiers = {
 	},
 	gutterModified() {
 		return `${this.workspace.yellowish}${convertAlpha(90)}`;
+	},
+	// Selections
+	bgSelection() {
+		return `${this.workspace.bluish}${convertAlpha(40)}`;
 	},
 };
 

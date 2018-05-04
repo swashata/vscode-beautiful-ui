@@ -4,11 +4,11 @@ const Color = require('color');
 // Color codes for different themes
 
 /**
- * <Template> Color Scheme
- * @author <>, Ihor Oleksandrov, Swashata Ghosh
+ * Template Color Scheme
+ * @author author, Ihor Oleksandrov, Swashata Ghosh
  */
 const Template = {
-	author: '<>, Ihor Oleksandrov, Swashata Ghosh',
+	author: 'author, Ihor Oleksandrov, Swashata Ghosh',
 	name: 'Template',
 	type: 'dark', // dark, or light
 	workspace: {
@@ -59,7 +59,7 @@ const Template = {
 		},
 		lineNumber: {
 			foreground: '#', // [gutterForeground]
-			active: '#', // [lineHighlight]
+			active: '#ffffff5a', // #0000005a for light
 		},
 		caret: '#', // [caret]
 		selection: {
