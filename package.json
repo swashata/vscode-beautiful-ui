@@ -3,16 +3,16 @@
     "displayName": "Beautiful UI",
     "description": "A set of beautiful color themes for VSCode, inspired by Sublime DA UI.",
     "version": "0.0.1",
-	"publisher": "swashata",
-	"icon": "bui-icon.png",
-	"repository": {
-		"url": "https://github.com/swashata/vscode-beautiful-ui",
-		"type": "git"
-	},
-	"homepage": "https://github.com/swashata/vscode-beautiful-ui",
-	"bugs": {
-		"url": "https://github.com/swashata/vscode-beautiful-ui/issues"
-	},
+    "publisher": "swashata",
+    "icon": "bui-icon.png",
+    "repository": {
+        "url": "https://github.com/swashata/vscode-beautiful-ui",
+        "type": "git"
+    },
+    "homepage": "https://github.com/swashata/vscode-beautiful-ui",
+    "bugs": {
+        "url": "https://github.com/swashata/vscode-beautiful-ui/issues"
+    },
     "engines": {
         "node": ">=8.6.0",
         "vscode": "^1.22.0"
@@ -82,7 +82,8 @@
         "eslint-plugin-prettier": "^2.6.0",
         "lodash": "^4.17.10",
         "ora": "^2.1.0",
-        "prettier": "^1.12.1"
+        "prettier": "^1.12.1",
+        "vsce": "^1.40.0"
     },
     "scripts": {
         "build": "node ./script/generateTheme.js",
