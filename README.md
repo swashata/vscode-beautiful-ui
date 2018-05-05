@@ -1,7 +1,7 @@
 # VSCode Beautiful UI - Color Themes
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/bui-logo-small.png" />
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/bui-logo-medium.png" />
 </p>
 
 A collection of [VSCode](https://code.visualstudio.com/) themes inspired from
