@@ -36,7 +36,7 @@ git clone git@github.com:swashata/vscode-beautiful-ui.git
 ### Activation
 
 After installation, open/restart vscode and from command palette search for
-`Beautiful UI -`. You can choose and apply the color theme of your choice.
+`βui -`. You can choose and apply the color theme of your choice.
 
 ## Customization
 

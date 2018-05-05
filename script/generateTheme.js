@@ -81,7 +81,7 @@ Object.keys(schemes).forEach(theme => {
 	fs.writeFileSync(filename, newTheme);
 	spinner.color = 'green';
 	createdSchemes.contributes.themes.push({
-		label: `Beautiful UI - ${theme}`,
+		label: `βui - ${theme}`,
 		uiTheme: scheme.type === 'dark' ? 'vs-dark' : 'vs', // dark or light
 		path: `./themes/${theme}-color-theme.json`,
 	});

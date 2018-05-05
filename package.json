@@ -2,7 +2,7 @@
     "name": "beautiful-ui",
     "displayName": "Beautiful UI",
     "description": "A set of beautiful color themes for VSCode, inspired by Sublime DA UI.",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "publisher": "swashata",
     "icon": "bui-icon.png",
     "repository": {
@@ -22,47 +22,47 @@
     "contributes": {
         "themes": [
             {
-                "label": "Beautiful UI - Tomorrow Dark",
+                "label": "βui - Tomorrow Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Tomorrow Dark-color-theme.json"
             },
             {
-                "label": "Beautiful UI - Tomorrow Light",
+                "label": "βui - Tomorrow Light",
                 "uiTheme": "vs",
                 "path": "./themes/Tomorrow Light-color-theme.json"
             },
             {
-                "label": "Beautiful UI - One Dark",
+                "label": "βui - One Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/One Dark-color-theme.json"
             },
             {
-                "label": "Beautiful UI - One Light",
+                "label": "βui - One Light",
                 "uiTheme": "vs",
                 "path": "./themes/One Light-color-theme.json"
             },
             {
-                "label": "Beautiful UI - Eighties Dark",
+                "label": "βui - Eighties Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Eighties Dark-color-theme.json"
             },
             {
-                "label": "Beautiful UI - Ocean Dark",
+                "label": "βui - Ocean Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Ocean Dark-color-theme.json"
             },
             {
-                "label": "Beautiful UI - Ocean Light",
+                "label": "βui - Ocean Light",
                 "uiTheme": "vs",
                 "path": "./themes/Ocean Light-color-theme.json"
             },
             {
-                "label": "Beautiful UI - Solarized Dark",
+                "label": "βui - Solarized Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Solarized Dark-color-theme.json"
             },
             {
-                "label": "Beautiful UI - Solarized Light",
+                "label": "βui - Solarized Light",
                 "uiTheme": "vs",
                 "path": "./themes/Solarized Light-color-theme.json"
             }
