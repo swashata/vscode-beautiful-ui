@@ -62,43 +62,34 @@ The following color themes have been ported. Images are W.I.P.
 * Original [sources](https://github.com/chriskempson/base16).
 * Licensed under the [MIT License](https://github.com/chriskempson/base16/blob/master/LICENSE.md).
 
+#### Eighties Dark
 
-<p>
-    <details>
-        <summary><strong>Eighties Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/EightiesDark.png" alt="Eighties Dark" title="Eighties Dark"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/EightiesDark.png" alt="Eighties Dark" title="Eighties Dark">
 </p>
 
+#### Ocean Dark
 
-<p>
-    <details>
-        <summary><strong>Ocean Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanDark.png" alt="Ocean Dark" title="Ocean Dark"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanDark.png" alt="Ocean Dark" title="Ocean Dark">
 </p>
 
-<p>
-    <details>
-        <summary><strong>Ocean Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanLight.png" alt="Ocean Light" title="Ocean Light"></p>
-    </details>
+#### Ocean Light
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanLight.png" alt="Ocean Light" title="Ocean Light">
 </p>
 
+#### Tomorrow Dark
 
-<p>
-    <details>
-        <summary><strong>Tomorrow Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowNight.png" alt="Tomorrow Dark" title="Tomorrow Dark"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowNight.png" alt="Tomorrow Dark" title="Tomorrow Dark">
 </p>
 
+#### Tomorrow Light
 
-<p>
-    <details>
-        <summary><strong>Tomorrow Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowLight.png" alt="Tomorrow Light" title="Tomorrow Light"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowLight.png" alt="Tomorrow Dark" title="Tomorrow Dark">
 </p>
 
 
@@ -107,22 +98,17 @@ The following color themes have been ported. Images are W.I.P.
 * Original [sources](http://ethanschoonover.com/solarized).
 * Licensed under the [MIT License](https://github.com/altercation/solarized/blob/master/LICENSE).
 
+#### Solarized Dark
 
-<p>
-    <details>
-        <summary><strong>Solarized Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedDark.png" alt="Solarized Dark" title="Solarized Dark"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedDark.png" alt="Solarized Dark" title="Solarized Dark">
 </p>
 
+#### Solarized Light
 
-<p>
-    <details>
-        <summary><strong>Solarized Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedLight.png" alt="Solarized Light" title="Solarized Light"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedLight.png" alt="Solarized Light" title="Solarized Light">
 </p>
-
 
 ### Color Pack from Dmitri Voronianski [TODO]
 
@@ -157,22 +143,17 @@ The following color themes have been ported. Images are W.I.P.
 * Original [sources](https://github.com/atom/one-dark-syntax).
 * Licensed under the [MIT License](https://github.com/atom/one-dark-syntax/blob/master/LICENSE.md).
 
+#### One Dark
 
-<p>
-    <details>
-        <summary><strong>One Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneDark.png" alt="One Dark" title="One Dark"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneDark.png" alt="One Dark" title="One Dark">
 </p>
 
+#### One Light
 
-<p>
-    <details>
-        <summary><strong>One Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneLight.png" alt="One Light" title="One Light"></p>
-    </details>
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneLight.png" alt="One Light" title="One Light">
 </p>
-
 
 ### Color Pack from Jani Nurminen, Colin T.A. Gray, William D. Neumann [TODO]
 
@@ -229,6 +210,8 @@ The following color themes have been ported. Images are W.I.P.
 
 ## Development
 
+> Help porting the themes from sublime da cs.
+
 The development is made easy with some custom scripts. First fork and clone the
 repo and run
 
@@ -254,6 +237,14 @@ yarn build
 to finalize the themes and make changes to `package.json` manually.
 
 Then submit a PR.
+
+### Adding a new theme
+
+* Copy `./src/schemes/Template.noop.js` to `./src/schemes/MyTheme.js`.
+* Mark the theme `dark` or `light` and make changes accordingly.
+* Add colors to the config.
+* Import and add the theme in `src/colors.js`.
+* Build and test.
 
 <p align="center">
 **Enjoy**
