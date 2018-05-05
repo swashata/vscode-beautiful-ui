@@ -2,7 +2,7 @@
     "name": "beautiful-ui",
     "displayName": "Beautiful UI",
     "description": "A set of beautiful color themes for VSCode, inspired by Sublime DA UI.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "swashata",
     "icon": "bui-icon.png",
     "repository": {
