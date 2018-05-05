@@ -23,7 +23,17 @@ theme for a long time and I have put effort to port as many themes as possible.
 
 ## Installation
 
-You can install manually from `git` until the packages are published.
+You can install manually from `git` or use the [vscode extensions marketplace](https://marketplace.visualstudio.com/items?itemName=swashata.beautiful-ui).
+
+### Marketplace Installation
+
+From command palette, run
+
+```
+ext install swashata.beautiful-ui
+```
+
+Or search for `Beautiful UI` in the marketplace and install from there.
 
 ### Git Installation
 
