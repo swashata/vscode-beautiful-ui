@@ -66,7 +66,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>Eighties Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/EightiesDark.png" alt="Eighties Dark" title="Eighties Dark"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/EightiesDark.png" alt="Eighties Dark" title="Eighties Dark"></p>
     </details>
 </p>
 
@@ -74,14 +74,14 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>Ocean Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/OceanDark.png" alt="Ocean Dark" title="Ocean Dark"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanDark.png" alt="Ocean Dark" title="Ocean Dark"></p>
     </details>
 </p>
 
 <p>
     <details>
         <summary><strong>Ocean Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/OceanLight.png" alt="Ocean Light" title="Ocean Light"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanLight.png" alt="Ocean Light" title="Ocean Light"></p>
     </details>
 </p>
 
@@ -89,7 +89,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>Tomorrow Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/TomorrowNight.png" alt="Tomorrow Dark" title="Tomorrow Dark"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowNight.png" alt="Tomorrow Dark" title="Tomorrow Dark"></p>
     </details>
 </p>
 
@@ -97,7 +97,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>Tomorrow Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/TomorrowLight.png" alt="Tomorrow Light" title="Tomorrow Light"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowLight.png" alt="Tomorrow Light" title="Tomorrow Light"></p>
     </details>
 </p>
 
@@ -111,7 +111,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>Solarized Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/SolarizedDark.png" alt="Solarized Dark" title="Solarized Dark"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedDark.png" alt="Solarized Dark" title="Solarized Dark"></p>
     </details>
 </p>
 
@@ -119,7 +119,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>Solarized Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/SolarizedLight.png" alt="Solarized Light" title="Solarized Light"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedLight.png" alt="Solarized Light" title="Solarized Light"></p>
     </details>
 </p>
 
@@ -161,7 +161,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>One Dark</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/OneDark.png" alt="One Dark" title="One Dark"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneDark.png" alt="One Dark" title="One Dark"></p>
     </details>
 </p>
 
@@ -169,7 +169,7 @@ The following color themes have been ported. Images are W.I.P.
 <p>
     <details>
         <summary><strong>One Light</strong></summary><p></p>
-        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/.screenshots/OneLight.png" alt="One Light" title="One Light"></p>
+        <p><img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneLight.png" alt="One Light" title="One Light"></p>
     </details>
 </p>
 
