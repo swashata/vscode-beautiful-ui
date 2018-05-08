@@ -11,4 +11,10 @@ module.exports = {
 	'Solarized Dark': require('./schemes/SolarizedDark'),
 	'Solarized Light': require('./schemes/SolarizedLight'),
 	'Oceanic Next': require('./schemes/OceanicNext'),
+	'Monokai Classic': require('./schemes/MonokaiClassis'),
+	'Monokai Machine': require('./schemes/MonokaiMachine'),
+	'Monokai Pro': require('./schemes/MonokaiPro'),
+	'Monokai Octagon': require('./schemes/MonokaiOctagon'),
+	'Monokai Ristretto': require('./schemes/MonokaiRistretto'),
+	'Monokai Spectrum': require('./schemes/MonokaiSpectrum'),
 };

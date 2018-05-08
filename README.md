@@ -114,12 +114,13 @@ The following color themes have been ported. Images are W.I.P.
 	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/SolarizedLight.png" alt="Solarized Light" title="Solarized Light">
 </p>
 
-### Color Pack from Dmitri Voronianski [TODO]
+### Color Pack from Dmitri Voronianski
 
 * Original [sources](https://labs.voronianski.com/oceanic-next-color-scheme/).
 * Licensed under the [MIT License](https://github.com/voronianski/oceanic-next-color-scheme/blob/master/README.md).
 * You can show your appreciation to Dmitri using [PayPal](https://www.paypal.me/voronianski).
 
+#### Oceanic Next
 
 > Soon…
 

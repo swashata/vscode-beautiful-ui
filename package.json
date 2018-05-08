@@ -87,6 +87,36 @@
                 "label": "βui - Oceanic Next",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Oceanic Next-color-theme.json"
+            },
+            {
+                "label": "βui - Monokai Classic",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Monokai Classic-color-theme.json"
+            },
+            {
+                "label": "βui - Monokai Machine",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Monokai Machine-color-theme.json"
+            },
+            {
+                "label": "βui - Monokai Pro",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Monokai Pro-color-theme.json"
+            },
+            {
+                "label": "βui - Monokai Octagon",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Monokai Octagon-color-theme.json"
+            },
+            {
+                "label": "βui - Monokai Ristretto",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Monokai Ristretto-color-theme.json"
+            },
+            {
+                "label": "βui - Monokai Spectrum",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Monokai Spectrum-color-theme.json"
             }
         ]
     },
