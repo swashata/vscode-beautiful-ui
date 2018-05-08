@@ -13,7 +13,7 @@ script:
   - yarn test
   - codecov
 deploy:
-  - provider: script
+  provider: script
   script: yarn vsce -p $VSCE_TOKEN
   on:
     tags: true
