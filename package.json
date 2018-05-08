@@ -19,7 +19,23 @@
     },
     "categories": [
         "Themes"
-    ],
+	],
+	"keywords": [
+		"Light Theme", "Dark Theme", "Tomorrow", "One", "Eighties", "Ocean",
+		"Solarized", "Oceanic"
+	],
+	"badges": [
+		{
+			"url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
+			"href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
+			"description": "Travis Build Status"
+		},
+		{
+			"url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
+			"href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
+			"description": "Code Coverage"
+		}
+	],
     "contributes": {
         "themes": [
             {

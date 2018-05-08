@@ -1,5 +1,8 @@
 # VSCode Beautiful UI - Color Themes
 
+--------------------------------------
+[![codecov](https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/swashata/vscode-beautiful-ui) [![Build Status](https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master)](https://travis-ci.org/swashata/vscode-beautiful-ui) [![VSCode Version](https://vsmarketplacebadge.apphb.com/version-short/swashata.beautiful-ui.svg)](https://marketplace.visualstudio.com/items?itemName=swashata.beautiful-ui) [![VSCode Install](https://vsmarketplacebadge.apphb.com/installs/swashata.beautiful-ui.svg)](vscode:extension/swashata.beautiful-ui) [![VSCode Rating](https://vsmarketplacebadge.apphb.com/rating-short/swashata.beautiful-ui.svg)](https://marketplace.visualstudio.com/items?itemName=swashata.beautiful-ui#review-details)
+
 <p align="center">
 	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/bui-logo-medium.png" />
 </p>
