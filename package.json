@@ -117,6 +117,21 @@
                 "label": "βui - Monokai Spectrum",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Monokai Spectrum-color-theme.json"
+            },
+            {
+                "label": "βui - Material",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Material-color-theme.json"
+            },
+            {
+                "label": "βui - Material Darker",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Material Darker-color-theme.json"
+            },
+            {
+                "label": "βui - Material Palenight",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Material Palenight-color-theme.json"
             }
         ]
     },

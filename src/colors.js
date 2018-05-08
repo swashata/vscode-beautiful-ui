@@ -17,4 +17,7 @@ module.exports = {
 	'Monokai Octagon': require('./schemes/MonokaiOctagon'),
 	'Monokai Ristretto': require('./schemes/MonokaiRistretto'),
 	'Monokai Spectrum': require('./schemes/MonokaiSpectrum'),
+	Material: require('./schemes/Material'),
+	'Material Darker': require('./schemes/MaterialDarker'),
+	'Material Palenight': require('./schemes/MaterialPalenight'),
 };
