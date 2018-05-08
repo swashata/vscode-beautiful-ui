@@ -20,4 +20,5 @@ module.exports = {
 	Material: require('./schemes/Material'),
 	'Material Darker': require('./schemes/MaterialDarker'),
 	'Material Palenight': require('./schemes/MaterialPalenight'),
+	Zenburn: require('./schemes/Zenburn'),
 };

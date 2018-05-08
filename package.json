@@ -132,6 +132,11 @@
                 "label": "βui - Material Palenight",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Material Palenight-color-theme.json"
+            },
+            {
+                "label": "βui - Zenburn",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Zenburn-color-theme.json"
             }
         ]
     },
