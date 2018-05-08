@@ -14,7 +14,8 @@
         "url": "https://github.com/swashata/vscode-beautiful-ui/issues"
     },
     "engines": {
-        "vscode": "^1.22.0"
+        "vscode": "^1.22.0",
+        "node": ">=8.6.0"
     },
     "categories": [
         "Themes"
@@ -84,12 +85,14 @@
         "eslint-config-prettier": "^2.9.0",
         "eslint-plugin-import": "^2.11.0",
         "eslint-plugin-prettier": "^2.6.0",
+        "jest": "^22.4.3",
         "lodash": "^4.17.10",
         "ora": "^2.1.0",
         "prettier": "^1.12.1",
         "vsce": "^1.40.0"
     },
     "scripts": {
+		"test": "jest",
         "build": "node ./script/generateTheme.js",
         "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
         "vscode:prepublish": "yarn build",

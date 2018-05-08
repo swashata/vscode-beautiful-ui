@@ -1,0 +1,673 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tokens matches snapshot 1`] = `
+Object {
+  "tokenColors": Array [
+    Object {
+      "settings": Object {
+        "background": "<%= tokens.editor.background %>",
+        "foreground": "<%= tokens.editor.foreground %>",
+      },
+    },
+    Object {
+      "name": "Comment",
+      "scope": Array [
+        "comment",
+        "punctuation.definition.comment",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.comment %>",
+      },
+    },
+    Object {
+      "name": "Variable",
+      "scope": Array [
+        "variable",
+        "variable.other",
+        "variable.name",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - parameter",
+      "scope": Array [
+        "variable.parameter",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - language",
+      "scope": Array [
+        "variable.language",
+        "variable.scss",
+        "variable.less",
+        "variable.styl",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Variable - punctuation",
+      "scope": Array [
+        "punctuation.definition.variable",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - constant",
+      "scope": Array [
+        "variable.other.constant",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color5 %>",
+      },
+    },
+    Object {
+      "name": "Constants",
+      "scope": Array [
+        "constant",
+        "constant.other",
+        "constant.character",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color3 %>",
+      },
+    },
+    Object {
+      "name": "Constants - numeric, support, Property Name",
+      "scope": Array [
+        "support.type.property-name",
+        "constant.numeric",
+        "support.constant",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color9 %>",
+      },
+    },
+    Object {
+      "name": "Object Literal",
+      "scope": Array [
+        "meta.object-literal.key",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "Constants - language",
+      "scope": Array [
+        "constant.language",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Constants - Escape, Inheritance",
+      "scope": Array [
+        "constant.character.escape",
+        "constant.other.placeholder",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "Invalid",
+      "scope": Array [
+        "invalid",
+        "invalid.illegal",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Keyword, Storage",
+      "scope": Array [
+        "keyword",
+        "storage.type",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color3 %>",
+      },
+    },
+    Object {
+      "name": "Storage - modifier",
+      "scope": Array [
+        "storage.modifier",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Keyword, Storage - italics",
+      "scope": Array [
+        "storage.modifier",
+        "storage.type",
+        "keyword.control",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+      },
+    },
+    Object {
+      "name": "Keyword - operator ($this->stuff), Punctuation - accessor (this.stuff)",
+      "scope": Array [
+        "keyword.operator",
+        "punctuation.accessor.",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "Operator, Misc",
+      "scope": Array [
+        "constant.other.color",
+        "punctuation",
+        "meta.tag",
+        "punctuation.definition.tag",
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.section.embedded",
+        "keyword.other.template",
+        "keyword.other.substitution",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Entity - name",
+      "scope": Array [
+        "entity.name",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "Tag",
+      "scope": Array [
+        "entity.name.tag",
+        "meta.tag.sgml",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Function, Special Method",
+      "scope": Array [
+        "entity.name.function",
+        "entity.name.label",
+        "meta.function-call",
+        "variable.function",
+        "keyword.other.special-method",
+        "support.function",
+        "support.type",
+        "support.class",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color5 %>",
+      },
+    },
+    Object {
+      "name": "String, Symbols, Inherited Class, Markup Heading",
+      "scope": Array [
+        "string",
+        "entity.other.inherited-class",
+        "markup.heading",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.string %>",
+      },
+    },
+    Object {
+      "name": "Attributes",
+      "scope": Array [
+        "meta.tag.attribute",
+        "entity.other.attribute-name",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color9 %>",
+      },
+    },
+    Object {
+      "name": "Property, Separator, Terminator",
+      "scope": Array [
+        "punctuation.terminator",
+        "punctuation.separator",
+        "meta.property-list.scss",
+        "meta.property-list.css",
+        "meta.property-list.styl",
+        "meta.property-list.less",
+        "punctuation.separator.inheritance",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color7 %>",
+      },
+    },
+    Object {
+      "name": "CSS - Class",
+      "scope": Array [
+        "source.css entity.other.attribute-name.class",
+        "source.scss entity.other.attribute-name.class",
+        "source.styl entity.other.attribute-name.class",
+        "source.less entity.other.attribute-name.class",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "CSS - ID",
+      "scope": Array [
+        "source.css entity.other.attribute-name.id",
+        "source.scss entity.other.attribute-name.id",
+        "source.styl entity.other.attribute-name.id",
+        "source.less entity.other.attribute-name.id",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color5 %>",
+      },
+    },
+    Object {
+      "name": "CSS - Property Name",
+      "scope": Array [
+        "support.type.property-name.css",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Pseudo Elements",
+      "scope": Array [
+        "entity.other.attribute-name.pseudo-element",
+        "entity.other.attribute-name.pseudo-class",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color8 %>",
+      },
+    },
+    Object {
+      "name": "URL",
+      "scope": Array [
+        "*url*",
+        "*link*",
+        "*uri*",
+      ],
+      "settings": Object {
+        "fontStyle": "italic underline",
+        "foreground": "<%= tokens.link %>",
+      },
+    },
+    Object {
+      "name": "Decorators",
+      "scope": Array [
+        "tag.decorator.js entity.name.tag.js",
+        "tag.decorator.js punctuation.definition.tag.js",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color5 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 0",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 1",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color9 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 2",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color3 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 3",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 4",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color5 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 5",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 6",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color7 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 7",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color8 %>",
+      },
+    },
+    Object {
+      "name": "JSON Key - Level 8",
+      "scope": Array [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Plain",
+      "scope": Array [
+        "text.html.markdown",
+        "punctuation.definition.list_item.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color7 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Markup Raw Inline",
+      "scope": Array [
+        "text.html.markdown markup.inline.raw.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color3 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Markup Raw Inline Punctuation",
+      "scope": Array [
+        "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color8 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Line Break",
+      "scope": Array [
+        "text.html.markdown meta.dummy.line-break",
+      ],
+      "settings": Object {
+        "foreground": "",
+      },
+    },
+    Object {
+      "name": "Markdown - Heading",
+      "scope": Array [
+        "markdown.heading",
+        "markup.heading.markdown entity.name.section.markdown",
+        "markup.heading | markup.heading entity.name",
+        "markup.heading.markdown punctuation.definition.heading.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - List",
+      "scope": Array [
+        "beginning.punctuation.definition.list.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color9 %>",
+      },
+    },
+    Object {
+      "name": "Markup - Italic",
+      "scope": Array [
+        "markup.italic",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "Markup - Bold",
+      "scope": Array [
+        "markup.bold",
+        "markup.bold string",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "Markup - Bold-Italic",
+      "scope": Array [
+        "markup.bold markup.italic",
+        "markup.italic markup.bold",
+        "markup.quote markup.bold",
+        "markup.bold markup.italic string",
+        "markup.italic markup.bold string",
+        "markup.quote markup.bold string",
+      ],
+      "settings": Object {
+        "fontStyle": "bold italic",
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "Markup - Underline",
+      "scope": Array [
+        "markup.underline",
+      ],
+      "settings": Object {
+        "fontStyle": "underline",
+        "foreground": "<%= tokens.link %>",
+      },
+    },
+    Object {
+      "name": "Markup - Strike",
+      "scope": Array [
+        "markup.strike",
+      ],
+      "settings": Object {
+        "fontStyle": "strike",
+        "foreground": "<%= tokens.comment %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Blockquote Punctuation",
+      "scope": Array [
+        "beginning.punctuation.definition.quote",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.blockquote.background %>",
+      },
+    },
+    Object {
+      "name": "Markup - Quote",
+      "scope": Array [
+        "markup.quote",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.blockquote.foreground %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Link",
+      "scope": Array [
+        "string.other.link.title.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color9 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Link Description",
+      "scope": Array [
+        "string.other.link.description.title.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.string %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Link Anchor",
+      "scope": Array [
+        "constant.other.reference.link.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color6 %>",
+      },
+    },
+    Object {
+      "name": "Markup - Raw Block",
+      "scope": Array [
+        "markup.raw.block",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Raw",
+      "scope": Array [
+        "markup.raw.block.fenced.markdown",
+        "markup.inline.raw.string.markdown",
+        "markup.fenced_code.block.markdown",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Markdown - Separator",
+      "scope": Array [
+        "meta.separator",
+      ],
+      "settings": Object {
+        "background": "<%= bgPrimary() %>",
+        "fontStyle": "bold",
+        "foreground": "<%= textPrimary() %>",
+      },
+    },
+    Object {
+      "name": "Markup - Table",
+      "scope": Array [
+        "markup.table",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.editor.foreground %>",
+      },
+    },
+    Object {
+      "scope": "token.info-token",
+      "settings": Object {
+        "foreground": "<%= textInfo() %>",
+      },
+    },
+    Object {
+      "scope": "token.warn-token",
+      "settings": Object {
+        "foreground": "<%= textWarning() %>",
+      },
+    },
+    Object {
+      "scope": "token.error-token",
+      "settings": Object {
+        "foreground": "<%= textInvalid() %>",
+      },
+    },
+    Object {
+      "scope": "token.debug-token",
+      "settings": Object {
+        "foreground": "<%= tokens.color5 %>",
+      },
+    },
+    Object {
+      "scope": Array [
+        "markup.deleted",
+        "punctuation.definition.deleted",
+      ],
+      "settings": Object {
+        "foreground": "<%= textInvalid() %>",
+      },
+    },
+    Object {
+      "scope": Array [
+        "markup.inserted",
+        "punctuation.definition.inserted",
+      ],
+      "settings": Object {
+        "foreground": "<%= textSuccess() %>",
+      },
+    },
+    Object {
+      "scope": Array [
+        "markup.changed",
+        "punctuation.definition.changed",
+      ],
+      "settings": Object {
+        "foreground": "<%= textInfo() %>",
+      },
+    },
+  ],
+}
+`;
