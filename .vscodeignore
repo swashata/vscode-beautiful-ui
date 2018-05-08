@@ -1,3 +1,6 @@
+__tests__/**
+coverage/**
+docs/**
 .vscode/**
 .vscode-test/**
 node_modules/**
@@ -9,3 +12,5 @@ src/**
 docs/**
 package-lock.json
 yarn.lock
+.travis.yml
+jest.config.js
