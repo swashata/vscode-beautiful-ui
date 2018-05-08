@@ -57,9 +57,48 @@ After installation, open/restart vscode and from command palette search for
 Workspace colors can be customized by editing `workbench.colorCustomizations`
 user settings. More information can be found [here](https://code.visualstudio.com/docs/getstarted/theme-color-reference).
 
+## Recommended Settings
+
+Following extensions/tools are recommended for the color schemes.
+
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) - For file icons.
+* [WhiteViz](https://marketplace.visualstudio.com/items?itemName=spywhere.whiteviz) - Sublime like whitespace highlight.
+* [FiraCoda](https://github.com/tonsky/FiraCode) - For an awesome font with ligatures.
+* [Operator Mono](https://www.typography.com/fonts/operator/styles/) - If you can spend `$200` 😉.
+* [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) - For creating ligatures for operator mono.
+
+Also note the recommended user settings.
+
+```json
+{
+	"workbench.iconTheme": "vscode-icons",
+	"editor.fontFamily": "Operator Mono SSM Lig",
+	"editor.lineHeight": 25,
+	"editor.fontLigatures": true,
+	"explorer.decorations.badges": false,
+	"editor.fontSize": 14,
+	"editor.letterSpacing": 0.5,
+	"editor.fontWeight": "400",
+	"editor.renderWhitespace": "none",
+	"workbench.statusBar.feedback.visible": false,
+	"editor.rulers": [
+		80,
+		100,
+		120
+	],
+	"whiteviz.maximumLimit": 500,
+	"whiteviz.expandedTabIndicator": false,
+	"editor.occurrencesHighlight": true,
+	"workbench.tree.horizontalScrolling": true,
+	"editor.cursorStyle": "line-thin",
+	"editor.showFoldingControls": "always",
+	"editor.matchBrackets": true
+}
+```
+
 ## Color Themes
 
-The following color themes have been ported. Images are W.I.P.
+The following color themes have been ported.
 
 ### Color Pack from Chris Kempson
 
