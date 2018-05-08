@@ -142,6 +142,11 @@
                 "label": "βui - Nova",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Nova-color-theme.json"
+            },
+            {
+                "label": "βui - Nord",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Nord-color-theme.json"
             }
         ]
     },

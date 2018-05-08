@@ -22,4 +22,5 @@ module.exports = {
 	'Material Palenight': require('./schemes/MaterialPalenight'),
 	Zenburn: require('./schemes/Zenburn'),
 	Nova: require('./schemes/Nova'),
+	Nord: require('./schemes/Nord'),
 };
