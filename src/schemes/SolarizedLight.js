@@ -51,7 +51,10 @@ const SolarizedLight = {
 	tokens: {
 		editor: {
 			background: '#fdf6e2', // [background]
-			foreground: '#647a82', // [foreground]
+			foreground: Color('#647a82')
+				.hsl()
+				.darken(0.2)
+				.hex(), // [foreground]
 		},
 		gutter: {
 			background: '#fdf6e2', // [gutter]
@@ -89,16 +92,46 @@ const SolarizedLight = {
 		},
 		link: '#278bd3', // [markup.underline.link, string.other.link]
 		comment: '#92a0a0', // [comment] comment, punctuation.definition.comment
-		string: '#859900', // [string]
-		color1: '#b38600', // [entity.name - (entity.name.section | entity.name.tag | entity.name.label)] entity.name, support.constant.property-value
-		color2: '#dc312e', // [variable.language] variable.language, constant.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
-		color3: '#6d72c5', // [storage.type] constant, constant.other, constant.character, keyword, storage.type
-		color4: '#647a82', // [variable.parameter] variable, variable.parameter, Operators, Misc, punctuation.definition.variable
-		color5: '#278bd3', // [variable.function] variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
-		color6: '#be7009', // [keyword.operator] keyword.operator
-		color7: '#778888', // [punctuation.separator] Property, Separator, Terminator, list_item
-		color8: '#535f5f', // [entity.other.pseudo-class] Pseudo Property
-		color9: '#ca4c16', // [constant.numeric], attributes
+		string: Color('#859900')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [string]
+		color1: Color('#b38600')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [entity.name - (entity.name.section | entity.name.tag | entity.name.label)] entity.name, support.constant.property-value
+		color2: Color('#dc312e')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [variable.language] variable.language, constant.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
+		color3: Color('#6d72c5')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [storage.type] constant, constant.other, constant.character, keyword, storage.type
+		color4: Color('#647a82')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [variable.parameter] variable, variable.parameter, Operators, Misc, punctuation.definition.variable
+		color5: Color('#278bd3')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [variable.function] variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
+		color6: Color('#be7009')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [keyword.operator] keyword.operator
+		color7: Color('#778888')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [punctuation.separator] Property, Separator, Terminator, list_item
+		color8: Color('#535f5f')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [entity.other.pseudo-class] Pseudo Property
+		color9: Color('#ca4c16')
+			.hsl()
+			.darken(0.2)
+			.hex(), // [constant.numeric], attributes
 	},
 };
 
