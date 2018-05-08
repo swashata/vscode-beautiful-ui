@@ -9,7 +9,7 @@ const Color = require('color');
  */
 const Template = {
 	author: 'Arctic Ice Studio, Ihor Oleksandrov, Swashata Ghosh',
-	name: 'Template',
+	name: 'Nord',
 	type: 'dark', // dark, or light
 	workspace: {
 		background: Color('#2e3440')

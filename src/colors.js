@@ -23,4 +23,5 @@ module.exports = {
 	Zenburn: require('./schemes/Zenburn'),
 	Nova: require('./schemes/Nova'),
 	Nord: require('./schemes/Nord'),
+	'Espresso Libre': require('./schemes/EspressoLibre'),
 };

@@ -147,6 +147,11 @@
                 "label": "βui - Nord",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Nord-color-theme.json"
+            },
+            {
+                "label": "βui - Espresso Libre",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Espresso Libre-color-theme.json"
             }
         ]
     },
