@@ -10,4 +10,5 @@ module.exports = {
 	'Ocean Light': require('./schemes/OceanLight'),
 	'Solarized Dark': require('./schemes/SolarizedDark'),
 	'Solarized Light': require('./schemes/SolarizedLight'),
+	'Oceanic Next': require('./schemes/OceanicNext'),
 };

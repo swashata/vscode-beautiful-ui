@@ -65,6 +65,11 @@
                 "label": "βui - Solarized Light",
                 "uiTheme": "vs",
                 "path": "./themes/Solarized Light-color-theme.json"
+            },
+            {
+                "label": "βui - Oceanic Next",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Oceanic Next-color-theme.json"
             }
         ]
     },
@@ -86,9 +91,9 @@
     },
     "scripts": {
         "build": "node ./script/generateTheme.js",
-		"start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
-		"vscode:prepublish": "yarn build",
-		"vsce": "vsce publish"
+        "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
+        "vscode:prepublish": "yarn build",
+        "vsce": "vsce publish"
     },
     "private": false
 }

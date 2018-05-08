@@ -245,6 +245,13 @@ module.exports = {
 			},
 		},
 		{
+			name: 'CSS - Property Name',
+			scope: ['support.type.property-name.css'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+			},
+		},
+		{
 			name: 'Pseudo Elements',
 			scope: [
 				'entity.other.attribute-name.pseudo-element',
