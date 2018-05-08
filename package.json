@@ -137,6 +137,11 @@
                 "label": "βui - Zenburn",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Zenburn-color-theme.json"
+            },
+            {
+                "label": "βui - Nova",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Nova-color-theme.json"
             }
         ]
     },
