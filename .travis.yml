@@ -1,21 +1,21 @@
 language: node_js
 node_js:
-	- '9'
+  - '9'
 cache:
-	yarn: true
-	directories:
-		- "~/.npm"
-		- node_modules
+  yarn: true
+  directories:
+    - "~/.npm"
+    - node_modules
 install:
-	- yarn global add codecov
-	- yarn install
+  - yarn global add codecov
+  - yarn install
 script:
-	- yarn test
-	- codecov
+  - yarn test
+  - codecov
 deploy:
-	- provider: script
-	script: yarn vsce -p $VSCE_TOKEN
-	on:
-		tags: true
-		repo: swashata/vscode-beautiful-ui
-	skip_cleanup: true
+  - provider: script
+  script: yarn vsce -p $VSCE_TOKEN
+  on:
+    tags: true
+    repo: swashata/vscode-beautiful-ui
+  skip_cleanup: true
