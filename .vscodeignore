@@ -1,6 +1,7 @@
 __tests__/**
 coverage/**
 docs/**
+site/**
 .vscode/**
 .vscode-test/**
 node_modules/**
