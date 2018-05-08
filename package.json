@@ -158,7 +158,7 @@
         "vsce": "^1.40.0"
     },
     "scripts": {
-		"test": "jest",
+		"test": "jest --color",
         "build": "node ./script/generateTheme.js",
         "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
         "vscode:prepublish": "yarn build",

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tokens matches snapshot 1`] = `
+exports[`🔑 Tokens matches snapshot 1`] = `
 Object {
   "tokenColors": Array [
     Object {

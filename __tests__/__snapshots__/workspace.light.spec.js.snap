@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Workspace Light matches snapshot 1`] = `
+exports[`🖥️ Workspace Light matches snapshot 1`] = `
 Object {
   "colors": Object {
     "activityBar.background": "<%= bgPrimary() %>",

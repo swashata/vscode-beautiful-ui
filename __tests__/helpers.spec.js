@@ -57,7 +57,7 @@ const checkHashes = obj => {
 	});
 };
 
-describe('Helpers', () => {
+describe('🚑 Helpers', () => {
 	describe('For Dark Scheme', () => {
 		const extended = {
 			...colorDark,
