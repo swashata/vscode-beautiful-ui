@@ -126,7 +126,7 @@ The following color themes have been ported. Images are W.I.P.
 	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanicNext.png" alt="OceanicNext" title="OceanicNext">
 </p>
 
-### Color Pack from Wimer Hazenberg [TODO]
+### Color Pack from Wimer Hazenberg
 
 * Original [sources](https://www.monokai.pro/sublime-text/).
 * Monokai &copy; 2017.
@@ -136,53 +136,71 @@ The following color themes have been ported. Images are W.I.P.
 #### Monokai Classic
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiClassic.png" alt="Monokai Classic" title="Monokai Classic">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiClassic.png" alt="Monokai Classic" title="Monokai Classic">
 </p>
 
 
 #### Monokai Machine
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiMachine.png" alt="Monokai Machine" title="Monokai Machine">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiMachine.png" alt="Monokai Machine" title="Monokai Machine">
 </p>
 
 
 #### Monokai Octagon
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiOctagon.png" alt="Monokai Octagon" title="Monokai Octagon">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiOctagon.png" alt="Monokai Octagon" title="Monokai Octagon">
 </p>
 
 
 #### Monokai Pro
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiPro.png" alt="Monokai Pro" title="Monokai Pro">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiPro.png" alt="Monokai Pro" title="Monokai Pro">
 </p>
 
 
 #### Monokai Ristretto
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiRistretto.png" alt="Monokai Ristretto" title="Monokai Ristretto">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiRistretto.png" alt="Monokai Ristretto" title="Monokai Ristretto">
 </p>
 
 
 #### Monokai Spectrum
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiSpectrum.png" alt="Monokai Spectrum" title="Monokai Spectrum">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiSpectrum.png" alt="Monokai Spectrum" title="Monokai Spectrum">
 </p>
 
 
-### Color Pack from Mattia Astorino [TODO]
+### Color Pack from Mattia Astorino
 
 * Original [sources](https://github.com/equinusocio/material-theme).
 * Licensed under the [MIT License](https://github.com/equinusocio/material-theme/blob/master/LICENSE.md).
 * You can show your appreciation to Mattia using [Beerpay](https://beerpay.io/equinusocio/material-theme).
 
 
-> Soon…
+#### Material
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/Material.png" alt="Material" title="Material">
+</p>
+
+
+#### Material Darker
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MaterialDarker.png" alt="Material Darker" title="Material Darker">
+</p>
+
+
+#### Material Palenight
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MaterialPalenight.png" alt="Material Palenight" title="Material Palenight">
+</p>
 
 ### Color Pack from GitHub Inc.
 
@@ -201,49 +219,67 @@ The following color themes have been ported. Images are W.I.P.
 	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OneLight.png" alt="One Light" title="One Light">
 </p>
 
-### Color Pack from Jani Nurminen, Colin T.A. Gray, William D. Neumann [TODO]
+### Color Pack from Jani Nurminen, Colin T.A. Gray, William D. Neumann
 
 * Original [sources](https://github.com/colinta/zenburn).
 * Licensed under the [BSD 2-clause "Simplified" License](https://github.com/colinta/zenburn/blob/master/LICENSE).
 
+#### Zenburn
 
-> Soon …
+<p>
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/Zenburn.png" alt="Zenburn" title="Zenburn">
+</p>
 
 
-### Color Pack from Adam Christiansen, Merrick Christensen, Trevor D. Miller [TODO]
+### Color Pack from Adam Christiansen, Merrick Christensen, Trevor D. Miller
 
 * Original [sources](https://trevordmiller.com/projects/nova).
 * Licensed under the [MIT License](https://github.com/trevordmiller/nova-colors/blob/master/LICENSE).
 
 
-> Soon …
+#### Nova
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/Nova.png" alt="Nova" title="Nova">
+</p>
 
 
-### Color Pack from Arctic Ice Studio [TODO]
+### Color Pack from Arctic Ice Studio
 
 * Original [sources](https://github.com/arcticicestudio/nord).
 * Licensed under the [Apache License](https://github.com/arcticicestudio/nord/blob/develop/LICENSE.md).
 
 
-> Soon…
+#### Nord
+
+<p>
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/Nord.png" alt="Nord" title="Nord">
+</p>
 
 
-### Color Pack from Chris Thomas [TODO]
+### Color Pack from Chris Thomas
 
 * Original [sources](https://github.com/textmate/themes.tmbundle/blob/master/Themes/Espresso%20Libre.tmTheme).
 * Licensed under the [Permissive License](https://github.com/textmate/themes.tmbundle/blob/master/README.mdown).
 
 
-> Soon…
+#### Espresso Libre
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/EspressoLibre.png" alt="Espresso Libre" title="Espresso Libre">
+</p>
 
 
-### Color Pack from Ian Hill [TODO]
+### Color Pack from Ian Hill
 
 * Original [sources](https://github.com/buymeasoda/soda-theme).
 * Licensed under the [Creative Commons Attribution-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-sa/3.0/).
 
+#### Espresso Soda
 
-> Soon…
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/EspressoSoda.png" alt="Espresso Soda" title="Espresso Soda">
+</p>
 
 
 ### Color Pack from Ike Ku [TODO]
@@ -252,11 +288,29 @@ The following color themes have been ported. Images are W.I.P.
 * Licensed under the [MIT License](https://github.com/dempfi/ayu/blob/master/LICENSE).
 
 
-> Soon…
+#### Ayu Dark
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/AyuDark.png" alt="Ayu Dark" title="Ayu Dark">
+</p>
+
+
+#### Ayu Light
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/AyuLight.png" alt="Ayu Light" title="Ayu Light">
+</p>
+
+
+#### Ayu Mirage
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/AyuMirage.png" alt="Ayu Mirage" title="Ayu Mirage">
+</p>
 
 ## Development
 
-> Help porting the themes from sublime da cs.
+> Help porting popular tmThemes to vscode.
 
 The development is made easy with some custom scripts. First fork and clone the
 repo and run
