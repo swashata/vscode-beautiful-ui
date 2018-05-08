@@ -122,7 +122,9 @@ The following color themes have been ported. Images are W.I.P.
 
 #### Oceanic Next
 
-> Soon…
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/OceanicNext.png" alt="OceanicNext" title="OceanicNext">
+</p>
 
 ### Color Pack from Wimer Hazenberg [TODO]
 
@@ -131,7 +133,46 @@ The following color themes have been ported. Images are W.I.P.
 * You can show your appreciation to Wimer via buying [Monokai Pro](https://www.monokai.pro/sublime-text/).
 
 
-> Soon…
+#### Monokai Classic
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiClassic.png" alt="Monokai Classic" title="Monokai Classic">
+</p>
+
+
+#### Monokai Machine
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiMachine.png" alt="Monokai Machine" title="Monokai Machine">
+</p>
+
+
+#### Monokai Octagon
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiOctagon.png" alt="Monokai Octagon" title="Monokai Octagon">
+</p>
+
+
+#### Monokai Pro
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiPro.png" alt="Monokai Pro" title="Monokai Pro">
+</p>
+
+
+#### Monokai Ristretto
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiRistretto.png" alt="Monokai Ristretto" title="Monokai Ristretto">
+</p>
+
+
+#### Monokai Spectrum
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MonokaiSpectrum.png" alt="Monokai Spectrum" title="Monokai Spectrum">
+</p>
 
 
 ### Color Pack from Mattia Astorino [TODO]
