@@ -24,4 +24,5 @@ module.exports = {
 	Nova: require('./schemes/Nova'),
 	Nord: require('./schemes/Nord'),
 	'Espresso Libre': require('./schemes/EspressoLibre'),
+	'Espresso Soda': require('./schemes/EspressoSoda'),
 };

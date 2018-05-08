@@ -152,6 +152,11 @@
                 "label": "βui - Espresso Libre",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Espresso Libre-color-theme.json"
+            },
+            {
+                "label": "βui - Espresso Soda",
+                "uiTheme": "vs",
+                "path": "./themes/Espresso Soda-color-theme.json"
             }
         ]
     },
