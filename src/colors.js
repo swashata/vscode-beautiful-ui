@@ -25,4 +25,7 @@ module.exports = {
 	Nord: require('./schemes/Nord'),
 	'Espresso Libre': require('./schemes/EspressoLibre'),
 	'Espresso Soda': require('./schemes/EspressoSoda'),
+	'Ayu Dark': require('./schemes/AyuDark'),
+	'Ayu Light': require('./schemes/AyuLight'),
+	'Ayu Mirage': require('./schemes/AyuMirage'),
 };
