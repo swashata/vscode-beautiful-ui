@@ -7,4 +7,5 @@ module.exports = {
 	],
 	collectCoverage: true,
 	testPathIgnorePatterns: ['/node_modules/', '.eslintrc'],
+	testMatch: ['**/__tests__/**/*.js?(x)'],
 };
