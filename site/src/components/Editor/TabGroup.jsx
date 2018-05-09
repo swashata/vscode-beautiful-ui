@@ -26,7 +26,7 @@ const styles = theme => ({
 				borderColor:
 					theme.type === 'dark'
 						? theme.bgLightest()
-						: theme.bgDarkest(),
+						: theme.bgPrimary(),
 				borderBottomColor: theme.bgAccentDarker(),
 			},
 		},

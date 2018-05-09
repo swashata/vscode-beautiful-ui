@@ -103,6 +103,7 @@ class Demo extends React.PureComponent {
 							/>
 							<AceEditor
 								mode={modeMap[this.state.mode]}
+								className={this.state.mode}
 								value={this.state.data[this.state.mode]}
 								theme={this.state.scheme}
 								onChange={this.handleChange}
@@ -118,7 +119,7 @@ class Demo extends React.PureComponent {
 									highlightActiveLine: true,
 									useWorker: false,
 								}}
-								height="calc(100% - 48px)"
+								height="calc(100% - 40px)"
 								width="100%"
 							/>
 						</div>

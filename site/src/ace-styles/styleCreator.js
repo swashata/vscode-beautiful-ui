@@ -131,6 +131,18 @@ const styleCreator = (name, colors) => {
 			color: colors.tokens.string,
 			'font-style': 'normal',
 		},
+		'string.blockquote': {
+			color: colors.tokens.blockquote.foreground,
+			'font-style': 'italic',
+		},
+		'string.emphasis': {
+			color: colors.tokens.color6,
+			'font-style': 'italic',
+		},
+		'string.strong': {
+			color: colors.tokens.color6,
+			'font-weight': 'bold',
+		},
 
 		comment: {
 			color: colors.tokens.comment,
@@ -196,8 +208,12 @@ const styleCreator = (name, colors) => {
 		},
 
 		'markup.heading': {
-			color: colors.tokens.string,
+			color: colors.tokens.color2,
 			'font-style': 'normal',
+		},
+		'markup.underline': {
+			color: colors.tokens.link,
+			'text-decoration': 'underline',
 		},
 	};
 	return `
@@ -272,7 +288,7 @@ const styleCreator = (name, colors) => {
 	}
 	${Object.keys(supportedScope).reduce((prev, key) => {
 		const newStyles = supportedScope[key];
-		const selector = `.ace_${key.split('.').join('.ace_')}`;
+		const selector = `.ace-${name} .ace_${key.split('.').join('.ace_')}`;
 		const properties = Object.keys(newStyles).reduce(
 			(p, k) => `${p}${k}:${newStyles[k]};`,
 			''
@@ -280,6 +296,20 @@ const styleCreator = (name, colors) => {
 		// console.log(key, newStyles);
 		return `${prev}${selector}{${properties}}`;
 	}, '')}
+	.ace-${name}.css .ace_support.ace_type {
+		color: ${colors.tokens.color4};
+	}
+	.ace-${name}.css .ace_variable {
+		color: ${colors.tokens.color6};
+	}
+	.ace-${name}.css .ace_keyword {
+		color: ${colors.tokens.color5};
+	}
+	.ace-${name}.css .ace_variable + .ace_string,
+	.ace-${name}.css .ace_keyword + .ace_string {
+		color: ${colors.tokens.color8};
+		font-style: italic;
+	}
 	.ace-${name} .ace_indent-guide {
 		color: ${colors.tokens.guide.indent};
 		position: relative;

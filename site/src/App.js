@@ -25,6 +25,46 @@ class App extends Component {
 				<div className="App-demo">
 					<Editor />
 				</div>
+				<div className="App-guide">
+					<p className="disclaimer">
+						Syntax highlighting differs (degrades) a little from the
+						original implementation due to limitations of{' '}
+						<a href="https://ace.c9.io/">ace editor</a>.
+					</p>
+					<p className="links">
+						<a
+							href="https://marketplace.visualstudio.com/items?itemName=swashata.beautiful-ui"
+							className="vscode"
+						>
+							Install
+						</a>
+						<a
+							href="https://github.com/swashata/vscode-beautiful-ui#vscode-beautiful-ui---color-themes"
+							className="github"
+						>
+							GitHub
+						</a>
+						<a href="https://eform.live" className="eform">
+							(Ad) Check eForm
+						</a>
+					</p>
+				</div>
+				<div className="App-footer">
+					<p className="copyright">
+						Made with ❤️ by{' '}
+						<a href="https://swashata.me">Swashata Ghosh</a> and
+						licensed under MIT. Used{' '}
+						<a href="https://code.visualstudio.com/">VSCode</a>,{' '}
+						<a href="https://reactjs.org/">React</a>,{' '}
+						<a href="https://github.com/cssinjs/react-jss">
+							React JSS
+						</a>,{' '}
+						<a href="https://github.com/securingsincity/react-ace">
+							React ace
+						</a>, <a href="https://github.com/Qix-/color">color</a>{' '}
+						etc.
+					</p>
+				</div>
 			</div>
 		);
 	}

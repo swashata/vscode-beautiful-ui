@@ -1,8 +1,7 @@
 .bui-vsc-tabgroup {
 	display: flex;
 	flex-flow: row nowrap;
-	border-bottom: 1px solid;
-	height: 48px;
+	height: 40px;
 	width: 100%;
 	overflow-y: auto;
 }
@@ -12,5 +11,6 @@
 	cursor: pointer;
 	padding: 0 16px;
 	font-size: 14px;
-	line-height: 46px;
+	line-height: 38px;
+	margin: -1px -1px 0;
 }

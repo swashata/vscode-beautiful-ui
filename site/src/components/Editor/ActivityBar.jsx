@@ -9,10 +9,7 @@ const styles = theme => ({
 		borderColor:
 			theme.type === 'dark' ? theme.bgLightest() : theme.bgDarker(),
 		'& .bui-vsc-activitybar__items li': {
-			color:
-				theme.type === 'dark'
-					? theme.textLighter()
-					: theme.textDarker(),
+			color: theme.textFaded(),
 			'&.active': {
 				color:
 					theme.type === 'dark'
