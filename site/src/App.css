@@ -1,28 +1,71 @@
-.App {
-  text-align: center;
+@import '../node_modules/normalize.css/normalize.css';
+
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-size: 16px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #82a3bf;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.App {
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+	padding: 20px 48px;
+	background: #1d1f20;
+	color: #c5c9c6;
+	text-align: center;
+	margin: 0 0 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.App-logo {
+	display: block;
+	width: 128px;
+	height: auto;
+	margin: 0;
+}
+
+.App-desc {
+	margin: 0 32px;
+	min-width: 280px;
 }
 
 .App-title {
-  font-size: 1.5em;
+	font-size: 24px;
+	font-weight: normal;
+	background: -webkit-linear-gradient(45deg, #b4bc67, #f0c775, #cc6666, #b295bb, #82a3bf, #e9b36d, #de935e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.App-intro {
-  font-size: large;
+@media screen and (min-width: 1028px) {
+	.App-logo {
+		width: 256px;
+	}
+	.App-desc {
+		min-width: 400px;
+	}
+	.App-title {
+		font-size: 48px;
+	}
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-demo {
+	margin: 0 64px 32px;
 }

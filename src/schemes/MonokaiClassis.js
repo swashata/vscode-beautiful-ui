@@ -9,7 +9,7 @@ const Color = require('color');
  */
 const Template = {
 	author: 'Wimer Hazenberg, Ihor Oleksandrov, Swashata Ghosh',
-	name: 'Template',
+	name: 'Monokai Classic',
 	type: 'dark', // dark, or light
 	workspace: {
 		background: Color('#272821')

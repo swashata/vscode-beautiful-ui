@@ -1,0 +1,30 @@
+.bui-vsc-activitybar {
+	border-right: 1px solid;
+	width: 50px;
+}
+.bui-vsc-activitybar .bui-vsc-activitybar__items {
+	display: flex;
+	flex-flow: column wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.bui-vsc-activitybar .bui-vsc-activitybar__items li {
+	list-style: none;
+	width: 50px;
+	height: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	fill: currentColor;
+}
+
+.bui-vsc-activitybar .bui-vsc-activitybar__items li svg {
+	width: 28px;
+	height: 28px;
+}
+
+.bui-vsc-activitybar .bui-vsc-activitybar__items li.settings {
+	margin-top: auto;
+}

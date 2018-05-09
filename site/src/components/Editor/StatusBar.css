@@ -1,0 +1,27 @@
+.bui-vsc-statusbar {
+	display: flex;
+	height: 24px;
+	flex-flow: row nowrap;
+	padding: 0 16px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 0 4px 4px;
+	font-size: 10px;
+	border-top: 1px solid;
+}
+
+.bui-vsc-statusbar svg {
+	vertical-align: middle;
+	display: inline;
+	height: 14px;
+	width: 14px;
+	fill: currentColor;
+}
+
+.bui-vsc-statusbar__git {
+	margin-right: auto;
+}
+
+.bui-vsc-statusbar__lang {
+	margin-left: auto;
+}

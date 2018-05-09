@@ -1,0 +1,25 @@
+.bui-vsc-sidebar {
+	width: 20%;
+	overflow: auto;
+	border-right: 1px solid;
+}
+
+.bui-vsc-sidebar__title {
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0;
+	padding: 4px 8px;
+}
+
+.bui-vsc-sidebar__list {
+	margin: 8px 0;
+	padding: 0;
+	list-style: none;
+	max-height: 300px;
+	overflow: auto;
+	font-size: 11px;
+}
+.bui-vsc-sidebar__list li {
+	cursor: pointer;
+	padding: 4px 16px;
+}
