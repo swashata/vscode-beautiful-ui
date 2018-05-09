@@ -20,5 +20,6 @@
   "devDependencies": {
     "eslint-config-prettier": "^2.9.0",
     "prettier": "^1.12.1"
-  }
+  },
+  "homepage": "https://vscbui.rocks"
 }
