@@ -7,9 +7,11 @@ site/**
 node_modules/**
 .gitignore
 script/**
+site/**
 src/**
 .eslintrc.js
 .prettierrc.json
+.nojekyll
 docs/**
 package-lock.json
 yarn.lock

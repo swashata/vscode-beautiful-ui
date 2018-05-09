@@ -5,7 +5,9 @@
 --------------------------------------
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/bui-logo-medium.png" />
+	<a href="https://vscbui.rocks/">
+		<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/bui-logo-medium.png" />
+	</a>
 </p>
 
 A collection of [VSCode](https://code.visualstudio.com/) themes inspired from
