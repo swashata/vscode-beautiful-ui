@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
 	<meta property="og:title" content="βui - Beautiful UI for VSCode">
 	<meta property="og:site_name" content="βui">
@@ -11,11 +11,11 @@
 	<meta name="description" content="A collection of awesome VSCode themes inspired from the awesome Sublime DA CS. Includes Tomorrow, Solarized, One, Espresso, Monokai and various other color themes with workspace modifications.">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="%PUBLIC_URL%/image.png">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/favicon/apple-icon-57x57.png">
+	<!--
+		manifest.json provides metadata used when your web app is added to the
+		homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+	-->
+	<link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/favicon/apple-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/favicon/apple-icon-76x76.png">
@@ -35,22 +35,77 @@
 
 	<link rel="stylesheet" href="https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css">
 
-    <title>Beautiful UI - Awesome VSCode Theme</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+	<title>Beautiful UI - Awesome VSCode Theme</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+	<style>
+		#disqus_thread {
+			margin: 32px auto;
+			max-width: 900px;
+			padding: 0 30px;
+		}
+	</style>
+</head>
+<body>
+	<noscript>
+		You need to enable JavaScript to run this app.
+	</noscript>
+	<div id="root"></div>
+	<div id="disqus_thread"></div>
+	<script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+	/**
+	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+	var disqus_config = function () {
+	this.page.url = 'https://vscbui.rocks';  // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = 'home'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = 'https://vscbui.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	<div class="App-footer">
+		<p class="copyright">
+			Made with ❤️ by
+			<a href="https://swashata.me">Swashata Ghosh</a> and
+			licensed under MIT. Used
+			<a href="https://code.visualstudio.com/">VSCode</a>,
+			<a href="https://reactjs.org/">React</a>,
+			<a href="https://github.com/cssinjs/react-jss">
+				React JSS
+			</a>,
+			<a href="https://github.com/securingsincity/react-ace">
+				React ace
+			</a>, <a href="https://github.com/Qix-/color">color</a>
+			etc.
+		</p>
+	</div>
+	<!--
+		This HTML file is a template.
+		If you open it directly in the browser, you will see an empty page.
+
+		You can add webfonts, meta tags, or analytics to this file.
+		The build step will place the bundled scripts into the <body> tag.
+
+			To begin the development, run `npm start` or `yarn start`.
+			To create a production bundle, use `npm run build` or `yarn build`.
+		-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81510319-7"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-81510319-7');
+		</script>
+
+	</body>
+	</html>
