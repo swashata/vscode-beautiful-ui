@@ -19,25 +19,23 @@
     },
     "categories": [
         "Themes"
-	],
-	"keywords": [
-		"Light Theme", "Dark Theme", "Tomorrow", "One", "Ayu"
-	],
-	"badges": [
-		{
-			"url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
-			"href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
-			"description": "Travis Build Status"
-		},
-		{
-			"url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
-			"href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
-			"description": "Code Coverage"
-		}
-	],
+    ],
+    "keywords": [
+        "Light Theme", "Dark Theme", "Tomorrow", "One", "Ayu"
+    ],
+    "badges": [{
+            "url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
+            "href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
+            "description": "Travis Build Status"
+        },
+        {
+            "url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
+            "href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
+            "description": "Code Coverage"
+        }
+    ],
     "contributes": {
-        "themes": [
-            {
+        "themes": [{
                 "label": "βui - Tomorrow Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Tomorrow Dark-color-theme.json"
@@ -163,6 +161,11 @@
                 "path": "./themes/Ayu Dark-color-theme.json"
             },
             {
+                "label": "βui - Ayu Dark Orange",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Ayu Dark Orange-color-theme.json"
+            },
+            {
                 "label": "βui - Ayu Light",
                 "uiTheme": "vs",
                 "path": "./themes/Ayu Light-color-theme.json"
@@ -192,7 +195,7 @@
         "vsce": "^1.40.0"
     },
     "scripts": {
-		"test": "jest --color",
+        "test": "jest --color",
         "build": "node ./script/generateTheme.js",
         "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
         "vscode:prepublish": "yarn build",
