@@ -88,7 +88,7 @@ module.exports = {
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-groups-tabs
 		'editorGroup.background': '<%= bgLightest() %>',
 		'editorGroup.border': '<%= bgLighter() %>',
-		'editorGroup.dropBackground': '<%= bgLighter() %>',
+		'editorGroup.dropBackground': '<%= bgFaded() %>',
 		'editorGroupHeader.noTabsBackground': '<%= bgDarker() %>',
 		'editorGroupHeader.tabsBackground': '<%= bgDarker() %>',
 		'editorGroupHeader.tabsBorder': '<%= bgLightest() %>',
@@ -163,9 +163,9 @@ module.exports = {
 
 		// Editor Widget Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-widget-colors
-		'editorWidget.background': '<%= bgDarker() %>',
+		'editorWidget.background': '<%= bgPrimary() %>',
 		'editorWidget.border': '<%= bgDarkest() %>',
-		'editorHoverWidget.background': '<%= bgHover() %>',
+		'editorHoverWidget.background': '<%= bgLighter() %>',
 		'editorSuggestWidget.background': '<%= bgPrimary() %>',
 		'editorSuggestWidget.border': '<%= bgPrimary() %>',
 		'editorSuggestWidget.foreground': '<%= textPrimary() %>',
@@ -173,8 +173,8 @@ module.exports = {
 		'debugExceptionWidget.background': '<%= bgInvalid() %>',
 		'debugExceptionWidget.border': '<%= bgInvalid() %>',
 		'editorMarkerNavigation.background': '<%= bgPrimary() %>',
-		'editorMarkerNavigationError.background': '<%= bgInvalid() %>',
-		'editorMarkerNavigationWarning.background': '<%= bgWarning() %>',
+		'editorMarkerNavigationError.background': '<%= gutterDeleted() %>',
+		'editorMarkerNavigationWarning.background': '<%= gutterModified() %>',
 
 		// Peek View Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_peek-view-colors
@@ -216,7 +216,7 @@ module.exports = {
 		// Status Bar Colors
 		// https: //code.visualstudio.com/docs/getstarted/theme-color-reference#_status-bar-colors
 		'statusBar.background': '<%= bgDarkest() %>',
-		'statusBar.foreground': '<%= textLightest() %>',
+		'statusBar.foreground': '<%= textStatusbar() %>',
 		'statusBar.debuggingBackground': '<%= bgAccent() %>',
 		'statusBar.debuggingForeground': '<%= textAccent() %>',
 		'statusBar.noFolderBackground': '<%= bgLightest() %>',
@@ -293,7 +293,7 @@ module.exports = {
 		'gitDecoration.modifiedResourceForeground': '<%= textInfo() %>',
 		'gitDecoration.deletedResourceForeground': '<%= textInvalid() %>',
 		'gitDecoration.untrackedResourceForeground': '<%= textSuccess() %>',
-		'gitDecoration.ignoredResourceForeground': '<%= textLighter() %>',
-		'gitDecoration.conflictingResourceForeground': '<%= textInvalid() %>',
+		'gitDecoration.ignoredResourceForeground': '<%= textFaded() %>',
+		'gitDecoration.conflictingResourceForeground': '<%= textWarning() %>',
 	},
 };

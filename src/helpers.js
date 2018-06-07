@@ -5,10 +5,16 @@ const Color = require('color');
  * @param {Number} alpha Alpha value.
  * @returns {String} hex representation of the alpha, padded with 0 if needed
  */
-const convertAlpha = alpha =>
-	parseInt(alpha, 10)
+const convertAlpha = num => {
+	const percentage = Math.round(num) / 100;
+	const alpha = Math.round(percentage * 255);
+	const hex = (alpha + 0x10000)
 		.toString(16)
-		.padStart(2, '0');
+		.substr(-2)
+		.toLowerCase();
+	return hex;
+};
+const addAlpha = (hex, alpha) => `${hex}${convertAlpha(alpha)}`;
 
 /**
  * Different shades of colors to use with schemes
@@ -78,10 +84,10 @@ const modifiers = {
 			.hex();
 	},
 	bgFaded() {
-		return `${this.workspace.background}${convertAlpha(40)}`;
+		return addAlpha(this.workspace.background, 80);
 	},
 	textFaded() {
-		return `${this.workspace.foreground}${convertAlpha(40)}`;
+		return addAlpha(this.workspace.foreground, 65);
 	},
 	// Background with accent color
 	bgAccent() {
@@ -103,20 +109,15 @@ const modifiers = {
 			.hex();
 	},
 	textAccent() {
-		return '#ffffff';
+		return Color(this.bgAccent()).isDark()
+			? addAlpha('#ffffff', 90)
+			: addAlpha('#000000', 90);
 	},
 	// Background for hover
 	bgHover() {
-		if (this.type === 'dark') {
-			return Color(this.workspace.background)
-				.hsl()
-				.lighten(0.3)
-				.hex();
-		}
-		return Color(this.workspace.background)
-			.hsl()
-			.darken(0.02)
-			.hex();
+		return this.type === 'dark'
+			? addAlpha('#ffffff', 10)
+			: addAlpha('#000000', 5);
 	},
 	textHover() {
 		if (this.type === 'dark') {
@@ -132,16 +133,9 @@ const modifiers = {
 	},
 	// Background for Focus
 	bgFocus() {
-		if (this.type === 'dark') {
-			return Color(this.workspace.background)
-				.hsl()
-				.lighten(0.5)
-				.hex();
-		}
-		return Color(this.workspace.background)
-			.hsl()
-			.darken(0.06)
-			.hex();
+		return this.type === 'dark'
+			? addAlpha('#ffffff', 20)
+			: addAlpha('#000000', 15);
 	},
 	textFocus() {
 		if (this.type === 'dark') {
@@ -157,16 +151,9 @@ const modifiers = {
 	},
 	// Background for active area
 	bgActive() {
-		if (this.type === 'dark') {
-			return Color(this.workspace.background)
-				.hsl()
-				.lighten(0.65)
-				.hex();
-		}
-		return Color(this.workspace.background)
-			.hsl()
-			.darken(0.08)
-			.hex();
+		return this.type === 'dark'
+			? addAlpha('#ffffff', 15)
+			: addAlpha('#000000', 10);
 	},
 	textActive() {
 		if (this.type === 'dark') {
@@ -182,16 +169,9 @@ const modifiers = {
 	},
 	// Background for active area of inactive widget/tab
 	bgActivePassive() {
-		if (this.type === 'dark') {
-			return Color(this.workspace.background)
-				.hsl()
-				.lighten(0.5)
-				.hex();
-		}
-		return Color(this.workspace.background)
-			.hsl()
-			.darken(0.04)
-			.hex();
+		return this.type === 'dark'
+			? addAlpha('#ffffff', 13)
+			: addAlpha('#000000', 8);
 	},
 	textActivePassive() {
 		if (this.type === 'dark') {
@@ -207,16 +187,9 @@ const modifiers = {
 	},
 	// Background for inActiveFocus
 	bgInActiveFocus() {
-		if (this.type === 'dark') {
-			return Color(this.workspace.accent)
-				.hsl()
-				.lighten(0.3)
-				.hex();
-		}
-		return Color(this.workspace.accent)
-			.hsl()
-			.darken(0.02)
-			.hex();
+		return this.type === 'dark'
+			? addAlpha('#ffffff', 12)
+			: addAlpha('#000000', 7);
 	},
 	textInActive() {
 		if (this.type === 'dark') {
@@ -238,13 +211,14 @@ const modifiers = {
 			.hex();
 	},
 	bgInvalidFaded() {
-		return `${this.bgInvalid()}${convertAlpha(40)}`;
+		return addAlpha(this.bgInvalid(), 10);
 	},
 	textInvalid() {
-		return Color(this.workspace.redish)
-			.hsl()
-			.lighten(0.05)
-			.hex();
+		const color = Color(this.workspace.redish).hsl();
+		if (this.type === 'dark') {
+			return color.lighten(0.05).hex();
+		}
+		return color.darken(0.1).hex();
 	},
 	// Info background & text - Bluish
 	bgInfo() {
@@ -254,13 +228,14 @@ const modifiers = {
 			.hex();
 	},
 	bgInfoFaded() {
-		return `${this.bgInfo()}${convertAlpha(40)}`;
+		return addAlpha(this.bgInfo(), 10);
 	},
 	textInfo() {
-		return Color(this.workspace.bluish)
-			.hsl()
-			.lighten(0.05)
-			.hex();
+		const color = Color(this.workspace.bluish).hsl();
+		if (this.type === 'dark') {
+			return color.lighten(0.05).hex();
+		}
+		return color.darken(0.3).hex();
 	},
 	// Warning background & text - Yellowish
 	bgWarning() {
@@ -270,13 +245,14 @@ const modifiers = {
 			.hex();
 	},
 	bgWarningFaded() {
-		return `${this.bgWarning()}${convertAlpha(40)}`;
+		return addAlpha(this.bgWarning(), 10);
 	},
 	textWarning() {
-		return Color(this.workspace.yellowish)
-			.hsl()
-			.lighten(0.05)
-			.hex();
+		const color = Color(this.workspace.yellowish).hsl();
+		if (this.type === 'dark') {
+			return color.lighten(0.05).hex();
+		}
+		return color.darken(0.3).hex();
 	},
 	// Success background & text - Greenish
 	bgSuccess() {
@@ -286,13 +262,14 @@ const modifiers = {
 			.hex();
 	},
 	bgSuccessFaded() {
-		return `${this.bgSuccess()}${convertAlpha(40)}`;
+		return addAlpha(this.bgSuccess(), 10);
 	},
 	textSuccess() {
-		return Color(this.workspace.greenish)
-			.hsl()
-			.lighten(0.05)
-			.hex();
+		const color = Color(this.workspace.greenish).hsl();
+		if (this.type === 'dark') {
+			return color.lighten(0.05).hex();
+		}
+		return color.darken(0.3).hex();
 	},
 	// Shadow
 	shadow() {
@@ -309,27 +286,33 @@ const modifiers = {
 	},
 	// Scrollbar - transparency
 	scrollbarBg() {
-		return `${this.workspace.foreground}${convertAlpha(40)}`;
+		return addAlpha(this.workspace.foreground, 10);
 	},
 	scrollbarHover() {
-		return `${this.workspace.foreground}${convertAlpha(50)}`;
+		return addAlpha(this.workspace.foreground, 20);
 	},
 	scrollbarActive() {
-		return `${this.workspace.foreground}${convertAlpha(60)}`;
+		return addAlpha(this.workspace.foreground, 30);
 	},
 	// Git Gutter - Transparency
 	gutterAdded() {
-		return `${this.workspace.greenish}${convertAlpha(90)}`;
+		return addAlpha(this.workspace.greenish, 70);
 	},
 	gutterDeleted() {
-		return `${this.workspace.redish}${convertAlpha(90)}`;
+		return addAlpha(this.workspace.redish, 70);
 	},
 	gutterModified() {
-		return `${this.workspace.yellowish}${convertAlpha(90)}`;
+		return addAlpha(this.workspace.yellowish, 70);
 	},
 	// Selections
 	bgSelection() {
-		return `${this.workspace.bluish}${convertAlpha(40)}`;
+		return addAlpha(this.workspace.bluish, 70);
+	},
+	// Status bar Text Color
+	textStatusbar() {
+		return this.type === 'dark'
+			? `#ffffff${convertAlpha(80)}`
+			: `#000000${convertAlpha(80)}`;
 	},
 };
 

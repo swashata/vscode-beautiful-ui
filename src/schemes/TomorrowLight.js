@@ -83,7 +83,7 @@ const TomorrowLight = {
 		comment: '#959795', // comment, punctuation.definition.comment
 		string: Color('#b4bc67')
 			.hsl()
-			.darken(0.2)
+			.darken(0.4)
 			.hex(),
 		color1: Color('#f0c775')
 			.hsl()

@@ -77,7 +77,7 @@ module.exports = {
 
 		// Side Bar
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_side-bar
-		'sideBar.background': '<%= bgLighter() %>',
+		'sideBar.background': '<%= bgLightest() %>',
 		'sideBar.foreground': '<%= textPrimary() %>',
 		'sideBar.border': '<%= bgPrimary() %>',
 		'sideBarTitle.foreground': '<%= textLighter() %>',
@@ -88,7 +88,7 @@ module.exports = {
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-groups-tabs
 		'editorGroup.background': '<%= bgLightest() %>',
 		'editorGroup.border': '<%= bgLighter() %>',
-		'editorGroup.dropBackground': '<%= bgLighter() %>',
+		'editorGroup.dropBackground': '<%= bgFaded() %>',
 		'editorGroupHeader.noTabsBackground': '<%= bgDarker() %>',
 		'editorGroupHeader.tabsBackground': '<%= bgDarker() %>',
 		'editorGroupHeader.tabsBorder': '<%= bgLightest() %>',
@@ -165,7 +165,7 @@ module.exports = {
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-widget-colors
 		'editorWidget.background': '<%= bgPrimary() %>',
 		'editorWidget.border': '<%= bgDarker() %>',
-		'editorHoverWidget.background': '<%= bgHover() %>',
+		'editorHoverWidget.background': '<%= bgLighter() %>',
 		'editorSuggestWidget.background': '<%= bgPrimary() %>',
 		'editorSuggestWidget.border': '<%= bgDarker() %>',
 		'editorSuggestWidget.foreground': '<%= textPrimary() %>',
@@ -173,8 +173,8 @@ module.exports = {
 		'debugExceptionWidget.background': '<%= bgInvalid() %>',
 		'debugExceptionWidget.border': '<%= bgInvalid() %>',
 		'editorMarkerNavigation.background': '<%= bgPrimary() %>',
-		'editorMarkerNavigationError.background': '<%= bgInvalid() %>',
-		'editorMarkerNavigationWarning.background': '<%= bgWarning() %>',
+		'editorMarkerNavigationError.background': '<%= gutterDeleted() %>',
+		'editorMarkerNavigationWarning.background': '<%= gutterModified() %>',
 
 		// Peek View Colors
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_peek-view-colors
@@ -207,7 +207,7 @@ module.exports = {
 
 		// Panel Colors
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_panel-colors
-		'panel.background': '<%= bgPrimary() %>',
+		'panel.background': '<%= bgLightest() %>',
 		'panel.border': '<%= bgDarkest() %>',
 		'panelTitle.activeBorder': '<%= bgAccentDarker() %>',
 		'panelTitle.activeForeground': '<%= textDarkest() %>',
@@ -216,7 +216,7 @@ module.exports = {
 		// Status Bar Colors
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_status-bar-colors
 		'statusBar.background': '<%= bgPrimary() %>',
-		'statusBar.foreground': '<%= textLightest() %>',
+		'statusBar.foreground': '<%= textStatusbar() %>',
 		'statusBar.debuggingBackground': '<%= bgAccent() %>',
 		'statusBar.debuggingForeground': '<%= textAccent() %>',
 		'statusBar.noFolderBackground': '<%= bgPrimary() %>',
@@ -293,7 +293,7 @@ module.exports = {
 		'gitDecoration.modifiedResourceForeground': '<%= textInfo() %>',
 		'gitDecoration.deletedResourceForeground': '<%= textInvalid() %>',
 		'gitDecoration.untrackedResourceForeground': '<%= textSuccess() %>',
-		'gitDecoration.ignoredResourceForeground': '<%= textLighter() %>',
+		'gitDecoration.ignoredResourceForeground': '<%= textFaded() %>',
 		'gitDecoration.conflictingResourceForeground': '<%= textInvalid() %>',
 	},
 };
