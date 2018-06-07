@@ -9,7 +9,7 @@ const Color = require('color');
  */
 const TomorrowDark = {
 	author: 'Chris Kempson, Ihor Oleksandrov, Swashata Ghosh',
-	name: 'Tomorrow Sublime',
+	name: 'Tomorrow Subliminal',
 	type: 'dark', // dark, or light
 	workspace: {
 		background: Color('#282c35')

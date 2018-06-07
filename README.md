@@ -131,6 +131,12 @@ The following color themes have been ported.
 	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowNight.png" alt="Tomorrow Dark" title="Tomorrow Dark">
 </p>
 
+#### Tomorrow Subliminal
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/TomorrowSubliminal.png" alt="Tomorrow Subliminal" title="Tomorrow Subliminal">
+</p>
+
 #### Tomorrow Light
 
 <p align="center">
@@ -418,6 +424,6 @@ Then submit a PR.
 * Import and add the theme in `src/colors.js`.
 * Build and test.
 
-<p align="center">
-**Enjoy**
-</p>
+<h1 align="center">
+👨‍🎨
+</h1>

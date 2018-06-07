@@ -15,7 +15,7 @@ class App extends Component {
 							βui - Beautiful UI for VSCode.
 						</h1>
 						<p className="App-intro">
-							βui is a set of 27 themes ported from{' '}
+							βui is a set of 32 themes ported from{' '}
 							<a href="https://github.com/ihodev/sublime-da-cs">
 								Sublime DA CS
 							</a>.

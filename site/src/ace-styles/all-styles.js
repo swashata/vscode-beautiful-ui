@@ -1,9 +1,11 @@
 // Ace
+/* eslint-disable import/no-extraneous-dependencies */
 import ace from 'brace';
 // Style creator
 import styleCreator from './styleCreator';
 // Schemes
 import TomorrowDark from './schemes/TomorrowDark';
+import TomorrowSubliminal from './schemes/TomorrowSubliminal';
 import TomorrowLight from './schemes/TomorrowLight';
 import OneDark from './schemes/OneDark';
 import OneLight from './schemes/OneLight';
@@ -30,12 +32,17 @@ import EspressoSoda from './schemes/EspressoSoda';
 import AyuDark from './schemes/AyuDark';
 import AyuLight from './schemes/AyuLight';
 import AyuMirage from './schemes/AyuMirage';
+import MinimalBlue from './schemes/MinimalBlue';
+import MinimalGreen from './schemes/MinimalGreen';
+import MinimalYellow from './schemes/MinimalYellow';
+import MinimalPurple from './schemes/MinimalPurple';
 
 // helpers
 import methods from './helpers';
 
 const importedStyles = {
 	TomorrowDark,
+	TomorrowSubliminal,
 	TomorrowLight,
 	OneDark,
 	OneLight,
@@ -62,6 +69,10 @@ const importedStyles = {
 	AyuDark,
 	AyuLight,
 	AyuMirage,
+	MinimalBlue,
+	MinimalGreen,
+	MinimalYellow,
+	MinimalPurple,
 };
 
 // Loop over and define
