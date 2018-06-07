@@ -323,7 +323,7 @@ The following color themes have been ported.
 </p>
 
 
-### Color Pack from Ike Ku [TODO]
+### Color Pack from Ike Ku
 
 * Original [sources](https://github.com/dempfi/ayu).
 * Licensed under the [MIT License](https://github.com/dempfi/ayu/blob/master/LICENSE).
@@ -347,6 +347,37 @@ The following color themes have been ported.
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/AyuMirage.png" alt="Ayu Mirage" title="Ayu Mirage">
+</p>
+
+### Minimal Color Pack
+
+Inspired from Dan Abramov's Subliminal.
+
+* Original [sources](https://github.com/gaearon/subliminal).
+* Licensed under the [MIT License](https://github.com/gaearon/subliminal/blob/master/LICENSE).
+
+#### Minimal Blue
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MinimalBlue.png" alt="Minimal Blue" title="Minimal Blue">
+</p>
+
+#### Minimal Yellow
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MinimalYellow.png" alt="Minimal Yellow" title="Minimal Yellow">
+</p>
+
+#### Minimal Purple
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MinimalPurple.png" alt="Minimal Purple" title="Minimal Purple">
+</p>
+
+#### Minimal Green
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/swashata/vscode-beautiful-ui/master/docs/assets/screenshots/MinimalGreen.png" alt="Minimal Green" title="Minimal Green">
 </p>
 
 ## Development
