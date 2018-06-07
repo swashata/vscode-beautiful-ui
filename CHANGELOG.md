@@ -3,6 +3,10 @@ All notable changes to the "beautiful-ui" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.1] `2018-06-07`
+
+- Update jest snapshots (Oops 🤦‍).
+
 ## [1.2.0] `2018-06-07`
 
 - Fix alpha calculation of color schemes. No more weird alpha output.
