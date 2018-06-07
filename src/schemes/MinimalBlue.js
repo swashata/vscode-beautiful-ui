@@ -4,8 +4,8 @@ const Color = require('color');
 // https://coolors.co/463730-1f5673-759fbc-90c3c8-b9b8d3
 const mainColor = Color('#759FBC').hsl();
 const accentColor = Color('#90C3C8').hsl();
-const foreGround = Color('#d8d8d8').hsl();
-const backGround = Color('#181818').hsl();
+const foreGround = Color('#d4d4d4').hsl();
+const backGround = Color('#282c35').hsl();
 
 /**
  * Tomorrow Dark Color Scheme
