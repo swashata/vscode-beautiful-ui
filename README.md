@@ -10,7 +10,7 @@
 	</a>
 </p>
 
-A collection of [VSCode](https://code.visualstudio.com/) themes inspired from
+A collection of **32** [VSCode](https://code.visualstudio.com/) themes inspired from
 the awesome [Sublime DA CS](https://github.com/ihodev/sublime-da-cs).
 
 I am not at all the original author of the color scheme. This project was born
