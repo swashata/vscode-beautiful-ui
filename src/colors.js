@@ -28,4 +28,8 @@ module.exports = {
 	'Ayu Dark': require('./schemes/AyuDark'),
 	'Ayu Light': require('./schemes/AyuLight'),
 	'Ayu Mirage': require('./schemes/AyuMirage'),
+	'Minimal Blue': require('./schemes/MinimalBlue'),
+	'Minimal Yellow': require('./schemes/MinimalYellow'),
+	'Minimal Green': require('./schemes/MinimalGreen'),
+	'Minimal Purple': require('./schemes/MinimalPurple'),
 };

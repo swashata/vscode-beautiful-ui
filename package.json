@@ -171,6 +171,26 @@
                 "label": "βui - Ayu Mirage",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Ayu Mirage-color-theme.json"
+            },
+            {
+                "label": "βui - Minimal Blue",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Minimal Blue-color-theme.json"
+            },
+            {
+                "label": "βui - Minimal Yellow",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Minimal Yellow-color-theme.json"
+            },
+            {
+                "label": "βui - Minimal Green",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Minimal Green-color-theme.json"
+            },
+            {
+                "label": "βui - Minimal Purple",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Minimal Purple-color-theme.json"
             }
         ]
     },
