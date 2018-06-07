@@ -43,6 +43,11 @@
                 "path": "./themes/Tomorrow Dark-color-theme.json"
             },
             {
+                "label": "βui - Tomorrow Subliminal",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Tomorrow Subliminal-color-theme.json"
+            },
+            {
                 "label": "βui - Tomorrow Light",
                 "uiTheme": "vs",
                 "path": "./themes/Tomorrow Light-color-theme.json"
