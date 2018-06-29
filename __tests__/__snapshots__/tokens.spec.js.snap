@@ -668,6 +668,35 @@ Object {
         "foreground": "<%= textInfo() %>",
       },
     },
+    Object {
+      "name": "PHP Embed Tags",
+      "scope": Array [
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+      },
+    },
+    Object {
+      "name": "PHP namespace, use",
+      "scope": Array [
+        "keyword.other.namespace.php",
+        "keyword.other.use.php",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+      },
+    },
+    Object {
+      "name": "HTML doctype",
+      "scope": Array [
+        "meta.tag.sgml.doctype.html",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+      },
+    },
   ],
 }
 `;
