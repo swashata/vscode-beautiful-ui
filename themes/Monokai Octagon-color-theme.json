@@ -873,6 +873,35 @@
             "settings": {
                 "foreground": "#A8D7C4"
             }
+        },
+        {
+            "name": "PHP Embed Tags",
+            "scope": [
+                "punctuation.section.embedded.begin.php",
+                "punctuation.section.embedded.end.php"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "PHP namespace, use",
+            "scope": [
+                "keyword.other.namespace.php",
+                "keyword.other.use.php"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "HTML doctype",
+            "scope": [
+                "meta.tag.sgml.doctype.html"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
         }
     ]
 }
