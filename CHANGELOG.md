@@ -3,6 +3,12 @@ All notable changes to the "beautiful-ui" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.3.0] `2018-06-29`
+
+- Use opaque color for `overViewRuler`. (#3)
+- Add separator color for `editorGroup`.
+- Improvements for PHP and HTML.
+
 ## [1.2.1] `2018-06-07`
 
 - Update jest snapshots (Oops 🤦‍).
