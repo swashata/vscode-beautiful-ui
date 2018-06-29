@@ -66,6 +66,7 @@ Following extensions/tools are recommended for the color schemes.
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) - For file icons.
 * [WhiteViz](https://marketplace.visualstudio.com/items?itemName=spywhere.whiteviz) - Sublime like whitespace highlight.
 * [FiraCoda](https://github.com/tonsky/FiraCode) - For an awesome font with ligatures.
+* [Dank Mono](https://dank.sh/) - Awesome font for `40.00£`. This is what I am using right now.
 * [Operator Mono](https://www.typography.com/fonts/operator/styles/) - If you can spend `$200` 😉.
 * [Operator Mono Lig](https://github.com/kiliman/operator-mono-lig) - For creating ligatures for operator mono.
 
