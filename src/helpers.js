@@ -295,6 +295,12 @@ const modifiers = {
 		return addAlpha(this.workspace.foreground, 30);
 	},
 	// Git Gutter - Transparency
+	gutterBackground(token) {
+		const bgColor = Color(token);
+		return this.type === 'dark'
+			? bgColor.lighten(0.1).hex()
+			: bgColor.darken(0.03).hex();
+	},
 	gutterAdded() {
 		return addAlpha(this.workspace.greenish, 70);
 	},
@@ -311,8 +317,14 @@ const modifiers = {
 	// Status bar Text Color
 	textStatusbar() {
 		return this.type === 'dark'
-			? `#ffffff${convertAlpha(80)}`
-			: `#000000${convertAlpha(80)}`;
+			? addAlpha('#ffffff', 80)
+			: addAlpha('#000000', 80);
+	},
+	// Editor Border (for grids and overviewRuler)
+	editorGroupBorder() {
+		return this.type === 'dark'
+			? addAlpha('#ffffff', 7)
+			: addAlpha('#000000', 10);
 	},
 };
 

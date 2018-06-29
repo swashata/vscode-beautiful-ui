@@ -87,7 +87,7 @@ module.exports = {
 		// Editor Groups & Tabs
 		// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-groups-tabs
 		'editorGroup.background': '<%= bgLightest() %>',
-		'editorGroup.border': '<%= bgLighter() %>',
+		'editorGroup.border': '<%= editorGroupBorder() %>',
 		'editorGroup.dropBackground': '<%= bgFaded() %>',
 		'editorGroupHeader.noTabsBackground': '<%= bgDarker() %>',
 		'editorGroupHeader.tabsBackground': '<%= bgDarker() %>',
@@ -132,7 +132,7 @@ module.exports = {
 		'editorBracketMatch.background': '<%= tokens.guide.bracket %>',
 		'editorBracketMatch.border': '<%= tokens.guide.whitespace %>',
 
-		'editorOverviewRuler.border': '<%= tokens.editor.background %>',
+		'editorOverviewRuler.border': '<%= editorGroupBorder() %>',
 		'editorOverviewRuler.findMatchForeground': '<%= tokens.find.current %>',
 		'editorOverviewRuler.rangeHighlightForeground':
 			'<%= tokens.selection.general %>',
@@ -142,16 +142,17 @@ module.exports = {
 			'<%= tokens.selection.bright %>',
 		'editorOverviewRuler.wordHighlightStrongForeground':
 			'<%= tokens.selection.bright %>',
-		'editorOverviewRuler.modifiedForeground': '<%= bgWarningFaded() %>',
-		'editorOverviewRuler.addedForeground': '<%= bgSuccessFaded() %>',
-		'editorOverviewRuler.deletedForeground': '<%= bgInvalidFaded() %>',
-		'editorOverviewRuler.errorForeground': '<%= bgInvalidFaded() %>',
-		'editorOverviewRuler.warningForeground': '<%= bgWarningFaded() %>',
-		'editorOverviewRuler.infoForeground': '<%= bgWarningFaded() %>',
+		'editorOverviewRuler.modifiedForeground': '<%= bgWarning() %>',
+		'editorOverviewRuler.addedForeground': '<%= bgSuccess() %>',
+		'editorOverviewRuler.deletedForeground': '<%= bgInvalid() %>',
+		'editorOverviewRuler.errorForeground': '<%= bgInvalid() %>',
+		'editorOverviewRuler.warningForeground': '<%= bgWarning() %>',
+		'editorOverviewRuler.infoForeground': '<%= bgWarning() %>',
 
 		'editorError.foreground': '<%= textInvalid() %>',
 		'editorWarning.foreground': '<%= textWarning() %>',
-		'editorGutter.background': '<%= tokens.gutter.background %>',
+		'editorGutter.background':
+			'<%= gutterBackground(tokens.gutter.background) %>',
 		'editorGutter.modifiedBackground': '<%= gutterModified() %>',
 		'editorGutter.addedBackground': '<%= gutterAdded() %>',
 		'editorGutter.deletedBackground': '<%= gutterDeleted() %>',
