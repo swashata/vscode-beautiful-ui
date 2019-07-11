@@ -211,7 +211,7 @@
         "eslint-plugin-import": "^2.11.0",
         "eslint-plugin-prettier": "^2.6.0",
         "jest": "^22.4.3",
-        "lodash": "^4.17.10",
+        "lodash": "^4.17.13",
         "ora": "^2.1.0",
         "prettier": "^1.12.1",
         "vsce": "^1.40.0"
