@@ -311,15 +311,6 @@
             }
         },
         {
-            "name": "Entity - name",
-            "scope": [
-                "entity.name.type"
-            ],
-            "settings": {
-                "foreground": "#ffcc66"
-            }
-        },
-        {
             "name": "Function, Classes, Special Method",
             "scope": [
                 "entity.name.function",
@@ -344,7 +335,7 @@
             ],
             "settings": {
                 "foreground": "#f2787a",
-                "fontStyle": "bold"
+                "fontStyle": ""
             }
         },
         {
@@ -896,7 +887,7 @@
                 "variable.other.property"
             ],
             "settings": {
-                "foreground": "#b1b1a9",
+                "foreground": "#d4d1c9",
                 "fontStyle": ""
             }
         },

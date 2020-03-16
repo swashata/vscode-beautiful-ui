@@ -77,13 +77,6 @@ module.exports = {
 			},
 		},
 		{
-			name: 'Entity - name',
-			scope: ['entity.name.type'],
-			settings: {
-				foreground: '<%= tokens.color1 %>',
-			},
-		},
-		{
 			name: 'Function, Classes, Special Method',
 			scope: [
 				'entity.name.function',
@@ -106,7 +99,7 @@ module.exports = {
 			scope: ['entity.name.tag', 'meta.tag.sgml'],
 			settings: {
 				foreground: '<%= tokens.color2 %>',
-				fontStyle: 'bold',
+				fontStyle: '',
 			},
 		},
 		{
@@ -588,9 +581,9 @@ module.exports = {
 			name: 'Variable - Property',
 			scope: ['variable.other.property'],
 			settings: {
-				foreground: '<%= tokens.color8 %>',
+				foreground: '<%= tokens.color4 %>',
 				fontStyle: '',
-			}
+			},
 		},
 		{
 			name: 'Constants',

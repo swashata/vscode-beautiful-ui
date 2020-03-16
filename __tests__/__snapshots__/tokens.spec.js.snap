@@ -100,15 +100,6 @@ Object {
       },
     },
     Object {
-      "name": "Entity - name",
-      "scope": Array [
-        "entity.name.type",
-      ],
-      "settings": Object {
-        "foreground": "<%= tokens.color1 %>",
-      },
-    },
-    Object {
       "name": "Function, Classes, Special Method",
       "scope": Array [
         "entity.name.function",
@@ -132,7 +123,7 @@ Object {
         "meta.tag.sgml",
       ],
       "settings": Object {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "<%= tokens.color2 %>",
       },
     },
@@ -686,7 +677,7 @@ Object {
       ],
       "settings": Object {
         "fontStyle": "",
-        "foreground": "<%= tokens.color8 %>",
+        "foreground": "<%= tokens.color4 %>",
       },
     },
     Object {
