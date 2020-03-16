@@ -15,82 +15,6 @@ module.exports = {
 			},
 		},
 		{
-			name: 'Variable',
-			scope: ['variable', 'variable.other', 'variable.name'],
-			settings: {
-				foreground: '<%= tokens.color4 %>',
-			},
-		},
-		{
-			name: 'Variable - parameter',
-			scope: ['variable.parameter'],
-			settings: {
-				foreground: '<%= tokens.color4 %>',
-			},
-		},
-		{
-			name: 'Variable - language',
-			scope: [
-				'variable.language',
-				'variable.scss',
-				'variable.less',
-				'variable.styl',
-			],
-			settings: {
-				foreground: '<%= tokens.color2 %>',
-				fontStyle: 'italic',
-			},
-		},
-		{
-			name: 'Variable - punctuation',
-			scope: ['punctuation.definition.variable'],
-			settings: {
-				foreground: '<%= tokens.color4 %>',
-				fontStyle: 'italic',
-			},
-		},
-		{
-			name: 'Variable - constant',
-			scope: ['variable.other.constant'],
-			settings: {
-				foreground: '<%= tokens.color5 %>',
-				fontStyle: 'bold',
-			},
-		},
-		{
-			name: 'Constants',
-			scope: ['constant', 'constant.other', 'constant.character'],
-			settings: {
-				foreground: '<%= tokens.color3 %>',
-			},
-		},
-		{
-			name: 'Constants - numeric, support, Property Name',
-			scope: [
-				'support.type.property-name',
-				'constant.numeric',
-				'support.constant',
-			],
-			settings: {
-				foreground: '<%= tokens.color9 %>',
-			},
-		},
-		{
-			name: 'Object Literal',
-			scope: ['meta.object-literal.key'],
-			settings: {
-				foreground: '<%= tokens.color1 %>',
-			},
-		},
-		{
-			name: 'Constants - language',
-			scope: ['constant.language'],
-			settings: {
-				foreground: '<%= tokens.color2 %>',
-				fontStyle: 'italic',
-			},
-		},
-		{
 			name: 'Constants - Escape, Inheritance',
 			scope: ['constant.character.escape', 'constant.other.placeholder'],
 			settings: {
@@ -154,9 +78,27 @@ module.exports = {
 		},
 		{
 			name: 'Entity - name',
-			scope: ['entity.name'],
+			scope: ['entity.name.type'],
 			settings: {
 				foreground: '<%= tokens.color1 %>',
+			},
+		},
+		{
+			name: 'Function, Classes, Special Method',
+			scope: [
+				'entity.name.function',
+				'entity.name.label',
+				'entity.name.type.class',
+				'meta.function-call',
+				'variable.function',
+				'keyword.other.special-method',
+				'support.function',
+				'support.type',
+				// 'support.class',
+			],
+			settings: {
+				foreground: '<%= tokens.color5 %>',
+				fontStyle: '',
 			},
 		},
 		{
@@ -164,24 +106,7 @@ module.exports = {
 			scope: ['entity.name.tag', 'meta.tag.sgml'],
 			settings: {
 				foreground: '<%= tokens.color2 %>',
-				fontStyle: '',
-			},
-		},
-		{
-			name: 'Function, Special Method',
-			scope: [
-				'entity.name.function',
-				'entity.name.label',
-				'meta.function-call',
-				'variable.function',
-				'keyword.other.special-method',
-				'support.function',
-				'support.type',
-				'support.class',
-			],
-			settings: {
-				foreground: '<%= tokens.color5 %>',
-				fontStyle: '',
+				fontStyle: 'bold',
 			},
 		},
 		{
@@ -595,6 +520,102 @@ module.exports = {
 			name: 'HTML doctype',
 			scope: ['meta.tag.sgml.doctype.html'],
 			settings: {
+				fontStyle: 'italic',
+			},
+		},
+		{
+			name: 'Variable',
+			scope: ['variable', 'variable.other', 'variable.name'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+			},
+		},
+		{
+			name: 'Variable - parameter',
+			scope: ['variable.parameter'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+				fontStyle: '',
+			},
+		},
+		{
+			name: 'Variable - language',
+			scope: [
+				'variable.language',
+				'variable.scss',
+				'variable.less',
+				'variable.styl',
+			],
+			settings: {
+				foreground: '<%= tokens.color2 %>',
+				fontStyle: 'italic',
+			},
+		},
+		{
+			name: 'Variable - punctuation',
+			scope: ['punctuation.definition.variable'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+				fontStyle: 'italic',
+			},
+		},
+		{
+			name: 'Variable - constant',
+			scope: ['variable.other.constant'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+				fontStyle: 'bold',
+			},
+		},
+		{
+			name: 'Variable - imports',
+			scope: ['meta.import variable.other'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+				fontStyle: 'bold',
+			},
+		},
+		{
+			name: 'Variable - Property',
+			scope: ['variable.other.property'],
+			settings: {
+				foreground: '<%= tokens.color8 %>',
+				fontStyle: '',
+			}
+		},
+		{
+			name: 'Constants',
+			scope: ['constant', 'constant.other', 'constant.character'],
+			settings: {
+				foreground: '<%= tokens.color3 %>',
+				fontStyle: 'bold',
+			},
+		},
+		{
+			name: 'Constants - numeric, support, Property Name',
+			scope: [
+				'support.type.property-name',
+				'constant.numeric',
+				'support.constant',
+			],
+			settings: {
+				foreground: '<%= tokens.color9 %>',
+				fontStyle: 'bold',
+			},
+		},
+		{
+			name: 'Object Literal',
+			scope: ['meta.object-literal.key'],
+			settings: {
+				foreground: '<%= tokens.color1 %>',
+				fontStyle: '',
+			},
+		},
+		{
+			name: 'Constants - language',
+			scope: ['constant.language'],
+			settings: {
+				foreground: '<%= tokens.color2 %>',
 				fontStyle: 'italic',
 			},
 		},

@@ -227,100 +227,6 @@
             }
         },
         {
-            "name": "Variable",
-            "scope": [
-                "variable",
-                "variable.other",
-                "variable.name"
-            ],
-            "settings": {
-                "foreground": "#c5d4dd"
-            }
-        },
-        {
-            "name": "Variable - parameter",
-            "scope": [
-                "variable.parameter"
-            ],
-            "settings": {
-                "foreground": "#c5d4dd"
-            }
-        },
-        {
-            "name": "Variable - language",
-            "scope": [
-                "variable.language",
-                "variable.scss",
-                "variable.less",
-                "variable.styl"
-            ],
-            "settings": {
-                "foreground": "#de8c8c",
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "Variable - punctuation",
-            "scope": [
-                "punctuation.definition.variable"
-            ],
-            "settings": {
-                "foreground": "#c5d4dd",
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "Variable - constant",
-            "scope": [
-                "variable.other.constant"
-            ],
-            "settings": {
-                "foreground": "#85b0e5",
-                "fontStyle": "bold"
-            }
-        },
-        {
-            "name": "Constants",
-            "scope": [
-                "constant",
-                "constant.other",
-                "constant.character"
-            ],
-            "settings": {
-                "foreground": "#9993e1"
-            }
-        },
-        {
-            "name": "Constants - numeric, support, Property Name",
-            "scope": [
-                "support.type.property-name",
-                "constant.numeric",
-                "support.constant"
-            ],
-            "settings": {
-                "foreground": "#f2c38d"
-            }
-        },
-        {
-            "name": "Object Literal",
-            "scope": [
-                "meta.object-literal.key"
-            ],
-            "settings": {
-                "foreground": "#dbdb95"
-            }
-        },
-        {
-            "name": "Constants - language",
-            "scope": [
-                "constant.language"
-            ],
-            "settings": {
-                "foreground": "#de8c8c",
-                "fontStyle": "italic"
-            }
-        },
-        {
             "name": "Constants - Escape, Inheritance",
             "scope": [
                 "constant.character.escape",
@@ -402,10 +308,27 @@
         {
             "name": "Entity - name",
             "scope": [
-                "entity.name"
+                "entity.name.type"
             ],
             "settings": {
                 "foreground": "#dbdb95"
+            }
+        },
+        {
+            "name": "Function, Classes, Special Method",
+            "scope": [
+                "entity.name.function",
+                "entity.name.label",
+                "entity.name.type.class",
+                "meta.function-call",
+                "variable.function",
+                "keyword.other.special-method",
+                "support.function",
+                "support.type"
+            ],
+            "settings": {
+                "foreground": "#85b0e5",
+                "fontStyle": ""
             }
         },
         {
@@ -416,24 +339,7 @@
             ],
             "settings": {
                 "foreground": "#de8c8c",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "Function, Special Method",
-            "scope": [
-                "entity.name.function",
-                "entity.name.label",
-                "meta.function-call",
-                "variable.function",
-                "keyword.other.special-method",
-                "support.function",
-                "support.type",
-                "support.class"
-            ],
-            "settings": {
-                "foreground": "#85b0e5",
-                "fontStyle": ""
+                "fontStyle": "bold"
             }
         },
         {
@@ -900,6 +806,124 @@
                 "meta.tag.sgml.doctype.html"
             ],
             "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Variable",
+            "scope": [
+                "variable",
+                "variable.other",
+                "variable.name"
+            ],
+            "settings": {
+                "foreground": "#c5d4dd"
+            }
+        },
+        {
+            "name": "Variable - parameter",
+            "scope": [
+                "variable.parameter"
+            ],
+            "settings": {
+                "foreground": "#c5d4dd",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Variable - language",
+            "scope": [
+                "variable.language",
+                "variable.scss",
+                "variable.less",
+                "variable.styl"
+            ],
+            "settings": {
+                "foreground": "#de8c8c",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Variable - punctuation",
+            "scope": [
+                "punctuation.definition.variable"
+            ],
+            "settings": {
+                "foreground": "#c5d4dd",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Variable - constant",
+            "scope": [
+                "variable.other.constant"
+            ],
+            "settings": {
+                "foreground": "#c5d4dd",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Variable - imports",
+            "scope": [
+                "meta.import variable.other"
+            ],
+            "settings": {
+                "foreground": "#c5d4dd",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Variable - Property",
+            "scope": [
+                "variable.other.property"
+            ],
+            "settings": {
+                "foreground": "#d0d8dc",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Constants",
+            "scope": [
+                "constant",
+                "constant.other",
+                "constant.character"
+            ],
+            "settings": {
+                "foreground": "#9993e1",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Constants - numeric, support, Property Name",
+            "scope": [
+                "support.type.property-name",
+                "constant.numeric",
+                "support.constant"
+            ],
+            "settings": {
+                "foreground": "#f2c38d",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Object Literal",
+            "scope": [
+                "meta.object-literal.key"
+            ],
+            "settings": {
+                "foreground": "#dbdb95",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Constants - language",
+            "scope": [
+                "constant.language"
+            ],
+            "settings": {
+                "foreground": "#de8c8c",
                 "fontStyle": "italic"
             }
         }
