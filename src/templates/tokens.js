@@ -128,10 +128,6 @@ module.exports = {
 			scope: [
 				'punctuation.terminator',
 				'punctuation.separator',
-				'meta.property-list.scss',
-				'meta.property-list.css',
-				'meta.property-list.styl',
-				'meta.property-list.less',
 				'punctuation.separator.inheritance',
 			],
 			settings: {
@@ -164,7 +160,13 @@ module.exports = {
 		},
 		{
 			name: 'CSS - Property Name',
-			scope: ['support.type.property-name.css'],
+			scope: [
+				'support.type.property-name.css',
+				'meta.property-list.scss',
+				'meta.property-list.css',
+				'meta.property-list.styl',
+				'meta.property-list.less',
+			],
 			settings: {
 				foreground: '<%= tokens.color4 %>',
 				fontStyle: '',
@@ -172,7 +174,11 @@ module.exports = {
 		},
 		{
 			name: 'CSS - Property Value',
-			scope: ['meta.property-value.css', 'constant.numeric source.css'],
+			scope: [
+				'meta.property-value.css',
+				'constant.numeric source.css',
+				'support.constant.property-value.css',
+			],
 			settings: {
 				foreground: '<%= tokens.color9 %>',
 				fontStyle: '',

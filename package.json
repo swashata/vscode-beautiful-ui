@@ -1,231 +1,231 @@
 {
-    "name": "beautiful-ui",
-    "displayName": "Beautiful UI",
-    "description": "A set of 32 beautiful color themes for VSCode, inspired by Sublime DA UI.",
-    "version": "1.4.0",
-    "publisher": "swashata",
-    "icon": "bui-icon.png",
-    "repository": {
-        "url": "https://github.com/swashata/vscode-beautiful-ui",
-        "type": "git"
-    },
-    "homepage": "https://vscbui.rocks",
-    "bugs": {
-        "url": "https://github.com/swashata/vscode-beautiful-ui/issues"
-    },
-    "engines": {
-        "vscode": "^1.22.0",
-        "node": ">=8.6.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "keywords": [
-        "Light Theme",
-        "Dark Theme",
-        "Tomorrow",
-        "Monokai",
-        "Ayu"
-    ],
-    "badges": [
-        {
-            "url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
-            "href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
-            "description": "Travis Build Status"
-        },
-        {
-            "url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
-            "href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
-            "description": "Code Coverage"
-        }
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "βui - Tomorrow Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Tomorrow Dark-color-theme.json"
-            },
-            {
-                "label": "βui - Tomorrow Subliminal",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Tomorrow Subliminal-color-theme.json"
-            },
-            {
-                "label": "βui - Tomorrow Light",
-                "uiTheme": "vs",
-                "path": "./themes/Tomorrow Light-color-theme.json"
-            },
-            {
-                "label": "βui - One Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/One Dark-color-theme.json"
-            },
-            {
-                "label": "βui - One Light",
-                "uiTheme": "vs",
-                "path": "./themes/One Light-color-theme.json"
-            },
-            {
-                "label": "βui - Eighties Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Eighties Dark-color-theme.json"
-            },
-            {
-                "label": "βui - Ocean Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Ocean Dark-color-theme.json"
-            },
-            {
-                "label": "βui - Ocean Light",
-                "uiTheme": "vs",
-                "path": "./themes/Ocean Light-color-theme.json"
-            },
-            {
-                "label": "βui - Solarized Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Solarized Dark-color-theme.json"
-            },
-            {
-                "label": "βui - Solarized Light",
-                "uiTheme": "vs",
-                "path": "./themes/Solarized Light-color-theme.json"
-            },
-            {
-                "label": "βui - Oceanic Next",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Oceanic Next-color-theme.json"
-            },
-            {
-                "label": "βui - Monokai Classic",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Classic-color-theme.json"
-            },
-            {
-                "label": "βui - Monokai Machine",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Machine-color-theme.json"
-            },
-            {
-                "label": "βui - Monokai Pro",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Pro-color-theme.json"
-            },
-            {
-                "label": "βui - Monokai Octagon",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Octagon-color-theme.json"
-            },
-            {
-                "label": "βui - Monokai Ristretto",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Ristretto-color-theme.json"
-            },
-            {
-                "label": "βui - Monokai Spectrum",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Monokai Spectrum-color-theme.json"
-            },
-            {
-                "label": "βui - Material",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Material-color-theme.json"
-            },
-            {
-                "label": "βui - Material Darker",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Material Darker-color-theme.json"
-            },
-            {
-                "label": "βui - Material Palenight",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Material Palenight-color-theme.json"
-            },
-            {
-                "label": "βui - Zenburn",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Zenburn-color-theme.json"
-            },
-            {
-                "label": "βui - Nova",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Nova-color-theme.json"
-            },
-            {
-                "label": "βui - Nord",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Nord-color-theme.json"
-            },
-            {
-                "label": "βui - Espresso Libre",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Espresso Libre-color-theme.json"
-            },
-            {
-                "label": "βui - Espresso Soda",
-                "uiTheme": "vs",
-                "path": "./themes/Espresso Soda-color-theme.json"
-            },
-            {
-                "label": "βui - Ayu Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Ayu Dark-color-theme.json"
-            },
-            {
-                "label": "βui - Ayu Light",
-                "uiTheme": "vs",
-                "path": "./themes/Ayu Light-color-theme.json"
-            },
-            {
-                "label": "βui - Ayu Mirage",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Ayu Mirage-color-theme.json"
-            },
-            {
-                "label": "βui - Minimal Blue",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Minimal Blue-color-theme.json"
-            },
-            {
-                "label": "βui - Minimal Yellow",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Minimal Yellow-color-theme.json"
-            },
-            {
-                "label": "βui - Minimal Green",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Minimal Green-color-theme.json"
-            },
-            {
-                "label": "βui - Minimal Purple",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Minimal Purple-color-theme.json"
-            }
-        ]
-    },
-    "license": "MIT",
-    "author": "Swashata Ghosh <swashata4u@gmail.com> (https://swashata.me)",
-    "devDependencies": {
-        "chalk": "^3.0.0",
-        "chokidar-cli": "^2.1.0",
-        "color": "^3.1.2",
-        "eslint": "^6.8.0",
-        "eslint-config-airbnb-base": "^14.1.0",
-        "eslint-config-prettier": "^6.10.0",
-        "eslint-plugin-import": "^2.20.1",
-        "eslint-plugin-prettier": "^3.1.2",
-        "jest": "^25.1.0",
-        "lodash": "^4.17.15",
-        "ora": "^4.0.3",
-        "prettier": "^1.19.1",
-        "vsce": "^1.74.0"
-    },
-    "scripts": {
-        "test": "jest --color",
-        "build": "node ./script/generateTheme.js",
-        "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
-        "vscode:prepublish": "yarn build",
-        "vsce:publish": "vsce publish"
-    },
-    "private": true
+	"name": "beautiful-ui",
+	"displayName": "Beautiful UI",
+	"description": "A set of 32 beautiful color themes for VSCode, inspired by Sublime DA UI.",
+	"version": "1.4.0",
+	"publisher": "swashata",
+	"icon": "bui-icon.png",
+	"repository": {
+		"url": "https://github.com/swashata/vscode-beautiful-ui",
+		"type": "git"
+	},
+	"homepage": "https://vscbui.rocks",
+	"bugs": {
+		"url": "https://github.com/swashata/vscode-beautiful-ui/issues"
+	},
+	"engines": {
+		"vscode": "^1.22.0",
+		"node": ">=8.6.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"Light Theme",
+		"Dark Theme",
+		"Tomorrow",
+		"Monokai",
+		"Ayu"
+	],
+	"badges": [
+		{
+			"url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
+			"href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
+			"description": "Travis Build Status"
+		},
+		{
+			"url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
+			"href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
+			"description": "Code Coverage"
+		}
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "βui - One Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/One Dark-color-theme.json"
+			},
+			{
+				"label": "βui - One Light",
+				"uiTheme": "vs",
+				"path": "./themes/One Light-color-theme.json"
+			},
+			{
+				"label": "βui - Tomorrow Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Tomorrow Dark-color-theme.json"
+			},
+			{
+				"label": "βui - Tomorrow Subliminal",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Tomorrow Subliminal-color-theme.json"
+			},
+			{
+				"label": "βui - Tomorrow Light",
+				"uiTheme": "vs",
+				"path": "./themes/Tomorrow Light-color-theme.json"
+			},
+			{
+				"label": "βui - Eighties Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Eighties Dark-color-theme.json"
+			},
+			{
+				"label": "βui - Ocean Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Ocean Dark-color-theme.json"
+			},
+			{
+				"label": "βui - Ocean Light",
+				"uiTheme": "vs",
+				"path": "./themes/Ocean Light-color-theme.json"
+			},
+			{
+				"label": "βui - Solarized Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Solarized Dark-color-theme.json"
+			},
+			{
+				"label": "βui - Solarized Light",
+				"uiTheme": "vs",
+				"path": "./themes/Solarized Light-color-theme.json"
+			},
+			{
+				"label": "βui - Oceanic Next",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Oceanic Next-color-theme.json"
+			},
+			{
+				"label": "βui - Monokai Classic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Classic-color-theme.json"
+			},
+			{
+				"label": "βui - Monokai Machine",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Machine-color-theme.json"
+			},
+			{
+				"label": "βui - Monokai Pro",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Pro-color-theme.json"
+			},
+			{
+				"label": "βui - Monokai Octagon",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Octagon-color-theme.json"
+			},
+			{
+				"label": "βui - Monokai Ristretto",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Ristretto-color-theme.json"
+			},
+			{
+				"label": "βui - Monokai Spectrum",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Spectrum-color-theme.json"
+			},
+			{
+				"label": "βui - Material",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Material-color-theme.json"
+			},
+			{
+				"label": "βui - Material Darker",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Material Darker-color-theme.json"
+			},
+			{
+				"label": "βui - Material Palenight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Material Palenight-color-theme.json"
+			},
+			{
+				"label": "βui - Zenburn",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Zenburn-color-theme.json"
+			},
+			{
+				"label": "βui - Nova",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Nova-color-theme.json"
+			},
+			{
+				"label": "βui - Nord",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Nord-color-theme.json"
+			},
+			{
+				"label": "βui - Espresso Libre",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Espresso Libre-color-theme.json"
+			},
+			{
+				"label": "βui - Espresso Soda",
+				"uiTheme": "vs",
+				"path": "./themes/Espresso Soda-color-theme.json"
+			},
+			{
+				"label": "βui - Ayu Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Ayu Dark-color-theme.json"
+			},
+			{
+				"label": "βui - Ayu Light",
+				"uiTheme": "vs",
+				"path": "./themes/Ayu Light-color-theme.json"
+			},
+			{
+				"label": "βui - Ayu Mirage",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Ayu Mirage-color-theme.json"
+			},
+			{
+				"label": "βui - Minimal Blue",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Minimal Blue-color-theme.json"
+			},
+			{
+				"label": "βui - Minimal Yellow",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Minimal Yellow-color-theme.json"
+			},
+			{
+				"label": "βui - Minimal Green",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Minimal Green-color-theme.json"
+			},
+			{
+				"label": "βui - Minimal Purple",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Minimal Purple-color-theme.json"
+			}
+		]
+	},
+	"license": "MIT",
+	"author": "Swashata Ghosh <swashata4u@gmail.com> (https://swashata.me)",
+	"devDependencies": {
+		"chalk": "^3.0.0",
+		"chokidar-cli": "^2.1.0",
+		"color": "^3.1.2",
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-prettier": "^3.1.2",
+		"jest": "^25.1.0",
+		"lodash": "^4.17.15",
+		"ora": "^4.0.3",
+		"prettier": "^1.19.1",
+		"vsce": "^1.74.0"
+	},
+	"scripts": {
+		"test": "jest --color",
+		"build": "node ./script/generateTheme.js",
+		"start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
+		"vscode:prepublish": "yarn build",
+		"vsce:publish": "vsce publish"
+	},
+	"private": true
 }

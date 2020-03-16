@@ -1,52 +1,54 @@
 import React from 'react';
-import injectSheet from 'react-jss';
+import styled from 'styled-components';
 
-import './TabGroup.css';
+const TabGroupContainer = styled.div`
+	display: flex;
+	flex-flow: row nowrap;
+	height: 40px;
+	width: 100%;
+	overflow-y: auto;
+	background: ${props => props.theme.editorGroupHeaderTabsBackground};
+	border-bottom: 1px solid ${props => props.theme.editorGroupHeaderTabsBorder};
 
-const styles = theme => ({
-	group: {
-		background: theme.bgLightest(),
-		borderColor: theme.bgLighter(),
-		'& .bui-vsc-tabgroup__tab': {
-			background: theme.bgDarkest(),
-			color: theme.textLighter(),
-			borderColor: theme.bgLightest(),
-			'&:hover': {
-				background:
-					theme.type === 'dark'
-						? theme.bgLightest()
-						: theme.bgLighter(),
-			},
-			'&.active': {
-				background: theme.bgLightest(),
-				color:
-					theme.type === 'dark'
-						? theme.textDarkest()
-						: theme.textPrimary(),
-				borderColor:
-					theme.type === 'dark'
-						? theme.bgLightest()
-						: theme.bgPrimary(),
-				borderBottomColor: theme.bgAccentDarker(),
-			},
-		},
-	},
-});
+	.bui-vsc-tabgroup__tab {
+		border: 1px solid ${props => props.theme.tabInactiveBackground};
+		border-bottom-width: 2px;
+		border-top: 0 none;
+		cursor: pointer;
+		padding: 0 16px;
+		font-size: 14px;
+		line-height: 38px;
+		margin: -1px -1px 0;
+		background-color: ${props => props.theme.tabInactiveBackground};
+		color: ${props => props.theme.tabInactiveForeground};
 
-const TabGroup = ({ classes, modes, mode, setMode }) => (
-	<div className={`bui-vsc-tabgroup ${classes.group}`}>
-		{Object.keys(modes).map(key => (
-			<div
-				className={`bui-vsc-tabgroup__tab ${
-					key === mode ? 'active' : ''
-				}`}
-				key={key}
-				onClick={() => setMode(key)}
-			>
-				example.{key}
-			</div>
-		))}
-	</div>
-);
+		&:hover {
+			background-color: ${props => props.theme.tabHoverBackground};
+		}
 
-export default injectSheet(styles)(TabGroup);
+		&.active {
+			background-color: ${props => props.theme.tabActiveBackground};
+			color: ${props => props.theme.tabActiveForeground};
+			border-color: ${props => props.theme.tabActiveBackground};
+			border-bottom-color: ${props => props.theme.tabActiveBorder};
+		}
+	}
+`;
+
+export default function TabGroup({ languages, currentLang, setLang }) {
+	return (
+		<TabGroupContainer className="bui-vsc-tabgroup">
+			{Object.keys(languages).map(lang => (
+				<div
+					className={`bui-vsc-tabgroup__tab ${
+						lang === currentLang ? 'active' : ''
+					}`}
+					key={lang}
+					onClick={() => setLang(lang)}
+				>
+					example.{lang}
+				</div>
+			))}
+		</TabGroupContainer>
+	);
+}

@@ -367,10 +367,6 @@
             "scope": [
                 "punctuation.terminator",
                 "punctuation.separator",
-                "meta.property-list.scss",
-                "meta.property-list.css",
-                "meta.property-list.styl",
-                "meta.property-list.less",
                 "punctuation.separator.inheritance"
             ],
             "settings": {
@@ -404,7 +400,11 @@
         {
             "name": "CSS - Property Name",
             "scope": [
-                "support.type.property-name.css"
+                "support.type.property-name.css",
+                "meta.property-list.scss",
+                "meta.property-list.css",
+                "meta.property-list.styl",
+                "meta.property-list.less"
             ],
             "settings": {
                 "foreground": "#202225",
@@ -415,7 +415,8 @@
             "name": "CSS - Property Value",
             "scope": [
                 "meta.property-value.css",
-                "constant.numeric source.css"
+                "constant.numeric source.css",
+                "support.constant.property-value.css"
             ],
             "settings": {
                 "foreground": "#D2702B",
