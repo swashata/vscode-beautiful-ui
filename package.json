@@ -2,7 +2,7 @@
     "name": "beautiful-ui",
     "displayName": "Beautiful UI",
     "description": "A set of 32 beautiful color themes for VSCode, inspired by Sublime DA UI.",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "publisher": "swashata",
     "icon": "bui-icon.png",
     "repository": {
@@ -227,5 +227,5 @@
         "vscode:prepublish": "yarn build",
         "vsce": "vsce publish"
     },
-    "private": false
+    "private": true
 }

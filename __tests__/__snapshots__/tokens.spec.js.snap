@@ -21,100 +21,6 @@ Object {
       },
     },
     Object {
-      "name": "Variable",
-      "scope": Array [
-        "variable",
-        "variable.other",
-        "variable.name",
-      ],
-      "settings": Object {
-        "foreground": "<%= tokens.color4 %>",
-      },
-    },
-    Object {
-      "name": "Variable - parameter",
-      "scope": Array [
-        "variable.parameter",
-      ],
-      "settings": Object {
-        "foreground": "<%= tokens.color4 %>",
-      },
-    },
-    Object {
-      "name": "Variable - language",
-      "scope": Array [
-        "variable.language",
-        "variable.scss",
-        "variable.less",
-        "variable.styl",
-      ],
-      "settings": Object {
-        "fontStyle": "italic",
-        "foreground": "<%= tokens.color2 %>",
-      },
-    },
-    Object {
-      "name": "Variable - punctuation",
-      "scope": Array [
-        "punctuation.definition.variable",
-      ],
-      "settings": Object {
-        "fontStyle": "italic",
-        "foreground": "<%= tokens.color4 %>",
-      },
-    },
-    Object {
-      "name": "Variable - constant",
-      "scope": Array [
-        "variable.other.constant",
-      ],
-      "settings": Object {
-        "fontStyle": "bold",
-        "foreground": "<%= tokens.color5 %>",
-      },
-    },
-    Object {
-      "name": "Constants",
-      "scope": Array [
-        "constant",
-        "constant.other",
-        "constant.character",
-      ],
-      "settings": Object {
-        "foreground": "<%= tokens.color3 %>",
-      },
-    },
-    Object {
-      "name": "Constants - numeric, support, Property Name",
-      "scope": Array [
-        "support.type.property-name",
-        "constant.numeric",
-        "support.constant",
-      ],
-      "settings": Object {
-        "foreground": "<%= tokens.color9 %>",
-      },
-    },
-    Object {
-      "name": "Object Literal",
-      "scope": Array [
-        "meta.object-literal.key",
-      ],
-      "settings": Object {
-        "foreground": "<%= tokens.color1 %>",
-      },
-    },
-    Object {
-      "name": "Constants - language",
-      "scope": Array [
-        "constant.language",
-      ],
-      "settings": Object {
-        "fontStyle": "italic",
-        "foreground": "<%= tokens.color2 %>",
-      },
-    },
-    Object {
       "name": "Constants - Escape, Inheritance",
       "scope": Array [
         "constant.character.escape",
@@ -196,10 +102,27 @@ Object {
     Object {
       "name": "Entity - name",
       "scope": Array [
-        "entity.name",
+        "entity.name.type",
       ],
       "settings": Object {
         "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "Function, Classes, Special Method",
+      "scope": Array [
+        "entity.name.function",
+        "entity.name.label",
+        "entity.name.type.class",
+        "meta.function-call",
+        "variable.function",
+        "keyword.other.special-method",
+        "support.function",
+        "support.type",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color5 %>",
       },
     },
     Object {
@@ -209,25 +132,8 @@ Object {
         "meta.tag.sgml",
       ],
       "settings": Object {
-        "fontStyle": "",
+        "fontStyle": "bold",
         "foreground": "<%= tokens.color2 %>",
-      },
-    },
-    Object {
-      "name": "Function, Special Method",
-      "scope": Array [
-        "entity.name.function",
-        "entity.name.label",
-        "meta.function-call",
-        "variable.function",
-        "keyword.other.special-method",
-        "support.function",
-        "support.type",
-        "support.class",
-      ],
-      "settings": Object {
-        "fontStyle": "",
-        "foreground": "<%= tokens.color5 %>",
       },
     },
     Object {
@@ -299,7 +205,19 @@ Object {
         "support.type.property-name.css",
       ],
       "settings": Object {
+        "fontStyle": "",
         "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "CSS - Property Value",
+      "scope": Array [
+        "meta.property-value.css",
+        "constant.numeric source.css",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color9 %>",
       },
     },
     Object {
@@ -695,6 +613,123 @@ Object {
       ],
       "settings": Object {
         "fontStyle": "italic",
+      },
+    },
+    Object {
+      "name": "Variable",
+      "scope": Array [
+        "variable",
+        "variable.other",
+        "variable.name",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - parameter",
+      "scope": Array [
+        "variable.parameter",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - language",
+      "scope": Array [
+        "variable.language",
+        "variable.scss",
+        "variable.less",
+        "variable.styl",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Variable - punctuation",
+      "scope": Array [
+        "punctuation.definition.variable",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - constant",
+      "scope": Array [
+        "variable.other.constant",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - imports",
+      "scope": Array [
+        "meta.import variable.other",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable - Property",
+      "scope": Array [
+        "variable.other.property",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color8 %>",
+      },
+    },
+    Object {
+      "name": "Constants",
+      "scope": Array [
+        "constant",
+        "constant.other",
+        "constant.character",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color3 %>",
+      },
+    },
+    Object {
+      "name": "Constants - numeric, support, Property Name",
+      "scope": Array [
+        "support.type.property-name",
+        "constant.numeric",
+      ],
+      "settings": Object {
+        "fontStyle": "bold",
+        "foreground": "<%= tokens.color9 %>",
+      },
+    },
+    Object {
+      "name": "Object Literal",
+      "scope": Array [
+        "meta.object-literal.key",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "Constants - language",
+      "scope": Array [
+        "constant.language",
+      ],
+      "settings": Object {
+        "fontStyle": "italic",
+        "foreground": "<%= tokens.color2 %>",
       },
     },
   ],

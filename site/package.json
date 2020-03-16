@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "color": "^3.0.0",
-    "normalize.css": "^8.0.0",
-    "react": "^16.3.2",
-    "react-ace": "^6.1.1",
-    "react-dom": "^16.3.2",
-    "react-jss": "^8.4.0",
-    "react-scripts": "1.1.4"
+    "color": "^3.1.2",
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.0",
+    "react-ace": "^8.1.0",
+    "react-dom": "^16.13.0",
+    "react-jss": "^10.1.1",
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,8 +18,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^2.9.0",
-    "prettier": "^1.12.1"
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1"
   },
   "homepage": "https://vscbui.rocks"
 }
