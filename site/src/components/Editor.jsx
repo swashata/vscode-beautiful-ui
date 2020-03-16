@@ -1,20 +1,8 @@
 import React from 'react';
-import AceEditor from 'react-ace';
 import { ThemeProvider } from 'react-jss';
 
-// ace editor
-/* eslint-disable import/no-extraneous-dependencies */
-import 'brace/mode/jsx';
-import 'brace/mode/javascript';
-import 'brace/mode/php';
-import 'brace/mode/html';
-import 'brace/mode/markdown';
-import 'brace/mode/css';
-import 'brace/mode/c_cpp';
-/* eslint-enable */
-
 // Our schemes
-import schemes from '../ace-styles/all-styles';
+import schemes, { shikiThemes } from '../bui-assets/all-styles';
 
 // data
 import * as examples from '../data/data';
@@ -28,8 +16,10 @@ import ActivityBar from './Editor/ActivityBar';
 import StatusBar from './Editor/StatusBar';
 import SideBar from './Editor/SideBar';
 import TabGroup from './Editor/TabGroup';
+import Shiki from './Editor/Shiki';
 
 const languageMap = {
+	tsx: 'TypeScript React',
 	jsx: 'JavaScript React',
 	js: 'JavaScript',
 	php: 'PHP',
@@ -40,32 +30,20 @@ const languageMap = {
 };
 
 const modeMap = {
+	tsx: 'tsx',
 	jsx: 'jsx',
-	js: 'javascript',
+	js: 'js',
 	php: 'php',
 	html: 'html',
-	md: 'markdown',
+	md: 'md',
 	css: 'css',
-	c: 'c_cpp',
+	c: 'cpp',
 };
 
-class Demo extends React.PureComponent {
+class Demo extends React.Component {
 	state = {
 		scheme: 'TomorrowDark',
 		mode: 'jsx',
-		data: {
-			jsx: examples.eJSX,
-			js: examples.eJS,
-			php: examples.ePHP,
-			html: examples.eHTML,
-			md: examples.eMD,
-			css: examples.eCSS,
-			c: examples.eC,
-		},
-	};
-
-	handleChange = val => {
-		this.setState(prevState => ({ data: { [prevState.mode]: val } }));
 	};
 
 	setScheme = val => {
@@ -101,7 +79,7 @@ class Demo extends React.PureComponent {
 								modes={modeMap}
 								setMode={this.setMode}
 							/>
-							<AceEditor
+							{/* <AceEditor
 								mode={modeMap[this.state.mode]}
 								className={this.state.mode}
 								value={this.state.data[this.state.mode]}
@@ -121,6 +99,12 @@ class Demo extends React.PureComponent {
 								}}
 								height="calc(100% - 40px)"
 								width="100%"
+							/> */}
+							<Shiki
+								mode={modeMap[this.state.mode]}
+								className={this.state.mode}
+								value={examples[this.state.mode]}
+								theme={shikiThemes[this.state.scheme]}
 							/>
 						</div>
 					</div>

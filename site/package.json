@@ -3,23 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "color": "^3.1.2",
     "normalize.css": "^8.0.1",
     "react": "^16.13.0",
-    "react-ace": "^8.1.0",
     "react-dom": "^16.13.0",
-    "react-jss": "^10.1.1",
-    "react-scripts": "3.4.0"
+    "react-is": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "shiki": "^0.1.6",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "node ./src/bui-assets/generate.js"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.10.0",
     "prettier": "^1.19.1"
   },
-  "homepage": "https://vscbui.rocks"
+  "homepage": "https://vscbui.rocks",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
