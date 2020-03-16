@@ -98,7 +98,7 @@ module.exports = {
 			],
 			settings: {
 				foreground: '<%= tokens.color5 %>',
-				fontStyle: '',
+				fontStyle: 'bold',
 			},
 		},
 		{
@@ -174,6 +174,15 @@ module.exports = {
 			scope: ['support.type.property-name.css'],
 			settings: {
 				foreground: '<%= tokens.color4 %>',
+				fontStyle: '',
+			},
+		},
+		{
+			name: 'CSS - Property Value',
+			scope: ['meta.property-value.css', 'constant.numeric source.css'],
+			settings: {
+				foreground: '<%= tokens.color9 %>',
+				fontStyle: '',
 			},
 		},
 		{
@@ -596,7 +605,7 @@ module.exports = {
 			scope: [
 				'support.type.property-name',
 				'constant.numeric',
-				'support.constant',
+				// 'support.constant',
 			],
 			settings: {
 				foreground: '<%= tokens.color9 %>',

@@ -333,7 +333,7 @@
             ],
             "settings": {
                 "foreground": "#80a8ff",
-                "fontStyle": ""
+                "fontStyle": "bold"
             }
         },
         {
@@ -416,7 +416,19 @@
                 "support.type.property-name.css"
             ],
             "settings": {
-                "foreground": "#9AA1CD"
+                "foreground": "#9AA1CD",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "CSS - Property Value",
+            "scope": [
+                "meta.property-value.css",
+                "constant.numeric source.css"
+            ],
+            "settings": {
+                "foreground": "#f78e6e",
+                "fontStyle": ""
             }
         },
         {
@@ -904,8 +916,7 @@
             "name": "Constants - numeric, support, Property Name",
             "scope": [
                 "support.type.property-name",
-                "constant.numeric",
-                "support.constant"
+                "constant.numeric"
             ],
             "settings": {
                 "foreground": "#f78e6e",
