@@ -225,7 +225,7 @@
         "build": "node ./script/generateTheme.js",
         "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
         "vscode:prepublish": "yarn build",
-        "vsce": "vsce publish"
+        "vsce:publish": "vsce publish"
     },
     "private": true
 }
