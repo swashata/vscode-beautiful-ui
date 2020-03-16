@@ -206,7 +206,12 @@
         "gitDecoration.deletedResourceForeground": "#F28187",
         "gitDecoration.untrackedResourceForeground": "#C2E98D",
         "gitDecoration.ignoredResourceForeground": "#d9d7cea6",
-        "gitDecoration.conflictingResourceForeground": "#FFDB93"
+        "gitDecoration.conflictingResourceForeground": "#FFDB93",
+        "breadcrumb.foreground": "#B4B09E",
+        "breadcrumb.background": "#2F3849",
+        "breadcrumb.focusForeground": "#C7C4B6",
+        "breadcrumb.activeSelectionForeground": "#FFFFFF",
+        "breadcrumbPicker.background": "#2B3342"
     },
     "tokenColors": [
         {

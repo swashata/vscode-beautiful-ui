@@ -296,5 +296,13 @@ module.exports = {
 		'gitDecoration.untrackedResourceForeground': '<%= textSuccess() %>',
 		'gitDecoration.ignoredResourceForeground': '<%= textFaded() %>',
 		'gitDecoration.conflictingResourceForeground': '<%= textWarning() %>',
+
+		// Breadcrumb
+		// https://code.visualstudio.com/api/references/theme-color#breadcrumbs
+		'breadcrumb.foreground': '<%= textLightest() %>',
+		'breadcrumb.background': '<%= bgLighter() %>',
+		'breadcrumb.focusForeground': '<%= textLighter() %>',
+		'breadcrumb.activeSelectionForeground': '<%= textFocus() %>',
+		'breadcrumbPicker.background': '<%= bgPrimary() %>',
 	},
 };
