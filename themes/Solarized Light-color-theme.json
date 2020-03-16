@@ -208,9 +208,9 @@
         "gitDecoration.ignoredResourceForeground": "#657b83a6",
         "gitDecoration.conflictingResourceForeground": "#CE2623",
         "breadcrumb.foreground": "#677D86",
-        "breadcrumb.background": "#FEF9EC",
+        "breadcrumb.background": "#FCF3DA",
         "breadcrumb.focusForeground": "#677D86",
-        "breadcrumb.activeSelectionForeground": "#FCF3DA",
+        "breadcrumb.activeSelectionForeground": "#5F747B",
         "breadcrumbPicker.background": "#FDF6E3"
     },
     "tokenColors": [

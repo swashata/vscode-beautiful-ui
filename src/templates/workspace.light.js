@@ -300,9 +300,9 @@ module.exports = {
 		// Breadcrumb
 		// https://code.visualstudio.com/api/references/theme-color#breadcrumbs
 		'breadcrumb.foreground': '<%= textDarker() %>',
-		'breadcrumb.background': '<%= bgLighter() %>',
+		'breadcrumb.background': '<%= bgDarker() %>',
 		'breadcrumb.focusForeground': '<%= textDarker() %>',
-		'breadcrumb.activeSelectionForeground': '<%= bgDarker() %>',
+		'breadcrumb.activeSelectionForeground': '<%= textFocus() %>',
 		'breadcrumbPicker.background': '<%= bgPrimary() %>',
 	},
 };
