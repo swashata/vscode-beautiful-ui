@@ -156,10 +156,6 @@ Object {
       "scope": Array [
         "punctuation.terminator",
         "punctuation.separator",
-        "meta.property-list.scss",
-        "meta.property-list.css",
-        "meta.property-list.styl",
-        "meta.property-list.less",
         "punctuation.separator.inheritance",
       ],
       "settings": Object {
@@ -194,6 +190,10 @@ Object {
       "name": "CSS - Property Name",
       "scope": Array [
         "support.type.property-name.css",
+        "meta.property-list.scss",
+        "meta.property-list.css",
+        "meta.property-list.styl",
+        "meta.property-list.less",
       ],
       "settings": Object {
         "fontStyle": "",
@@ -205,6 +205,7 @@ Object {
       "scope": Array [
         "meta.property-value.css",
         "constant.numeric source.css",
+        "support.constant.property-value.css",
       ],
       "settings": Object {
         "fontStyle": "",
