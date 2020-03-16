@@ -11,14 +11,13 @@ class App extends Component {
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
 					<div className="App-desc">
-						<h1 className="App-title">
-							βui - Beautiful UI for VSCode.
-						</h1>
+						<h1 className="App-title">βui - Beautiful UI for VSCode.</h1>
 						<p className="App-intro">
 							βui is a set of 32 themes ported from{' '}
 							<a href="https://github.com/ihodev/sublime-da-cs">
 								Sublime DA CS
-							</a>.
+							</a>
+							.
 						</p>
 					</div>
 				</header>
@@ -27,9 +26,12 @@ class App extends Component {
 				</div>
 				<div className="App-guide">
 					<p className="disclaimer">
-						Syntax highlighting differs (degrades) a little from the
-						original implementation due to limitations of{' '}
-						<a href="https://ace.c9.io/">ace editor</a>.
+						Syntax highlighting by <a href="https://shiki.matsu.io/">Shiki</a>.{' '}
+						Icons from{' '}
+						<a href="https://github.com/microsoft/vscode-codicons">
+							vscode-codicons
+						</a>
+						.
 					</p>
 					<p className="links">
 						<a
@@ -45,7 +47,8 @@ class App extends Component {
 							GitHub
 						</a>
 						<a href="https://eform.live" className="eform">
-							(Ad) Check eForm
+							<span style={{ textTransform: 'lowercase' }}>(plug)</span> Check
+							eForm
 						</a>
 					</p>
 				</div>
