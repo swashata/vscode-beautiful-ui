@@ -19,22 +19,26 @@
     },
     "categories": [
         "Themes"
-	],
-	"keywords": [
-		"Light Theme", "Dark Theme", "Tomorrow", "Monokai", "Ayu"
-	],
-	"badges": [
-		{
-			"url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
-			"href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
-			"description": "Travis Build Status"
-		},
-		{
-			"url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
-			"href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
-			"description": "Code Coverage"
-		}
-	],
+    ],
+    "keywords": [
+        "Light Theme",
+        "Dark Theme",
+        "Tomorrow",
+        "Monokai",
+        "Ayu"
+    ],
+    "badges": [
+        {
+            "url": "https://travis-ci.org/swashata/vscode-beautiful-ui.svg?branch=master",
+            "href": "https://travis-ci.org/swashata/vscode-beautiful-ui",
+            "description": "Travis Build Status"
+        },
+        {
+            "url": "https://codecov.io/gh/swashata/vscode-beautiful-ui/branch/master/graph/badge.svg",
+            "href": "https://codecov.io/gh/swashata/vscode-beautiful-ui",
+            "description": "Code Coverage"
+        }
+    ],
     "contributes": {
         "themes": [
             {
@@ -202,22 +206,22 @@
     "license": "MIT",
     "author": "Swashata Ghosh <swashata4u@gmail.com> (https://swashata.me)",
     "devDependencies": {
-        "chalk": "^2.4.1",
-        "chokidar-cli": "^1.2.0",
-        "color": "^3.0.0",
-        "eslint": "^4.19.1",
-        "eslint-config-airbnb-base": "^12.1.0",
-        "eslint-config-prettier": "^2.9.0",
-        "eslint-plugin-import": "^2.11.0",
-        "eslint-plugin-prettier": "^2.6.0",
-        "jest": "^22.4.3",
-        "lodash": "^4.17.10",
-        "ora": "^2.1.0",
-        "prettier": "^1.12.1",
-        "vsce": "^1.40.0"
+        "chalk": "^3.0.0",
+        "chokidar-cli": "^2.1.0",
+        "color": "^3.1.2",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "jest": "^25.1.0",
+        "lodash": "^4.17.15",
+        "ora": "^4.0.3",
+        "prettier": "^1.19.1",
+        "vsce": "^1.74.0"
     },
     "scripts": {
-		"test": "jest --color",
+        "test": "jest --color",
         "build": "node ./script/generateTheme.js",
         "start": "yarn build && chokidar 'src/**' 'script/**' -c 'yarn build'",
         "vscode:prepublish": "yarn build",
