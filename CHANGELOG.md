@@ -6,6 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.6.0] `2020-03-18`
 
+- 336de33 - chore: update site
 - 0110edf - feat: make themes consistent and remove bold
   1. Bold is too much on the eye #23
   2. Use intended color as original theme, it looks better.
