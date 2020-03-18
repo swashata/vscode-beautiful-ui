@@ -46,6 +46,19 @@ const OneDark = {
 			ansiYellow: '#cfae00',
 			selectionBackground: '#c1deff5a',
 		},
+		classic: {
+			purple: '#c678dd',
+			error: '#f44747',
+			coral: '#e06c75',
+			whiskey: '#d19a66',
+			chalky: '#e5c07b',
+			lightDark: '#7f848e',
+			dark: '#5c6370',
+			malibu: '#61afef',
+			green: '#98c379',
+			fountainBlue: '#56b6c2',
+			invalid: '#ffffff',
+		},
 	},
 	tokens: {
 		editor: {
@@ -86,13 +99,13 @@ const OneDark = {
 		link: '#61afef', // [markup.underline.link, string.other.link]
 		comment: '#5c6370', // [comment] comment, punctuation.definition.comment
 		string: '#98c27a', // [string]
-		color1: '#e4be77', // [entity.name - (entity.name.section | entity.name.tag | entity.name.label)] entity.name, support.constant.property-value
-		color2: '#de6872', // [variable.language] variable.language, constant.language, invalid, invalid.illegal, storage.modifier, entity.name.tag
+		color1: '#56b6c2', // [entity.name - (entity.name.section | entity.name.tag | entity.name.label)] entity.name, support.constant.property-value
+		color2: '#e06c75', // [variable.language] variable.language, constant.language, invalid, invalid.illegal, storage.modifier
 		color3: '#c678dd', // [storage.type] constant, constant.other, constant.character, keyword, storage.type
 		color4: '#abb2bf', // [variable.parameter] variable, variable.parameter, Operators, Misc, punctuation.definition.variable
 		color5: '#61afef', // [variable.function] variable.function, variable.annonation, variable.other.constant, entity.name.function, Functions, Special Method
-		color6: '#dcb16f', // [keyword.operator] keyword.operator
-		color7: '#737c8c', // [punctuation.separator] Property, Separator, Terminator, list_item
+		color6: '#e5c07b', // [keyword.operator] keyword.operator
+		color7: '#7f848e', // [punctuation.separator] Property, Separator, Terminator, list_item
 		color8: '#9da3af', // [entity.other.pseudo-class] Pseudo Property
 		color9: '#d19a66', // [constant.numeric], attributes
 	},

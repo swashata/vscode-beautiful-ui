@@ -40,14 +40,26 @@ module.exports = {
 			name: 'Storage - modifier',
 			scope: ['storage.modifier'],
 			settings: {
-				foreground: '<%= tokens.color2 %>',
+				foreground: '<%= tokens.color3 %>',
 			},
 		},
 		{
 			name: 'Keyword, Storage - italics',
-			scope: ['storage.modifier', 'storage.type', 'keyword.control'],
+			scope: [
+				'storage.modifier',
+				'meta.var storage.type',
+				'keyword.control.from',
+				'storage.type.function',
+			],
 			settings: {
 				fontStyle: 'italic',
+			},
+		},
+		{
+			name: 'Storage - Arrow',
+			scope: ['meta.var storage.type.function.arrow'],
+			settings: {
+				fontStyle: '',
 			},
 		},
 		{
@@ -86,12 +98,10 @@ module.exports = {
 				'variable.function',
 				'keyword.other.special-method',
 				'support.function',
-				'support.type',
-				// 'support.class',
 			],
 			settings: {
 				foreground: '<%= tokens.color5 %>',
-				fontStyle: 'bold',
+				fontStyle: '',
 			},
 		},
 		{
@@ -99,6 +109,34 @@ module.exports = {
 			scope: ['entity.name.tag', 'meta.tag.sgml'],
 			settings: {
 				foreground: '<%= tokens.color2 %>',
+				fontStyle: '',
+			},
+		},
+		{
+			name: 'Custom Tag',
+			scope: ['entity.name.tag support.class.component'],
+			settings: {
+				foreground: '<%= tokens.color1 %>',
+				fontStyle: '',
+			},
+		},
+		{
+			name: 'Tag Attribute',
+			scope: ['meta.tag.attributes meta.embedded variable.other'],
+			settings: {
+				foreground: '<%= tokens.color4 %>',
+				fontStyle: '',
+			},
+		},
+		{
+			name: 'Variable Type',
+			scope: [
+				'meta.type.annotation',
+				'meta.type.parameters',
+				'entity.name.type',
+			],
+			settings: {
+				foreground: '<%= tokens.color1 %>',
 				fontStyle: '',
 			},
 		},
@@ -129,9 +167,22 @@ module.exports = {
 				'punctuation.terminator',
 				'punctuation.separator',
 				'punctuation.separator.inheritance',
+				'punctuation.section.embedded.begin',
+				'punctuation.section.embedded.end',
 			],
 			settings: {
-				foreground: '<%= tokens.color7 %>',
+				foreground: '<%= tokens.color2 %>',
+			},
+		},
+		{
+			name: 'Comma, Semicolon',
+			scope: [
+				'punctuation.terminator.statement',
+				'punctuation.separator.comma',
+				'punctuation.terminator.rule',
+			],
+			settings: {
+				foreground: '<%= tokens.color8 %>',
 			},
 		},
 		{
@@ -532,8 +583,8 @@ module.exports = {
 			},
 		},
 		{
-			name: 'Variable',
-			scope: ['variable', 'variable.other', 'variable.name'],
+			name: 'Variable - General',
+			scope: ['variable', 'variable.name'],
 			settings: {
 				foreground: '<%= tokens.color4 %>',
 			},
@@ -572,22 +623,30 @@ module.exports = {
 			scope: ['variable.other.constant'],
 			settings: {
 				foreground: '<%= tokens.color4 %>',
-				fontStyle: 'bold',
+				fontStyle: '',
 			},
 		},
 		{
-			name: 'Variable - imports',
-			scope: ['meta.import variable.other'],
+			name: 'Variable - others (imports)',
+			scope: [
+				'meta.import variable.other',
+				// 'meta.export variable.other',
+				'entity.name.type.module',
+			],
 			settings: {
-				foreground: '<%= tokens.color4 %>',
-				fontStyle: 'bold',
+				foreground: '<%= tokens.color1 %>',
+				fontStyle: '',
 			},
 		},
 		{
 			name: 'Variable - Property',
-			scope: ['variable.other.property'],
+			scope: [
+				'variable.other.property',
+				'variable.other.object.property',
+				'support.variable.property',
+			],
 			settings: {
-				foreground: '<%= tokens.color4 %>',
+				foreground: '<%= tokens.color2 %>',
 				fontStyle: '',
 			},
 		},
@@ -596,7 +655,7 @@ module.exports = {
 			scope: ['constant', 'constant.other', 'constant.character'],
 			settings: {
 				foreground: '<%= tokens.color3 %>',
-				fontStyle: 'bold',
+				fontStyle: '',
 			},
 		},
 		{
@@ -608,14 +667,14 @@ module.exports = {
 			],
 			settings: {
 				foreground: '<%= tokens.color9 %>',
-				fontStyle: 'bold',
+				fontStyle: '',
 			},
 		},
 		{
 			name: 'Object Literal',
 			scope: ['meta.object-literal.key'],
 			settings: {
-				foreground: '<%= tokens.color1 %>',
+				foreground: '<%= tokens.color2 %>',
 				fontStyle: '',
 			},
 		},
@@ -623,8 +682,8 @@ module.exports = {
 			name: 'Constants - language',
 			scope: ['constant.language'],
 			settings: {
-				foreground: '<%= tokens.color2 %>',
-				fontStyle: 'italic',
+				foreground: '<%= tokens.color9 %>',
+				fontStyle: '',
 			},
 		},
 	],
