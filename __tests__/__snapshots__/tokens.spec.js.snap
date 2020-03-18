@@ -57,18 +57,28 @@ Object {
         "storage.modifier",
       ],
       "settings": Object {
-        "foreground": "<%= tokens.color2 %>",
+        "foreground": "<%= tokens.color3 %>",
       },
     },
     Object {
       "name": "Keyword, Storage - italics",
       "scope": Array [
         "storage.modifier",
-        "storage.type",
-        "keyword.control",
+        "meta.var storage.type",
+        "keyword.control.from",
+        "storage.type.function",
       ],
       "settings": Object {
         "fontStyle": "italic",
+      },
+    },
+    Object {
+      "name": "Storage - Arrow",
+      "scope": Array [
+        "meta.var storage.type.function.arrow",
+      ],
+      "settings": Object {
+        "fontStyle": "",
       },
     },
     Object {
@@ -109,10 +119,9 @@ Object {
         "variable.function",
         "keyword.other.special-method",
         "support.function",
-        "support.type",
       ],
       "settings": Object {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "<%= tokens.color5 %>",
       },
     },
@@ -125,6 +134,38 @@ Object {
       "settings": Object {
         "fontStyle": "",
         "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Custom Tag",
+      "scope": Array [
+        "entity.name.tag support.class.component",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color1 %>",
+      },
+    },
+    Object {
+      "name": "Tag Attribute",
+      "scope": Array [
+        "meta.tag.attributes meta.embedded variable.other",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color4 %>",
+      },
+    },
+    Object {
+      "name": "Variable Type",
+      "scope": Array [
+        "meta.type.annotation",
+        "meta.type.parameters",
+        "entity.name.type",
+      ],
+      "settings": Object {
+        "fontStyle": "",
+        "foreground": "<%= tokens.color1 %>",
       },
     },
     Object {
@@ -157,9 +198,22 @@ Object {
         "punctuation.terminator",
         "punctuation.separator",
         "punctuation.separator.inheritance",
+        "punctuation.section.embedded.begin",
+        "punctuation.section.embedded.end",
       ],
       "settings": Object {
-        "foreground": "<%= tokens.color7 %>",
+        "foreground": "<%= tokens.color2 %>",
+      },
+    },
+    Object {
+      "name": "Comma, Semicolon",
+      "scope": Array [
+        "punctuation.terminator.statement",
+        "punctuation.separator.comma",
+        "punctuation.terminator.rule",
+      ],
+      "settings": Object {
+        "foreground": "<%= tokens.color8 %>",
       },
     },
     Object {
@@ -608,10 +662,9 @@ Object {
       },
     },
     Object {
-      "name": "Variable",
+      "name": "Variable - General",
       "scope": Array [
         "variable",
-        "variable.other",
         "variable.name",
       ],
       "settings": Object {
@@ -657,28 +710,31 @@ Object {
         "variable.other.constant",
       ],
       "settings": Object {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "<%= tokens.color4 %>",
       },
     },
     Object {
-      "name": "Variable - imports",
+      "name": "Variable - others (imports)",
       "scope": Array [
         "meta.import variable.other",
+        "entity.name.type.module",
       ],
       "settings": Object {
-        "fontStyle": "bold",
-        "foreground": "<%= tokens.color4 %>",
+        "fontStyle": "",
+        "foreground": "<%= tokens.color1 %>",
       },
     },
     Object {
       "name": "Variable - Property",
       "scope": Array [
         "variable.other.property",
+        "variable.other.object.property",
+        "support.variable.property",
       ],
       "settings": Object {
         "fontStyle": "",
-        "foreground": "<%= tokens.color4 %>",
+        "foreground": "<%= tokens.color2 %>",
       },
     },
     Object {
@@ -689,7 +745,7 @@ Object {
         "constant.character",
       ],
       "settings": Object {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "<%= tokens.color3 %>",
       },
     },
@@ -700,7 +756,7 @@ Object {
         "constant.numeric",
       ],
       "settings": Object {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "<%= tokens.color9 %>",
       },
     },
@@ -711,7 +767,7 @@ Object {
       ],
       "settings": Object {
         "fontStyle": "",
-        "foreground": "<%= tokens.color1 %>",
+        "foreground": "<%= tokens.color2 %>",
       },
     },
     Object {
@@ -720,8 +776,8 @@ Object {
         "constant.language",
       ],
       "settings": Object {
-        "fontStyle": "italic",
-        "foreground": "<%= tokens.color2 %>",
+        "fontStyle": "",
+        "foreground": "<%= tokens.color9 %>",
       },
     },
   ],
