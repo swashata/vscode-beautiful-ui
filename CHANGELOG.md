@@ -4,6 +4,14 @@ All notable changes to the "beautiful-ui" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.6.0] `2020-03-18`
+
+- 0110edf - feat: make themes consistent and remove bold
+  1. Bold is too much on the eye #23
+  2. Use intended color as original theme, it looks better.
+  3. Use proper color for OneDark theme.
+  4. Semantically color variables, types, function, punctuations etc.
+
 ## [1.5.0] `2020-03-16`
 
 - c9e00d7 - feat: modernize website
