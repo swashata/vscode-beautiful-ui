@@ -1,6 +1,7 @@
 {
     "name": "Ayu Light",
     "type": "light",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#00000026",
         "foreground": "#5c6066",

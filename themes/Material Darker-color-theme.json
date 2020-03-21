@@ -1,6 +1,7 @@
 {
     "name": "Material Darker",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#eeffff",

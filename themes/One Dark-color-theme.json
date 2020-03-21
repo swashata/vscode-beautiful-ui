@@ -1,6 +1,7 @@
 {
     "name": "One Dark",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#aab1bf",

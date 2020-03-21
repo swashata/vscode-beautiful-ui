@@ -1,6 +1,7 @@
 {
     "name": "Monokai Octagon",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#eaf2f1",

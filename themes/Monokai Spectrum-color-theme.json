@@ -1,6 +1,7 @@
 {
     "name": "Monokai Spectrum",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#f7f1ff",

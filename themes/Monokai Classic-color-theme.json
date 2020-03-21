@@ -1,6 +1,7 @@
 {
     "name": "Monokai Classic",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#fdfff1",

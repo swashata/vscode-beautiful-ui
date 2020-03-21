@@ -1,6 +1,7 @@
 {
     "name": "Monokai Ristretto",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#fff1f3",

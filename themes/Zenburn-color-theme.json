@@ -1,6 +1,7 @@
 {
     "name": "Zenburn",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#dedede",

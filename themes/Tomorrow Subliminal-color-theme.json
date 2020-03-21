@@ -1,6 +1,7 @@
 {
     "name": "Tomorrow Subliminal",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#d4d4d4",

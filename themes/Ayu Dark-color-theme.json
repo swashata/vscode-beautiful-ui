@@ -1,6 +1,7 @@
 {
     "name": "Ayu Dark",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#e6e1cf",

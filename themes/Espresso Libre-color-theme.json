@@ -1,6 +1,7 @@
 {
     "name": "Espresso Libre",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#bdae9d",

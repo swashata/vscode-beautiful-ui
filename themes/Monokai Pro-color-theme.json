@@ -1,6 +1,7 @@
 {
     "name": "Monokai Pro",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#fcfcfa",

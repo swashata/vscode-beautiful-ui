@@ -1,6 +1,7 @@
 {
     "name": "Oceanic Next",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#cdd3de",

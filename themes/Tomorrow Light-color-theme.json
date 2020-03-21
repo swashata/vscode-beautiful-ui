@@ -1,6 +1,7 @@
 {
     "name": "Tomorrow Light",
     "type": "light",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#00000026",
         "foreground": "#282a2e",

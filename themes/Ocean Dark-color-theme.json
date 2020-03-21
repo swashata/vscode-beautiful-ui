@@ -1,6 +1,7 @@
 {
     "name": "OceanDark",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#c0c5ce",

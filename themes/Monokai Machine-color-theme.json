@@ -1,6 +1,7 @@
 {
     "name": "Monokai Machine",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#f2fffc",

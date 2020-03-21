@@ -28,6 +28,7 @@ const tokens = require('../src/templates/tokens');
 const general = {
 	name: '<%= name %>',
 	type: '<%= type %>',
+	semanticHighlighting: true,
 };
 
 const compilerDark = template(
@@ -73,10 +74,7 @@ Object.keys(schemes).forEach(theme => {
 		scheme.type === 'dark'
 			? compilerDark({ ...scheme, ...modifiers })
 			: compilerLight({ ...scheme, ...modifiers });
-	const filename = path.join(
-		__dirname,
-		`../themes/${theme}-color-theme.json`
-	);
+	const filename = path.join(__dirname, `../themes/${theme}-color-theme.json`);
 	// Save the file, overriding existing
 	fs.writeFileSync(filename, newTheme);
 	spinner.color = 'green';

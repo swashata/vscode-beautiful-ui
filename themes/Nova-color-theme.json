@@ -1,6 +1,7 @@
 {
     "name": "Nova",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#c5d4dd",

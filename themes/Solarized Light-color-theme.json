@@ -1,6 +1,7 @@
 {
     "name": "Solarized Light",
     "type": "light",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#00000026",
         "foreground": "#657b83",

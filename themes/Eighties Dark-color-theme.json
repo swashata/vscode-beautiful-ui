@@ -1,6 +1,7 @@
 {
     "name": "Eighties Dark",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#d3d0c8",

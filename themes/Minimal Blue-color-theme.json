@@ -1,6 +1,7 @@
 {
     "name": "Minimal Blue",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#D4D4D4",

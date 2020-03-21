@@ -1,6 +1,7 @@
 {
     "name": "Ayu Mirage",
     "type": "dark",
+    "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#ffffff33",
         "foreground": "#d9d7ce",
