@@ -4,6 +4,10 @@ All notable changes to the "beautiful-ui" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.7.0] `2020-03-21`
+
+- feat: enable semantic highlighting by default.
+
 ## [1.6.0] `2020-03-18`
 
 - 336de33 - chore: update site
